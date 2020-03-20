@@ -4,12 +4,12 @@ This solution starter was created by technologists from IBM.
 
 ## Authors
 
+- Donna Byron - IBM
 - John Walicki - IBM
 - Josh Zheng - IBM
 - Mofizur Rahman - IBM
 - Pooja Mistry - IBM
 - Upkar Lidder - IBM
-- Donna Byron - IBM
 
 ## Contents
 
@@ -64,7 +64,7 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 - [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
 - [How-to guides for chatbots](https://www.ibm.com/watson/how-to-build-a-chatbot)
 - [Create a machine learning powered web app to answer questions](https://developer.ibm.com/patterns/create-a-machine-learning-powered-web-app-to-answer-questions-from-a-book/)
-- [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/
+- [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
 - [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
 - [Chat Bot Slack Integration](https://developer.ibm.com/technologies/artificial-intelligence/videos/integrating-watson-assistant-with-slack-using-built-in-integrations/#)
 - [Chat Bot Slack Deployment](https://cloud.ibm.com/docs/assistant?topic=assistant-deploy-slack)
