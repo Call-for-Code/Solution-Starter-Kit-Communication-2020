@@ -81,7 +81,7 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 
 ### Prerequisite
 
-- Register for an [IBM Cloud](cloud.ibm.com/registration/) account.
+- Register for an [IBM Cloud](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020?cm_mmc=OSocial_Blog-_-Audience+Developer_Developer+Conversation-_-WW_WW-_-cfc-2020-ghub-starterkit-communication_ov75914&cm_mmca1=000039JL&cm_mmca2=10008917) account.
 
 ### Steps
 
