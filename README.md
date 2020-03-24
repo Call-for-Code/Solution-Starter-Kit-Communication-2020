@@ -78,7 +78,7 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 
 ![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
-1. User visits a Node-RED website with the COVID-19 chatbot and asks a question via Voice
+1. User visits a voice enabled Node-RED website with the COVID-19 chatbot and asks a question
 2. Node-RED records the speech wav file and calls the Watson Speech to Text service hosted in IBM Cloud
 3. Watson Speech to Text uses ML to decode the user's speech
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud
@@ -91,8 +91,6 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 11. Watson Text to Speech encodes the message in the user's language
 12. Node-RED plays the chat answer wav file to the user
 13. User listens to the chat answer
-
-
 
 
 ## Documents
@@ -120,7 +118,6 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 - [Getting Started with Watson Voice Agent](https://cloud.ibm.com/docs/services/voice-agent?topic=voice-agent-getting-started)
 - [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 - [IBM Cloud Voice Agent with Twilio](https://developer.ibm.com/recipes/tutorials/ibms-voice-agent-with-watson-and-twilio/)
-
 
 
 ## Getting started
