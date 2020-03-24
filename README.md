@@ -1,6 +1,6 @@
-# COVID Crisis Communications Starter Kit 
+# COVID Crisis Communications Starter Kit
 
-This solution starter was created by technologists from IBM. 
+This solution starter was created by technologists from IBM.
 
 ## Authors
 
@@ -46,7 +46,47 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 
 ## Diagrams
 
-![Challenge 1 Architecture](/images/Challenge_1_Architecture.png?raw=true "Challenge 1 Architecture")
+![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Nodejs-WebServer.png)
+
+1. User visits a website with the COVID-19 chatbot and asks a question
+2. Node.js web server calls Watson Assistant service hosted in IBM Cloud
+3. Watson Assistant uses NLU and ML to extract entities and intenties of the user question
+4. Check external data sources for COVID information
+5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
+7. Watson Discovery scans news articles and responds with relevant articles
+8. Watson Assistant replies to the user inquiry
+9. Node.js web server displays the chat answer to the user
+
+![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Slack-Integration.png)
+
+1. User invokes a COVID-19 Slack integration chatbot app and asks a question
+2. Slack app calls Watson Assistant service hosted in IBM Cloud
+3. Watson Assistant uses NLU and ML to extract entities and intenties of the user question
+4. Check external data sources for COVID information
+5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
+7. Watson Discovery scans news articles and responds with relevant articles
+8. Watson Assistant replies to the Slack app
+9. Slack app displays the chat answer to the user
+
+![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
+
+1. User visits a Node-RED website with the COVID-19 chatbot and asks a question via Voice
+2. Node-RED records the speech wav file and calls the Watson Speech to Text service hosted in IBM Cloud
+3. Watson Speech to Text uses ML to decode the user's speech
+4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud
+5. Watson Assistant uses NLU and ML to extract entities and intenties of the user question
+6. Check external data sources for COVID information
+7. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+8. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
+9. Watson Discovery scans news articles and responds with relevant articles
+10. Watson Assistant replies to the user inquiry and Node-RED sends the text transcript to Watson Text to Speech
+11. Watson Text to Speech encodes the message in the user's language
+12. Node-RED plays the chat answer wav file to the user
+13. User listens to the chat answer
+
+
 
 
 ## Documents
