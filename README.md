@@ -6,7 +6,7 @@ This solution starter was created by technologists from IBM.
 
 - Donna Byron - IBM
 - John Walicki - IBM
-- Josh Zheng - IBM
+- Matt Price - IBM
 - Mofizur Rahman - IBM
 - Pooja Mistry - IBM
 - Upkar Lidder - IBM
