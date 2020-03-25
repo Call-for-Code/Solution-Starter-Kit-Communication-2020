@@ -147,10 +147,15 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 1. Provision an instance of **Watson Assistant** from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/watson-assistant).
 
-![Watson Assistant Catalog](/starter-kit/assistant/WatsonAssistantCatalogPhoto1.png)
+![Watson Assistant Catalog](/starter-kit/assistant/WA-Photo1.png)
 
 1. Launch the Watson Assistant service.
 1. [Create an **Assistant** and call it COVID Crisis Communication](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
+
+![Watson Assistant Photo2 ](/starter-kit/assistant/WA-Photo2.png)
+
+![Watson Assistant Photo3 ](/starter-kit/assistant/WA-Photo3.png)
+
 1. [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
 1. Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
 1. Note the **Assistant ID** and **API Key**.
