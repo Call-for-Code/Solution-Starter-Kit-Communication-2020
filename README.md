@@ -157,9 +157,24 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 ![Watson Assistant Photo3 ](/starter-kit/assistant/WA-Photo3.png)
 
 1. [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
+
+![Watson Assistant Photo4 ](/starter-kit/assistant/WA-Photo4.png)
+
+![Watson Assistant Photo5 ](/starter-kit/assistant/WA-Photo5.png)
+
 1. Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
+
+![Watson Assistant Photo6 ](/starter-kit/assistant/WA-Photo6.png)
+
 1. Note the **Assistant ID** and **API Key**.
+![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
+
 1. Go to **Preview Link** to get a link to test and verify the dialog skill.
+![Watson Assistant Photo8 ](/starter-kit/assistant/WA-Photo8.png)
+
+![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
+
+![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
 
 ### Integrate with Slack 
 1. Go to your COVID Crisis Communications Assistant and **Add Integration** 
