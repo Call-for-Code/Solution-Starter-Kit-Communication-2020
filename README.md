@@ -7,7 +7,7 @@ This solution starter was created by technologists from IBM.
 - Donna Byron - IBM
 - [John Walicki](https://developer.ibm.com/profiles/walicki/) - IBM
 - Matt Price - IBM
-- Mofizur Rahman - IBM
+- [Mofizur Rahman](https://developer.ibm.com/profiles/mofizur.rahman/) - IBM
 - [Pooja Mistry](https://developer.ibm.com/profiles/pmistry/) - IBM
 - [Upkar Lidder](https://developer.ibm.com/profiles/ulidder/) - IBM
 
@@ -171,7 +171,14 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 ### Integrate with Node-RED
 
 
+### Integrate with a Node.js web site
 
+- Fork of [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple)
+- Follow the [COVID-Simple installation instructions](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/covid-simple/README.md) 
+
+### Integrate Data Sources via a Watson Assistant Webhook
+
+- [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 
 
 ## Resources
