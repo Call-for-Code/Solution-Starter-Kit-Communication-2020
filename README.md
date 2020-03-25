@@ -147,34 +147,34 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 **Step 1.** Provision an instance of **Watson Assistant** from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/watson-assistant).
 
-    ![Watson Assistant Catalog](/starter-kit/assistant/WA-Photo1.png)
+![Watson Assistant Catalog](/starter-kit/assistant/WA-Photo1.png)
 
 **Step 2.**  Launch the Watson Assistant service.
 
 **Step 3.** [Create an **Assistant** and call it COVID Crisis Communication](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
 
-    ![Watson Assistant Photo2 ](/starter-kit/assistant/WA-Photo2.png)
+![Watson Assistant Photo2 ](/starter-kit/assistant/WA-Photo2.png)
 
-        ![Watson Assistant Photo3 ](/starter-kit/assistant/WA-Photo3.png)
+![Watson Assistant Photo3 ](/starter-kit/assistant/WA-Photo3.png)
 
 **Step 4.** [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
 
-    ![Watson Assistant Photo4 ](/starter-kit/assistant/WA-Photo4.png)
+![Watson Assistant Photo4 ](/starter-kit/assistant/WA-Photo4.png)
 
-    ![Watson Assistant Photo5 ](/starter-kit/assistant/WA-Photo5.png)
+![Watson Assistant Photo5 ](/starter-kit/assistant/WA-Photo5.png)
 
 **Step 5.** Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
 
-    ![Watson Assistant Photo6 ](/starter-kit/assistant/WA-Photo6.png)
+![Watson Assistant Photo6 ](/starter-kit/assistant/WA-Photo6.png)
 
 **Step 6.**  Note the **Assistant ID** and **API Key** for future use.
-    ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
+![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
 **Step 6.**  Go to **Preview Link** to get a link to test and verify the dialog skill.
  
-    ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
+![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
 
-    ![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
+![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
 
 ### Integrate with Slack 
 1. Go to your COVID Crisis Communications Assistant and **Add Integration** 
