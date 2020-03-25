@@ -5,11 +5,11 @@ This solution starter was created by technologists from IBM.
 ## Authors
 
 - Donna Byron - IBM
-- John Walicki - IBM
+- [John Walicki](https://developer.ibm.com/profiles/walicki/) - IBM
 - Matt Price - IBM
 - Mofizur Rahman - IBM
 - Pooja Mistry - IBM
-- Upkar Lidder - IBM
+- [Upkar Lidder](https://developer.ibm.com/profiles/ulidder/) - IBM
 
 ## Contents
 
@@ -32,7 +32,9 @@ In times of crisis, communications systems are one of the first systems to becom
 
 ### How can technology help?
 
-Watson Assistant is a service on IBM Cloud that allows us to build, train, and deploy conversational interactions into any application, device, or channel. Creating a chatbot using Watson Assistant can help address the issues that our users can face while trying to gather the right information. Weather that is trying to learn the latest news on Covid-19 or find out how to take the right precautions, a chatbot built with Watson Assistant can play a major role in helping communities quickly understand crucial information and free up customer service resources to focus on higher-level issues.
+Crisis communication, whether through a chatbot, SMS, or a website, can alleviate panic in communities and provide guidance on the best ways to protect yourself and your loved ones.  From guidance on good hygiene to how to properly detect symptoms or key contact information, technology like chatbots or messaging platforms can help deliver information quickly and precisely. This can save people hours compared to waiting to get through to a call center, and free up customer service representatives to focus on higher level issues. 
+
+Watson Assistant is a service on IBM Cloud that allows us to build, train, and deploy conversational interactions into any application, device, or channel. Creating a chatbot using Watson Assistant can help address the issues that our users can face while trying to gather the right information. Whether that is trying to learn the latest news on Covid-19 or find out how to take the right precautions, a chatbot built with Watson Assistant can play a major role in helping communities quickly understand crucial information and free up customer service resources to focus on higher-level issues.
 
 ## Video
 
@@ -110,6 +112,7 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 - [Create a machine learning powered web app to answer questions](https://developer.ibm.com/patterns/create-a-machine-learning-powered-web-app-to-answer-questions-from-a-book/)
 - [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
 - [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
+- [Chatbot with Watson Discovery](https://github.com/IBM/watson-discovery-sdu-with-assistant)
 - [Chat Bot Slack Integration](https://developer.ibm.com/technologies/artificial-intelligence/videos/integrating-watson-assistant-with-slack-using-built-in-integrations/#)
 - [Chat Bot Slack Deployment](https://cloud.ibm.com/docs/assistant?topic=assistant-deploy-slack)
 - [Node-RED Slack Integration](https://www.ibm.com/cloud/blog/create-a-chatbot-on-ibm-cloud-and-integrate-with-slack-part-1)
