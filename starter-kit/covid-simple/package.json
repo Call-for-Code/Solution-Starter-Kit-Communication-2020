@@ -35,7 +35,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "casperjs": "^1.1.4",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.5",
     "eslint": "^5.14.0",
     "jest": "^24.9.0",
     "phantomjs-prebuilt": "^2.1.16",
