@@ -146,6 +146,9 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 Log in to IBM Cloud and provision a Watson Assistant instance.
 
 1. Provision an instance of **Watson Assistant** from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/watson-assistant).
+
+![Watson Assistant Catalog](/starter-kit/assistant/WatsonAssistantCatalogPhoto1.png)
+
 1. Launch the Watson Assistant service.
 1. [Create an **Assistant** and call it COVID Crisis Communication](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
 1. [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
