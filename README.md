@@ -228,6 +228,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 **Step 12.** Test app by asking questions based on intents and entities in your dialog tree! If you recieve answers back you have successfully integrated your COVID Crisis Communication Assistant!! 
 
+![Slack Movie](/starter-kit/slack/Movie.mp4)
 
 
 ### Integrate with Node-RED
