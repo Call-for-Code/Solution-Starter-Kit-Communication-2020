@@ -23,7 +23,7 @@ This solution starter was created by technologists from IBM.
 8. [Technology](#technology)
 9. [Getting started](#getting-started)
 9. [Resources](#resources)
-10. [License](#license)
+10.[License](#license)
 
 ## Overview
 
@@ -41,7 +41,9 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 [![Call for Code Solution Starter: Water sustainability in the context of climate change ](https://img.youtube.com/vi/VnKmEgUnn34/0.jpg)](https://www.youtube.com/watch?v=VnKmEgUnn34)
 
 ## The idea
+The idea for this starter kit stems from having an accurate source for communication and messaging during time of crisis. With communication systems being the first systems to be overwhelmed , the team thought that the best idea would be to use technology to create a chatbot that can help respond to a multiple inquiries a day and  can integrate with various technologies. In this pandemic , the team thought it would be best to create a chat bot using Watson Assistant that is  based on COVID-19 crisis management training data that would answer all basic inquires about the Corona Virus as well as any information regarding health and safety of individuals. This Watson Assistant based chatbot would also be integrated with to Watson Discovery news to get real time news articles around COVID-19 and would be used to  deployed to various different mediums such as Slack and Node-RED. 
 
+This starter kit shows how a user can integrate the COVID Crisis Communication Watson Assistant to various different technologies. With more and more individuals working from home and communicating via Slack  the team thought that having a Slack integration to the COVID Crisis Communication Bot would be a great use case for individuals to communicate. The other integration with Node-RED integration allows users to communicate with COVID Crisis Communication bot via speech to text api for any home automated assistant use cases. Along with these two integrations, this starter kit provided various resources and tutorials on how to integrate a Watson Assistant to a multitude of technologies. Overall the goal of this starter kit was to provide use examples on how to integrate the COVID Crisis Communication Bot and inspire everyone on how to get started with building your own version of these integrations.  
 
 ## How it works
 
@@ -128,11 +130,6 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 ### Prerequisite
 
 - Register for an [IBM Cloud](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020?cm_mmc=OSocial_Blog-_-Audience+Developer_Developer+Conversation-_-WW_WW-_-cfc-2020-ghub-starterkit-communication_ov75914&cm_mmca1=000039JL&cm_mmca2=10008917) account.
-
-### Steps
-
-1. [Set up an instance of Watson Assistant](#1-set-up-an-instance-of-watson-assistant).
-
 
 ### 1. Set up an instance of Watson Assistant
 Log in to IBM Cloud and provision a Watson Assistant instance.
