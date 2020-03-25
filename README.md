@@ -8,7 +8,7 @@ This solution starter was created by technologists from IBM.
 - [John Walicki](https://developer.ibm.com/profiles/walicki/) - IBM
 - Matt Price - IBM
 - Mofizur Rahman - IBM
-- Pooja Mistry - IBM
+- [Pooja Mistry](https://developer.ibm.com/profiles/pmistry/) - IBM
 - [Upkar Lidder](https://developer.ibm.com/profiles/ulidder/) - IBM
 
 ## Contents
@@ -41,9 +41,20 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 [![Call for Code Solution Starter: Water sustainability in the context of climate change ](https://img.youtube.com/vi/VnKmEgUnn34/0.jpg)](https://www.youtube.com/watch?v=VnKmEgUnn34)
 
 ## The idea
-The idea for this starter kit stems from having an accurate source for communication and messaging during time of crisis. With communication systems being the first systems to be overwhelmed , the team thought that the best idea would be to use technology to create a chatbot that can help respond to a multiple inquiries a day and  can integrate with various technologies. In this pandemic , the team thought it would be best to create a chat bot using Watson Assistant that is  based on COVID-19 crisis management training data that would answer all basic inquires about the Corona Virus as well as any information regarding health and safety of individuals. This Watson Assistant based chatbot would also be integrated with to Watson Discovery news to get real time news articles around COVID-19 and would be used to  deployed to various different mediums such as Slack and Node-RED. 
+
+The idea for this starter kit stems from having an accurate source for communication and messaging during time of crisis. With communication systems being the first systems to be overwhelmed, the team thought that the best idea would be to use technology to create a chatbot that can help respond to a multiple inquiries a day and  can integrate with various technologies. In this pandemic , the team thought it would be best to create a chat bot using Watson Assistant that is  based on COVID-19 crisis management training data that would answer all basic inquires about the Coronavirus as well as any information regarding health and safety of individuals. This Watson Assistant based chatbot would also be integrated with to Watson Discovery news to get real time news articles around COVID-19 and would be used to  deployed to various different mediums such as Slack and Node-RED. 
 
 This starter kit shows how a user can integrate the COVID Crisis Communication Watson Assistant to various different technologies. With more and more individuals working from home and communicating via Slack  the team thought that having a Slack integration to the COVID Crisis Communication Bot would be a great use case for individuals to communicate. The other integration with Node-RED integration allows users to communicate with COVID Crisis Communication bot via speech to text api for any home automated assistant use cases. Along with these two integrations, this starter kit provided various resources and tutorials on how to integrate a Watson Assistant to a multitude of technologies. Overall the goal of this starter kit was to provide use examples on how to integrate the COVID Crisis Communication Bot and inspire everyone on how to get started with building your own version of these integrations.  
+
+COVID-19 has citizens looking for answers about symptoms and testing sites as well as current status of schools, transportation and other public services. Using Watson Assistant, this Call for Code Starter Kit has designed a virtual assistant pre-loaded to understand and respond to common questions about COVID-19, scan COVID-19 news articles using Watson Discovery and respond to COVID statistics inquires with data from trusted sources.
+
+With this Watson Assistant powered Crisis Communications Starter Kit you can integrate a chatbot into your Call for Code solution in a IBM Cloud hosted web server, using a Slack integration or via a Node-RED Dashboard.  It can:
+
+- Respond by sharing consistent, accurate COVID-19 information
+- Help citizens quickly and easily access the latest information through their channel of choice – voice, text or collaborative tool
+- Free valuable resources by automating answers to common COVID-19 questions.
+- Dynamically update information with the latest developments and recommendations
+
 
 ## How it works
 
