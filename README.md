@@ -147,11 +147,32 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 1. Provision an instance of **Watson Assistant** from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/watson-assistant).
 1. Launch the Watson Assistant service.
-1. [Create an **Assistant**](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
-1. [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`starter-kit-flood-dialog-skill.json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
+1. [Create an **Assistant** and call it COVID Crisis Communication](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
+1. [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
 1. Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
 1. Note the **Assistant ID** and **API Key**.
 1. Go to **Preview Link** to get a link to test and verify the dialog skill.
+
+### Integrate with Slack 
+1. Go to your COVID Crisis Communications Assistant and **Add Integration** 
+2. Scroll down to Third-party integration and Select Slack 
+3. The first thing you will have to do is [Create a Slack App](https://api.slack.com/apps). Click on **Create New App** and give app a name and point to a slack development workspace. Learn more about creating slack apps [here](https://api.slack.com/start) 
+4. On the Slack app settings page, go to the **Basic Information** tab and find the **App Credentials** section. Copy your verification token from that section to **section 1** of Step 2 on Watson Assistant Slack integration page 
+5. Go to the **OAuth & Permissions tab**. In the **Bot Token Scopes** section click **Add an Oauth Scope**, and then select the following scopes:`app_mentions:read` `chat:write` `im:history` `im:read` `im:write`
+6. On the **OAuth & Permissions** tab. Click **Install App** to Workspace, and then click **Allow**. You should be redirected back to the OAuth & Permissions page. **Note** Make sure you copy your Bot User OAuth access token (`starts with xoxb`)  to both of the fields in **section 3** of Step 2 on Watson Assistant Slack integration page 
+7. On the Slack app settings page, go to the **Event Subscriptions** tab. Switch the **Enable Events** toggle to the On position. On Step 3 of the Watson Assistant Slack Integration page click on **Generate Requestt URL** Paste request url and verify on **Enable Events** page 
+8. On the Event Subscriptions tab, find the Subscribe to Bot Events section. Click Add Bot User Event, and then select the event types you want to subscribe to. You must select at least one of the following types: `message.im: Listens for message events that are posted in a direct message channel.` `    app_mention: Listens for only message events that mention your app or bot.` Make sure you save your changes
+9. On the **App Home** tab. Click **Edit** and enter a display name and default username for your virtual assistant and then click **Save**. Enable the **Always Show My Bot as Online** toggle
+10. On Watson Assistant Slack Integration page click **Save Changes**
+11. Log in to Slack workspace and click on **Browse App** Find the app you just created and add to workspace
+12. Test app by asking questions based on intents and entities in your dialog tree! If you recieve answers back you have successfully integrated your COVID Crisis Communication Assistant!! 
+
+
+### Integrate with Node-RED
+
+
+
+
 
 ## Resources
 
