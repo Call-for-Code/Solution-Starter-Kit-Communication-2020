@@ -17,7 +17,7 @@ In this tutorial, you will:
 - Once Node-RED is installed, add the dependencies:
 
 ```
-npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson
+npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson node-red-contrib-play-audio
 ```
 
 ## Estimated time
@@ -58,8 +58,9 @@ Once Node-RED is installed, add the dependencies for this tutorial:
 - [node-red-contrib-browser-utils](https://flows.nodered.org/node/node-red-contrib-browser-utils)
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-node-watson](https://flows.nodered.org/node/node-red-node-watson)
+- [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
 ```
-npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson
+npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson node-red-contrib-play-audio
 ```
 
 ### Explore node-red-node-watson Node-RED nodes
@@ -103,7 +104,7 @@ Before the flow will execute successfully, the Watson Assistant and Watson Speec
 
 #### Create a Watson Assistant service instance
 
-If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant)
+- If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant)
  ![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
 - Follow these [instructions](/README.md) to provision a Watson Assistant chatbot for COVID-19
 
@@ -162,10 +163,14 @@ If you haven't already, create a [Watson Assistant service instance](https://clo
 - Click on the **microphone** input tab and ask a question about COVID
 ![Node-RED flow](./images/Talk2COVIDChatBot.png)
 ---
-###
+
+### Build a Node-RED COVID Statistics Dashboard
 
 **Bonus** : This flow includes a Node-RED Dashboard with several gauges to display COVID-19 statistics.
- ![COVID Node-RED Dashboard](./images/Node-RED-COVID-Dashboard.png)
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/node-red/images/Node-RED-COVID-Dashboard.png">
+</p>
 
 ## Summary
 ### Build a Call for Code Crisis Communications solution!
