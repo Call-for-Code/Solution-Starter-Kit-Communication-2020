@@ -35,7 +35,7 @@ Completing this tutorial should take about 30 minutes.
 3. Watson Speech to Text uses ML to decode the user's speech
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud
 5. Watson Assistant uses natural language understanding (NLU) and machine learning (ML) to extract entities and intents of the user question
-6. Check external data sources for COVID information
+6. Source COVID-19 FAQ information from trusted CDC data
 7. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 8. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 9. Watson Discovery scans news articles and responds with relevant articles
