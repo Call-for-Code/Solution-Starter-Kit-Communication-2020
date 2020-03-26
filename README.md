@@ -66,7 +66,7 @@ The challenge for you is to build out from this framework to create a more compl
 1. User visits a website with the COVID-19 chatbot and asks a question.
 2. Node.js web server calls the Watson Assistant service hosted in IBM Cloud.
 3. Watson Assistant uses natural language understanding and machine learning to extract entities and intents of the user question.
-4. Check external data sources for COVID-19 information.
+4. Source COVID-19 FAQ information from trusted CDC data.
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function.
 6. IBM Cloud Function calls the Watson Discovery service running in IBM Cloud.
 7. Watson Discovery scans news articles and responds with relevant articles.
@@ -82,7 +82,7 @@ The challenge for you is to build out from this framework to create a more compl
 1. User invokes a COVID-19 Slack integration chatbot app and asks a question.
 2. Slack app calls the Watson Assistant service hosted in IBM Cloud.
 3. Watson Assistant uses natural language understanding and machine learning to extract entities and intents of the user question.
-4. Check external data sources for COVID-19 information.
+4. Source COVID-19 FAQ information from trusted CDC data
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function.
 6. IBM Cloud Function calls the Watson Discovery service running in IBM Cloud.
 7. Watson Discovery scans news articles and responds with relevant articles.
@@ -100,7 +100,7 @@ The challenge for you is to build out from this framework to create a more compl
 3. Watson Speech to Text uses machine learning to decode the user's speech.
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud.
 5. Watson Assistant uses natural language understanding and machine learning to extract entities and intents of the user's question.
-6. Check external data sources for COVID information.
+6. Source COVID-19 FAQ information from trusted CDC data
 7. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function.
 8. IBM Cloud Function calls the Watson Discovery service running in IBM Cloud.
 9. Watson Discovery scans news articles and responds with relevant articles.
