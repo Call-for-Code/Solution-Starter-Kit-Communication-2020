@@ -1,62 +1,104 @@
 # Adding Webhooks to Watson Assistant
-We can query for dynamic data using webhooks in watson assistant. For our chatbot we are going to use two different sources. 
+
+You can query for dynamic data using webhooks in IBM Watson Assistant. Our crisis communication chatbot uses two different sources:
+
 - [Watson Discovery](https://www.ibm.com/cloud/watson-discovery)
 - [COVID-19 API](https://covid19api.com/)
 
 ## Prerequisites
-- IBM Cloud Account
-- Watson Assistant Instance
+- Create an [IBM Cloud Account](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020?cm_mmc=OSocial_Blog-_-Audience+Developer_Developer+Conversation-_-WW_WW-_-cfc-2020-ghub-starterkit-communication_ov75914&cm_mmca1=000039JL&cm_mmca2=10008917).
+- Access the Watson Assistant instance that you created earlier.
 
-### Make use of Discovery to get News Information
-1. Go to Watson Discovery
+### Make use of Discovery to get news information
+
+1. From your IBM Cloud account, go to Watson Discovery.
+
 ![Discover Service](./images/discovery-service.png)
+
 2. Create a new lite service
+
 ![Create Discover Service](./images/create-discovery-service.png)
+
 3. Make note of the API-key and the URL. We will need that in the next steps. Click on 
+
 ![Credentials](./images/discovery-credentials.png)
-4. Open the Watson Discovery NEWS. A prepopulated discovery dataset updated and maintained by the discovery team. 
+
+4. Open the Watson Discovery NEWS, which is a prepopulated discovery dataset updated and maintained by the Watson Discovery team. 
+
 ![Watson Discovery NEWS](./images/watson-discovery-news.png)
-5. From the top right corner open the api tab. Make note of the Collection ID and Environment ID. 
+
+5. From the top right corner, open the API tab. Make note of the Collection ID and Environment ID.
+
 ![NEWS Api info](./images/news-api-info.png)
 
 ### Creating Cloud Functions
-1. Go to [IBM Cloud Functions](https://cloud.ibm.com/functions/)
-2. Click on Start Creating
+
+1. In the IBM Cloud catalog, go to [IBM Cloud Functions](https://cloud.ibm.com/functions/).
+
+2. Click **Start Creating**.
+
 ![functions](./images/cloud-functions.png)
-3. Select Create Action
+
+3. Select **Create Action**.
+
 ![create](./images/create-action.png)
-4. Give it a name. For Runtime select Node.js 10.
+
+4. Name your action. For the Runtime dropdown, select **Node.js 10**.
+
 ![environment](./images/create-action-env.png)
-5. Replace the Code with [action/covid-webhook.js](./action/covid-webhook.js)
+
+5. Replace the code with [action/covid-webhook.js](./action/covid-webhook.js)
+
 ![code](./images/code.png)
-6. Go to parameters on the left and add the following parameters from the discovery service we got on previous steps.
+
+6. On the left, click on the **Parameters** tab. Add the following parameters &mdash; `api_key`, `url`, `collection_id`, and `env_id` &mdash; from the Discovery service that you got from previous steps.
+
 ![parameters](./images/parameter.png)
-7. Enable the action as an web action. 
+
+7. Enable the action as a web action. To do so, select the **Endpoints** tab on the left. Click the checkbox beside "Enable as Web Action."
+
 ![endpoint](./images/endpoint.png)
-8. Make note of the HTTP URL.
+
+8. Make note of the HTTP URL. You will use this as the webhook for your assistant. You will have to add `.json` in the end of this url to make it work as a webhook.
+
 ![http endpoint](./images/http-endpoint.png)
-This will be used as the webhook for our assisstant. We will have to add `.json` in the end of this url to make it work as a webhook.
 
-### Integrate Data Sources via a Watson Assistant Webhook
+### Integrate data sources via a Watson Assistant webhook
 
-- [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
+- For detailed instructions on how to do this, check out our documentation: [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks).
 
-1. Go to the assistant you already created.
+1. Bring up the COVID-19 assistant you created earlier. Find it in your IBM Cloud account under services > IBM Watson Assistant.
+
 ![assistant](./images/assistant.png)
-2. Go to Options on the left.
+
+2. Click on **Options** on the left.
+
 ![options](./images/options.png)
-3. In the URL text box paste url from the cloud funciton step. Make sure to add a `.json` in the end of the URL.
+
+3. Under Options > Webhooks, in the URL text box, paste the URL from the Cloud Funciton step. Make sure to add a `.json` at the end of the URL.
+
 ![url](./images/add-url.png)
-4. Go to Dialog.
+
+4. Select **Dialog** on the left navigation.
+
 ![dialog](./images/dialog.png)
-5. Open up any dialog node you want to add webhook call for. 
-6. Click on Customize.
+
+5. Open up any dialog node you want to add a webhook call for. 
+
+6. After selecting the node, click **Customize**.
+
 ![customize](./images/customize.png)
-7. Enable Webhooks then click save.
+
+7. Enable Webhooks by moving the toggle button to **On** in the Webhooks section. Click **Save**.
+
 ![webhooks](./images/enable-webhook.png)
-8. Add any parameter you webhook needs. These will be sent as query parameters.
+
+8. Add any parameter your webhook needs. These will be sent as query parameters.
+
 ![webhook parameters](./images/webhook-parameter.png)
-9. We can try the webhook integration is working by going to the try it tab and initiating a dialog that calls the webhook.
+
+9. Test that your webhook integration is working by going to the Try It tab and initiating a dialog that calls the webhook.
+
 ![webhook test](./images/webhook-test.png)
 
-You can easily use webhooks to give you watson assistant access to many external apis and data bases.
+You can easily use webhooks to give your Watson Assistant access to many external APIs and databases.
