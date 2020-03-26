@@ -1,28 +1,47 @@
 {
   "intents": [
     {
-      "intent": "Whythenamea1be11fcb4d97b8fd0afd7f83b164",
+      "intent": "Whythename",
       "examples": [
         {
-          "text": "is covid an abbreviation?"
+          "text": "Why is the disease being called coronavirus disease 2019, COVID-19?"
+        },
+        {
+          "text": "why is covid-19 the name for this disease?"
         },
         {
           "text": "Why the name"
         },
         {
-          "text": "why was covid-19 used to name this disease?"
-        },
-        {
-          "text": "Why is the disease being called coronavirus disease 2019, COVID-19?"
+          "text": "is covid an abbreviation?"
         },
         {
           "text": "is corona virus the same as covid-19?"
+        },
+        {
+          "text": "why was covid-19 used to name this disease?"
         }
-      ]
+      ],
+      "description": "Answer how the name for this virus and disease arose."
     },
     {
       "intent": "HandwashingTips",
       "examples": [
+        {
+          "text": "Should I use soap and water or a hand sanitizer to protect against COVID-19?"
+        },
+        {
+          "text": "will frequent handwashing help?"
+        },
+        {
+          "text": "is hand sanitizer effective against covid-19?"
+        },
+        {
+          "text": "will washing my hands help protect me?"
+        },
+        {
+          "text": "handwashing products"
+        },
         {
           "text": "Handwashing tips"
         },
@@ -30,22 +49,7 @@
           "text": "how do i wash my hands correctly?"
         },
         {
-          "text": "is hand sanitizer effective against covid-19?"
-        },
-        {
-          "text": "handwashing products"
-        },
-        {
-          "text": "will washing my hands help protect me?"
-        },
-        {
           "text": "should i keep washing my hands"
-        },
-        {
-          "text": "Should I use soap and water or a hand sanitizer to protect against COVID-19?"
-        },
-        {
-          "text": "will frequent handwashing help?"
         }
       ],
       "description": "Hand Washing Guidance"
@@ -54,16 +58,16 @@
       "intent": "News_Corona_Virus",
       "examples": [
         {
-          "text": "Whats happening?"
-        },
-        {
-          "text": "NEWS"
+          "text": "What is in the NEWS?"
         },
         {
           "text": "whats happening"
         },
         {
-          "text": "What is in the NEWS?"
+          "text": "NEWS"
+        },
+        {
+          "text": "Whats happening?"
         }
       ],
       "description": ""
@@ -72,22 +76,10 @@
       "intent": "greeting",
       "examples": [
         {
-          "text": "namaste"
-        },
-        {
-          "text": "Olla"
-        },
-        {
-          "text": "yello"
-        },
-        {
-          "text": "yo"
+          "text": "hey there"
         },
         {
           "text": "aloha"
-        },
-        {
-          "text": "hello"
         },
         {
           "text": "bonjour"
@@ -97,6 +89,9 @@
         },
         {
           "text": "ciao"
+        },
+        {
+          "text": "hello"
         },
         {
           "text": "hello watson"
@@ -120,31 +115,37 @@
           "text": "heya"
         },
         {
-          "text": "hey there"
+          "text": "hiya"
         },
         {
           "text": "hi"
         },
         {
-          "text": "hiya"
+          "text": "yo"
         },
         {
-          "text": "hola"
+          "text": "yello"
+        },
+        {
+          "text": "Olla"
+        },
+        {
+          "text": "namaste"
+        },
+        {
+          "text": "howdy"
         },
         {
           "text": "hi there"
         },
         {
-          "text": "howdy"
+          "text": "hola"
         }
       ]
     },
     {
-      "intent": "Howdoesitspreadab25abb0945ec9146bfc83ac5df70",
+      "intent": "HowDoesItSpread",
       "examples": [
-        {
-          "text": "How does it spread"
-        },
         {
           "text": "does the corona virus spread easily?"
         },
@@ -152,16 +153,26 @@
           "text": "how did the virus spread from China?"
         },
         {
-          "text": "is corona virus contagious?"
+          "text": "How does it spread"
         },
         {
           "text": "How does the virus spread?"
+        },
+        {
+          "text": "is corona virus contagious?"
         }
-      ]
+      ],
+      "description": "Info on how COVID Spreads"
     },
     {
       "intent": "DisinfectingSurfaces",
       "examples": [
+        {
+          "text": "What cleaning products should I use to protect against COVID-19?"
+        },
+        {
+          "text": "what products are best at disinfecting?"
+        },
         {
           "text": "Where do i need to disinfect?"
         },
@@ -176,69 +187,69 @@
         },
         {
           "text": "how should i disinfect my home?"
-        },
-        {
-          "text": "What cleaning products should I use to protect against COVID-19?"
-        },
-        {
-          "text": "what products are best at disinfecting?"
         }
       ],
       "description": "Disinfection Guidance"
     },
     {
-      "intent": "spreadinquarantineafe8601c74329a6adbcf197631f50",
+      "intent": "spreadinquarantine",
       "examples": [
         {
-          "text": "what is the incubation period of this corona virus?"
-        },
-        {
-          "text": "Can someone who has been quarantined for COVID-19 spread the illness to others?"
+          "text": "does putting infected people into quarantine help?"
         },
         {
           "text": "spread in quarantine"
         },
         {
-          "text": "does putting infected people into quarantine help?"
-        },
-        {
           "text": "what is a quarantine?"
         },
         {
+          "text": "what is the incubation period of this corona virus?"
+        },
+        {
           "text": "does quarantining people stop the spread of corona virus?"
+        },
+        {
+          "text": "Can someone who has been quarantined for COVID-19 spread the illness to others?"
         }
       ],
       "description": "does quarantining people stop the spread of corona virus?"
     },
     {
-      "intent": "How_many_cases",
+      "intent": "How_any_cases",
       "examples": [
         {
-          "text": "How many cases so far?"
-        },
-        {
-          "text": "How many cases of corona virus has been detected?"
+          "text": "What is the stats on Corona Virus?"
         },
         {
           "text": "How many cases of covid 19 have been detected?"
         },
         {
+          "text": "How many cases so far?"
+        },
+        {
           "text": "What are the stats on COVID-19?"
+        },
+        {
+          "text": "How many cases of corona virus has been detected?"
+        },
+        {
+          "text": "Total Cases so Far"
+        },
+        {
+          "text": "How many cases of Covid 19 has been detected?"
         }
       ],
       "description": ""
     },
     {
-      "intent": "persontopersonab11ec53f495d8823e6b003aaf715",
+      "intent": "PersonToPerson",
       "examples": [
         {
-          "text": "Can someone who has had COVID-19 spread the illness to others?"
+          "text": "person to person"
         },
         {
-          "text": "Can  Corona Virus (COVID-19) spread from person-to-person?"
-        },
-        {
-          "text": "How does  Corona Virus (COVID-19) spread?"
+          "text": "Why is it so contagious?"
         },
         {
           "text": "Why is  Corona Virus (COVID-19) spreading between people?"
@@ -247,39 +258,47 @@
           "text": "Who can I get it from?"
         },
         {
+          "text": "How does  Corona Virus (COVID-19) spread?"
+        },
+        {
+          "text": "Can someone who has had COVID-19 spread the illness to others?"
+        },
+        {
           "text": "Can I catch it from my friend?"
         },
         {
-          "text": "Why is it so contagious?"
-        },
-        {
-          "text": "person to person"
+          "text": "Can  Corona Virus (COVID-19) spread from person-to-person?"
         }
-      ]
+      ],
+      "description": "Info on how Coronavirus spreads person to person"
     },
     {
-      "intent": "Negativetestresultsa79e27d754a9c9c5b9427c6db9cde",
+      "intent": "NegativeTestResults",
       "examples": [
         {
-          "text": "Can you have corona virus and still test negative?"
-        },
-        {
-          "text": "Can a person test negative and later test positive for COVID-19?"
+          "text": "if you test negative can you still get COVID-19 later?"
         },
         {
           "text": "Negative test results"
         },
         {
-          "text": "Does a negative test mean a person does not have COVID-19?"
+          "text": "Can a person test negative and later test positive for COVID-19?"
         },
         {
-          "text": "if you test negative can you still get COVID-19 later?"
+          "text": "Can you have corona virus and still test negative?"
+        },
+        {
+          "text": "Does a negative test mean a person does not have COVID-19?"
         }
-      ]
+      ],
+      "description": "Considerations for receiving negative test results"
     },
     {
       "intent": "ChildrenAndFaceMasks",
       "examples": [
+        {
+          "text": "Children and facemasks"
+        },
         {
           "text": "Should children wear masks?"
         },
@@ -290,22 +309,16 @@
           "text": "can my child play outside without a mask?"
         },
         {
-          "text": "Children and facemasks"
-        },
-        {
           "text": "does my daughter need to wear a facemask?"
         }
       ],
       "description": "Guidance regarding Children wearing Facemasks"
     },
     {
-      "intent": "ProductsfromChinaa4c382d20433eb8a1d75b485970f6",
+      "intent": "ProductsFromChina",
       "examples": [
         {
-          "text": "is it safe to buy Chinese products?"
-        },
-        {
-          "text": "Products from China"
+          "text": "are packages from China infected?"
         },
         {
           "text": "Am I at risk for COVID-19 from a package or products shipping from China?"
@@ -314,36 +327,38 @@
           "text": "should i stop buying products from China?"
         },
         {
-          "text": "are packages from China infected?"
+          "text": "Products from China"
+        },
+        {
+          "text": "is it safe to buy Chinese products?"
         }
-      ]
+      ],
+      "description": "Guidance regarding packages from China"
     },
     {
-      "intent": "Reportingtoworkab4e1f5e645b2b6643d796677e572",
+      "intent": "ReportingToWork",
       "examples": [
-        {
-          "text": "Should I go to work if there is an outbreak in my community?"
-        },
-        {
-          "text": "Reporting to work"
-        },
-        {
-          "text": "I'm supposed to work but my child's school is canceled"
-        },
         {
           "text": "what are my work from home options?"
         },
         {
           "text": "will my office be closed?"
+        },
+        {
+          "text": "I'm supposed to work but my child's school is canceled"
+        },
+        {
+          "text": "Reporting to work"
+        },
+        {
+          "text": "Should I go to work if there is an outbreak in my community?"
         }
-      ]
+      ],
+      "description": "Guidance on going in to work"
     },
     {
       "intent": "ChildrenSocializing",
       "examples": [
-        {
-          "text": "While school is out can my child go to sports practice?"
-        },
         {
           "text": "While school’s out, can my child hang out with their friends?"
         },
@@ -354,45 +369,52 @@
           "text": "Children socializing"
         },
         {
-          "text": "do kids need to limit in person contact?"
+          "text": "While school is out can my child go to sports practice?"
         },
         {
           "text": "Is social distancing important for kids too?"
+        },
+        {
+          "text": "do kids need to limit in person contact?"
         }
       ],
       "description": "Child Socialization guidance"
     },
     {
-      "intent": "Risktopetsa8f847c3b465f9ddbc086d2321146",
+      "intent": "RiskToPets",
       "examples": [
         {
-          "text": "Can corona virus affect the pets?"
+          "text": "Should I be concerned about pets or other animals and COVID-19?"
         },
         {
-          "text": "Should I be concerned about pets or other animals and COVID-19?"
+          "text": "Is there any danger to pets?"
+        },
+        {
+          "text": "Can corona virus affect the pets?"
         },
         {
           "text": "Are my pets in risk?"
         },
         {
           "text": "Risk to pets"
-        },
-        {
-          "text": "Is there any danger to pets?"
         }
-      ]
+      ],
+      "description": "Guidance on potential risk to Pets"
     },
     {
-      "intent": "Wearingfacemasksa7390768849428697f9a80f4f106e",
+      "intent": "Wearingfacemasks",
       "examples": [
         {
-          "text": "Do face masks do anything?"
-        },
-        {
-          "text": "Should my child wear a face mask?"
+          "text": "What do face masks do? "
         },
         {
           "text": "Wearing face masks"
+        },
+        {
+          "text": "Does CDC recommend the use of facemask to prevent COVID-19?"
+        },
+        {
+          "text": "Should I use a face mask when in public?"
         },
         {
           "text": "Do I need to wear a face mask?"
@@ -401,44 +423,43 @@
           "text": "Should I wear a face mask?"
         },
         {
+          "text": "Should my child wear a face mask?"
+        },
+        {
           "text": "Someone in my household is sick should we wear masks at home?"
         },
         {
-          "text": "Does CDC recommend the use of facemask to prevent COVID-19?"
-        },
-        {
-          "text": "What do face masks do? "
-        },
-        {
-          "text": "Should I use a face mask when in public?"
+          "text": "Do face masks do anything?"
         }
-      ]
+      ],
+      "description": "General facemask questions"
     },
     {
-      "intent": "warmerweatheraf9bf61d34e32bb82ee2caaca99df",
+      "intent": "warmerweather",
       "examples": [
         {
-          "text": "i heard the spread will slow down in warmer months"
-        },
-        {
-          "text": "does it get less contagious in the summer?"
-        },
-        {
           "text": "Will warm weather stop the outbreak of COVID-19?"
+        },
+        {
+          "text": "will the virus go away during warmer months?"
         },
         {
           "text": "warmer weather"
         },
         {
-          "text": "will the virus go away during warmer months?"
+          "text": "i heard the spread will slow down in warmer months"
+        },
+        {
+          "text": "does it get less contagious in the summer?"
         }
-      ]
+      ],
+      "description": "Does warmer weather or summer weather have an effect on the virus or the pandemic"
     },
     {
-      "intent": "Symptomsinchildrenadd565f0a4ff5b0828de1922a58ca",
+      "intent": "Symptomsinchildren",
       "examples": [
         {
-          "text": "do kids get different symptoms?"
+          "text": "Symptoms in children"
         },
         {
           "text": "Are the symptoms of COVID-19 different in children than in adults?"
@@ -447,32 +468,34 @@
           "text": "do children react differently to the virus than adults do?"
         },
         {
-          "text": "what are the symptoms in children?"
+          "text": "do kids get different symptoms?"
         },
         {
-          "text": "Symptoms in children"
+          "text": "what are the symptoms in children?"
         }
-      ]
+      ],
+      "description": "Signs and symptoms in children and differences from adults"
     },
     {
-      "intent": "Reducefamilyriska31180dbb40a9bb9745968d1ae8b8",
+      "intent": "ReduceFamilyRisk",
       "examples": [
-        {
-          "text": "lower my family's risk of getting sick"
-        },
-        {
-          "text": "What should I have my family do to keep from getting sick?"
-        },
-        {
-          "text": "Reduce family risk"
-        },
         {
           "text": "What steps can my family take to reduce our risk of getting COVID-19?"
         },
         {
           "text": "what are the top tips to keep my family from catching it?"
+        },
+        {
+          "text": "Reduce family risk"
+        },
+        {
+          "text": "lower my family's risk of getting sick"
+        },
+        {
+          "text": "What should I have my family do to keep from getting sick?"
         }
-      ]
+      ],
+      "description": "Guidance on reducing risk to your family"
     },
     {
       "intent": "HigherRiskPopulations",
@@ -481,118 +504,121 @@
           "text": "Why are people with pre-existing conditions more at risk?"
         },
         {
-          "text": "Why do Boomers get sick? "
-        },
-        {
-          "text": "Who is dying? "
-        },
-        {
-          "text": "Who is at higher risk for serious illness from COVID-19?"
-        },
-        {
-          "text": "What does immunocompromised mean? "
-        },
-        {
-          "text": "I have underlying health issues."
-        },
-        {
-          "text": "I have a chronic illness."
-        },
-        {
-          "text": "I am over the age of 60."
-        },
-        {
-          "text": "How does this impact the elderly? "
-        },
-        {
-          "text": "How does it affect immunocompromised people? "
-        },
-        {
-          "text": "Higher risk populations"
-        },
-        {
-          "text": "Does Gen-Y get it?"
-        },
-        {
-          "text": "Does  Corona Virus (COVID-19) affect older people more?"
-        },
-        {
-          "text": "Do seniors need to take extra precautions?"
-        },
-        {
-          "text": "Can Millennials get it? "
-        },
-        {
-          "text": "Can Gen-X get sick? "
+          "text": "Are all the old people going to die? "
         },
         {
           "text": "Are older adults more likely to contract the disease?"
         },
         {
-          "text": "Are all the old people going to die? "
+          "text": "Can Gen-X get sick? "
+        },
+        {
+          "text": "Can Millennials get it? "
+        },
+        {
+          "text": "Why do Boomers get sick? "
+        },
+        {
+          "text": "Do seniors need to take extra precautions?"
+        },
+        {
+          "text": "Does  Corona Virus (COVID-19) affect older people more?"
+        },
+        {
+          "text": "Does Gen-Y get it?"
+        },
+        {
+          "text": "Higher risk populations"
+        },
+        {
+          "text": "How does it affect immunocompromised people? "
+        },
+        {
+          "text": "How does this impact the elderly? "
+        },
+        {
+          "text": "I am over the age of 60."
+        },
+        {
+          "text": "I have a chronic illness."
+        },
+        {
+          "text": "I have underlying health issues."
+        },
+        {
+          "text": "What does immunocompromised mean? "
+        },
+        {
+          "text": "Who is at higher risk for serious illness from COVID-19?"
+        },
+        {
+          "text": "Who is dying? "
         }
       ],
       "description": "Identify which populations are at higher risk"
     },
     {
-      "intent": "Stigmatizedgroupsa40835d62469ca8c9efad2be9f006",
+      "intent": "Stigmatizedgroups",
       "examples": [
         {
-          "text": "Why might someone blame or avoid individuals and groups (create stigma) because of COVID-19?"
-        },
-        {
-          "text": "is the pandemic causing discrimination against Chinese people?"
-        },
-        {
           "text": "What causes stereotyping and blame?"
+        },
+        {
+          "text": "Why might someone blame or avoid individuals and groups (create stigma) because of COVID-19?"
         },
         {
           "text": "are Asian people being unfarely blamed for corona virus?"
         },
         {
-          "text": "Stigmatized groups"
-        }
-      ]
-    },
-    {
-      "intent": "Wherediditstarta5c88a17f47db82e00644eda9b706",
-      "examples": [
-        {
-          "text": "Where did corona virus originate from?"
+          "text": "is the pandemic causing discrimination against Chinese people?"
         },
         {
+          "text": "Stigmatized groups"
+        }
+      ],
+      "description": "About racial discrimination or shaming"
+    },
+    {
+      "intent": "Wherediditstart",
+      "examples": [
+        {
           "text": "Where did it start"
+        },
+        {
+          "text": "which location did corona virus start from?"
         },
         {
           "text": "What is the source of the virus?"
         },
         {
-          "text": "which location did corona virus start from?"
+          "text": "Where did corona virus originate from?"
         }
-      ]
+      ],
+      "description": "Handle questions about the origins of the virus in humans"
     },
     {
-      "intent": "Testingabf05d3a548e8b0fdd45f06f2d1cf",
+      "intent": "Testing",
       "examples": [
         {
           "text": "should I head to the doctor if I show symptoms?"
         },
         {
-          "text": "can my doctor test me if I start feeling sick?"
-        },
-        {
           "text": "Testing"
         },
         {
-          "text": "Should I be tested for COVID-19?"
+          "text": "who should get tested?"
         },
         {
-          "text": "who should get tested?"
+          "text": "can my doctor test me if I start feeling sick?"
+        },
+        {
+          "text": "Should I be tested for COVID-19?"
         }
-      ]
+      ],
+      "description": "When, where, how of getting yourself tested"
     },
     {
-      "intent": "Risktochildrena9899ac9c4e7da8ad6aedeeb5f0f6",
+      "intent": "RiskToChildren",
       "examples": [
         {
           "text": "Are kids at increased risk of infection?"
@@ -612,57 +638,54 @@
         {
           "text": "Are children at higher risk of getting sick?"
         }
-      ]
+      ],
+      "description": "Guidance on potential risk to Children"
     },
     {
-      "intent": "Mealsforstudentsa85128594418badc3724207ee68a2",
+      "intent": "MealsForStudents",
       "examples": [
         {
-          "text": "are schools continuing to serve school lunch plans even if classes are closed?"
-        },
-        {
-          "text": "Meals for students"
+          "text": "will school students be able to get their free meals?"
         },
         {
           "text": "While school’s out, will kids have access to meals?"
         },
         {
+          "text": "Meals for students"
+        },
+        {
           "text": "how are students on school lunch plans getting their meals?"
         },
         {
-          "text": "will school students be able to get their free meals?"
+          "text": "are schools continuing to serve school lunch plans even if classes are closed?"
         }
-      ]
+      ],
+      "description": "Info regarding school and student meals"
     },
     {
-      "intent": "schoolclosingaa91025604baa8a3cd399ecb042b2",
+      "intent": "schoolclosing",
       "examples": [
-        {
-          "text": "how do I know if my school is closing?"
-        },
         {
           "text": "school closing"
         },
         {
-          "text": "Will schools be dismissed if there is an outbreak in my community?"
+          "text": "who gets to decide if the school will close?"
         },
         {
           "text": "why are schools closing?"
         },
         {
-          "text": "who gets to decide if the school will close?"
+          "text": "Will schools be dismissed if there is an outbreak in my community?"
+        },
+        {
+          "text": "how do I know if my school is closing?"
         }
-      ]
+      ],
+      "description": "School closings information"
     },
     {
       "intent": "CommunitySpread",
       "examples": [
-        {
-          "text": "Can community spread happen? "
-        },
-        {
-          "text": "How does community spread happen? "
-        },
         {
           "text": "Does  Corona Virus (COVID-19) spread to an entire community?"
         },
@@ -670,13 +693,19 @@
           "text": "What does that term community spread mean?"
         },
         {
+          "text": "What is community spread?"
+        },
+        {
           "text": "Why is community spread of this virus important?"
+        },
+        {
+          "text": "Can community spread happen? "
         },
         {
           "text": "Community Spread"
         },
         {
-          "text": "What is community spread?"
+          "text": "How does community spread happen? "
         }
       ],
       "description": "Defining Community Spread"
@@ -688,7 +717,7 @@
           "text": "Am I at risk if I go to a funeral or visitation service for someone who died of COVID-19?"
         },
         {
-          "text": "Should I avoid funerals?"
+          "text": "Are funerals safe? "
         },
         {
           "text": "Can I go to a funeral? "
@@ -697,81 +726,82 @@
           "text": "Can I go to a funeral of someone who died of  Corona Virus (COVID-19)?"
         },
         {
-          "text": "Are funerals safe? "
+          "text": "Should I avoid funerals?"
         }
       ],
       "description": "Funeral attendance guidance"
     },
     {
-      "intent": "Symptomsaf9dc56944e09996777f17af2b6fa",
+      "intent": "Symptoms",
       "examples": [
         {
-          "text": "does covid-19 cause coughing?"
-        },
-        {
-          "text": "does covid-19 cause fever?"
-        },
-        {
-          "text": "is fever a sign of this infection?"
+          "text": "What are the symptoms and complications that COVID-19 can cause?"
         },
         {
           "text": "Symptoms"
         },
         {
-          "text": "What are the symptoms and complications that COVID-19 can cause?"
+          "text": "is fever a sign of this infection?"
+        },
+        {
+          "text": "does covid-19 cause fever?"
+        },
+        {
+          "text": "does covid-19 cause coughing?"
         },
         {
           "text": "what symptoms should I watch for?"
         }
-      ]
+      ],
+      "description": "General info on symptoms of covid-19 disease"
     },
     {
       "intent": "HealthDeptRecommendedActions",
       "examples": [
         {
-          "text": "Health dept recommended actions"
+          "text": "can CDC help my local health dept get protective gear?"
         },
         {
           "text": "What should healthcare professionals and health departments do?"
         },
         {
-          "text": "can CDC help my local board of health"
+          "text": "how do I ship a specimen to the CDC lab?"
         },
         {
-          "text": "can CDC help my local health dept get protective gear?"
+          "text": "Health dept recommended actions"
         },
         {
           "text": "does CDC provide protocols for labs to test covid-19?"
         },
         {
-          "text": "how do I ship a specimen to the CDC lab?"
+          "text": "can CDC help my local board of health"
         }
       ],
       "description": "Recommended"
     },
     {
-      "intent": "USinfectionlevela612c0a6a4fe58804a065c5465e77",
+      "intent": "USinfectionlevel",
       "examples": [
+        {
+          "text": "How many cases are there in the United States?"
+        },
+        {
+          "text": "How many cases are there in America?"
+        },
         {
           "text": "Has anyone in the United States gotten infected?"
         },
         {
-          "text": "How many deaths in the US?"
+          "text": "Are there any confirmed case in the US?"
         },
         {
           "text": "How many cases in the U.S.?"
         },
         {
+          "text": "How many deaths in the US?"
+        },
+        {
           "text": "How many infected people are there in America? "
-        },
-        {
-          "text": "How many recovered in the United States?"
-        },
-        {
-          "text": "How many people recovered in America?"
-        },
-        {
-          "text": "What is the total number of deaths in the US?"
         },
         {
           "text": "How many people have died in the U.S.? "
@@ -780,45 +810,68 @@
           "text": "How many people in the U.S. have  Corona Virus (COVID-19)?"
         },
         {
-          "text": "Has anyone in the United States gotten infected? "
+          "text": "How many people recovered in America?"
         },
         {
-          "text": "How many cases are there in America?"
+          "text": "How many recovered in the United States?"
         },
         {
           "text": "US infection level"
         },
         {
-          "text": "How many cases are there in the United States?"
+          "text": "What is the status of US cases?"
         },
         {
-          "text": "What is the status of US cases?"
+          "text": "What is the total number of deaths in the US?"
         }
-      ]
+      ],
+      "description": "National stats"
     },
     {
-      "intent": "Infectedfamilymemberaff1cd09d4a939b7f428fca22ef86",
+      "intent": "InfectedFamilyMember",
       "examples": [
         {
-          "text": "my roommate has corona virus what should I do?"
+          "text": "What should I do if someone in my house gets sick with COVID-19?"
         },
         {
           "text": "what do i do when someone in my home gets it?"
         },
         {
-          "text": "Infected family member"
+          "text": "my roommate has corona virus what should I do?"
         },
         {
-          "text": "What should I do if someone in my house gets sick with COVID-19?"
+          "text": "Infected family member"
         },
         {
           "text": "do I need to quarantine ill family members?"
         }
-      ]
+      ],
+      "description": "Guidance if a Family Member is infected"
     },
     {
       "intent": "goodbyes",
       "examples": [
+        {
+          "text": "ty"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "bye im going to play a game"
+        },
+        {
+          "text": "i am done with you"
+        },
+        {
+          "text": "o thank u"
+        },
+        {
+          "text": "ok thanks"
+        },
+        {
+          "text": "ok thank you for your time"
+        },
         {
           "text": "ok thank you"
         },
@@ -826,61 +879,49 @@
           "text": "stop"
         },
         {
-          "text": "dont need your help at all"
-        },
-        {
-          "text": "laters"
-        },
-        {
-          "text": "leave"
-        },
-        {
-          "text": "logging off"
-        },
-        {
-          "text": "my time is up"
-        },
-        {
-          "text": "ok bye"
-        },
-        {
-          "text": "out of time"
-        },
-        {
-          "text": "over and out"
-        },
-        {
-          "text": "run"
-        },
-        {
-          "text": "see ya"
-        },
-        {
-          "text": "see ya later"
-        },
-        {
-          "text": "see ya soon"
-        },
-        {
-          "text": "shut up"
+          "text": "be quiet robot"
         },
         {
           "text": "thanks for your help"
         },
         {
-          "text": "be quiet robot"
+          "text": "shut up"
         },
         {
-          "text": "done"
+          "text": "see ya soon"
         },
         {
-          "text": "good bye hohoho"
+          "text": "see ya later"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "run"
+        },
+        {
+          "text": "over and out"
+        },
+        {
+          "text": "out of time"
+        },
+        {
+          "text": "ok bye"
+        },
+        {
+          "text": "my time is up"
+        },
+        {
+          "text": "logging off"
+        },
+        {
+          "text": "leave"
+        },
+        {
+          "text": "laters"
         },
         {
           "text": "goodbye joto"
-        },
-        {
-          "text": "got to go bye nice time talking to you"
         },
         {
           "text": "gtg go right now ok"
@@ -1024,141 +1065,130 @@
           "text": "ttyl"
         },
         {
-          "text": "ty"
+          "text": "done"
         },
         {
-          "text": "thx"
+          "text": "dont need your help at all"
         },
         {
-          "text": "bye im going to play a game"
+          "text": "good bye hohoho"
         },
         {
-          "text": "i am done with you"
-        },
-        {
-          "text": "o thank u"
-        },
-        {
-          "text": "ok thanks"
-        },
-        {
-          "text": "ok thank you for your time"
+          "text": "got to go bye nice time talking to you"
         }
       ]
     },
     {
-      "intent": "spreadviafoodab268003f461fade3485ee15fd747",
+      "intent": "spreadviafood",
       "examples": [
-        {
-          "text": "does the virus stick to packaged food?"
-        },
         {
           "text": "do I need to wash my groceries?"
         },
         {
-          "text": "spread via food"
+          "text": "Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?"
         },
         {
           "text": "does it spread on food packaging?"
         },
         {
-          "text": "Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?"
+          "text": "spread via food"
+        },
+        {
+          "text": "does the virus stick to packaged food?"
         }
-      ]
+      ],
+      "description": "Virus spread from food or food packaging"
     },
     {
-      "intent": "Preparefamilya983054bc4ff88261a5eb2b1afed3",
+      "intent": "PrepareFamily",
       "examples": [
         {
           "text": "How can my family and I prepare for COVID-19?"
         },
         {
-          "text": "Prepare family"
+          "text": "should my household plan ahead?"
         },
         {
           "text": "how do I prepare my household in case corona virus hits my community?"
         },
         {
-          "text": "should my household plan ahead?"
+          "text": "Prepare family"
         },
         {
           "text": "what goes into a family emergency plan?"
         }
-      ]
+      ],
+      "description": "Family Preparation Guidance"
     },
     {
       "intent": "WhatisCovid",
       "examples": [
         {
-          "text": "covid 19"
-        },
-        {
-          "text": "what is carona virus?"
-        },
-        {
-          "text": "Where did  Corona Virus (COVID-19) appear?"
-        },
-        {
           "text": "What is a novel coronavirus?"
-        },
-        {
-          "text": "When did  Corona Virus (COVID-19) start?"
-        },
-        {
-          "text": "Why did  Corona Virus (COVID-19) spread?"
         },
         {
           "text": "How did the  Corona Virus (COVID-19) spread from China?"
         },
         {
-          "text": "What is Covid"
-        },
-        {
-          "text": "Where was  Corona Virus (COVID-19) first spotted."
-        },
-        {
-          "text": "What is SARS-CoV-2?"
+          "text": "covid 19"
         },
         {
           "text": "Carona Virus"
         },
         {
+          "text": "Why did  Corona Virus (COVID-19) spread?"
+        },
+        {
+          "text": "Where was  Corona Virus (COVID-19) first spotted."
+        },
+        {
+          "text": "Where did  Corona Virus (COVID-19) appear?"
+        },
+        {
+          "text": "When did  Corona Virus (COVID-19) start?"
+        },
+        {
           "text": "When did  Corona Virus (COVID-19) appear?"
         },
         {
-          "text": "What is COVID 19?"
-        }
-      ]
-    },
-    {
-      "intent": "Protectingchildrenad7a850a64dc38e2279015f08ea02",
-      "examples": [
-        {
-          "text": "should I disinfect my kid's toys?"
+          "text": "What is SARS-CoV-2?"
         },
         {
-          "text": "is handwashing important for children?"
+          "text": "What is COVID 19?"
+        },
+        {
+          "text": "What is Covid"
+        },
+        {
+          "text": "what is carona virus?"
+        }
+      ],
+      "description": "Description and definition of COVID19"
+    },
+    {
+      "intent": "ProtectingChildren",
+      "examples": [
+        {
+          "text": "How can I protect my child from COVID-19 infection?"
         },
         {
           "text": "what will protect my kids from getting the infection?"
         },
         {
+          "text": "should I disinfect my kid's toys?"
+        },
+        {
           "text": "Protecting children"
         },
         {
-          "text": "How can I protect my child from COVID-19 infection?"
+          "text": "is handwashing important for children?"
         }
-      ]
+      ],
+      "description": "Guidance for keeping children protected"
     },
     {
       "intent": "AnimalContact",
       "examples": [
-        {
-          "text": "can I get covid-19 from my pet?"
-        },
-        {
-          "text": "Should I avoid contact with pets or other animals if I am sick with COVID-19?"
-        },
         {
           "text": "can I get this from my cat?"
         },
@@ -1172,7 +1202,13 @@
           "text": "do dogs and cats get sick from corona virus?"
         },
         {
+          "text": "Should I avoid contact with pets or other animals if I am sick with COVID-19?"
+        },
+        {
           "text": "Animal contact"
+        },
+        {
+          "text": "can I get covid-19 from my pet?"
         }
       ],
       "description": "Human - Animal interaction guidance"
@@ -1181,62 +1217,64 @@
       "intent": "CDC_Response",
       "examples": [
         {
-          "text": "What is the center for disease control doing to help?"
+          "text": "How is CDC helping Americans prepare?"
+        },
+        {
+          "text": "CDC response"
         },
         {
           "text": "What is CDC doing about COVID-19?"
         },
         {
-          "text": "How is CDC helping Americans prepare?"
+          "text": "What is the center for disease control doing to help?"
         },
         {
           "text": "Does CDC work to protect public health?"
-        },
-        {
-          "text": "CDC response"
         }
       ],
       "description": "Info about the CDC"
     },
     {
-      "intent": "Preparingchildrena50533d424d9b8287b74efa18d8f3",
+      "intent": "PreparingChildren",
       "examples": [
         {
-          "text": "My child is stressed about the crisis how can I help?"
+          "text": "how do I keep my kids from worrying about the virus?"
         },
         {
           "text": "How do I prepare my children in case of COVID-19 outbreak in our community?"
+        },
+        {
+          "text": "My child is stressed about the crisis how can I help?"
         },
         {
           "text": "Preparing children"
         },
         {
           "text": "what should I tell my child about this pandemic?"
-        },
-        {
-          "text": "how do I keep my kids from worrying about the virus?"
         }
-      ]
+      ],
+      "description": "Guidance for calming and protecting children"
     },
     {
-      "intent": "Schoolfromhomea67c36efd402987ca85d59a1832ad",
+      "intent": "Schoolfromhome",
       "examples": [
         {
           "text": "While school’s out, how can I help my child continue learning?"
         },
         {
-          "text": "Tips for my child's schedule when school is canceled."
+          "text": "how do I keep my child engaged in schoolwork?"
         },
         {
           "text": "I need tips for at home learning"
         },
         {
-          "text": "how do I keep my child engaged in schoolwork?"
+          "text": "School from home"
         },
         {
-          "text": "School from home"
+          "text": "Tips for my child's schedule when school is canceled."
         }
-      ]
+      ],
+      "description": "Conducting remote education while school is dismissed"
     }
   ],
   "entities": [
@@ -1331,10 +1369,18 @@
             "virus check",
             "virus",
             "COVID-19",
-            "COVID"
+            "COVID",
+            "coronavirus",
+            "corona-virus",
+            "carona-virus",
+            "Carona",
+            "Korona",
+            "Korona-virus",
+            "COVID19"
           ]
         }
-      ]
+      ],
+      "fuzzy_match": true
     },
     {
       "entity": "sys-person",
@@ -1346,17 +1392,17 @@
       "values": [
         {
           "type": "synonyms",
-          "value": "college",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
           "value": "grade school",
           "synonyms": []
         },
         {
           "type": "synonyms",
           "value": "middle school",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "college",
           "synonyms": []
         },
         {
@@ -1627,7 +1673,7 @@
           "type": "webhook",
           "parameters": {
             "type": "api",
-            "country": "<?$location?>"
+            "country": "$location"
           },
           "result_variable": "location_stats"
         }
@@ -1682,6 +1728,49 @@
       "dialog_node": "response_10_1585074743918"
     },
     {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. See the current U.S. case count of COVID-19"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_11760",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1585158375558",
+      "previous_sibling": "response_3_1585158186121"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. See the current U.S. case count of COVID-19"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$us_result.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11760",
+      "conditions": "$us_result",
+      "dialog_node": "response_3_1585158186121"
+    },
+    {
       "type": "event_handler",
       "output": {
         "text": {
@@ -1731,7 +1820,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11787",
+      "title": "Student and School Meals",
       "output": {
         "text": {
           "values": [
@@ -1745,13 +1834,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Mealsforstudentsa85128594418badc3724207ee68a2 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#MealsForStudents && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11787",
       "previous_sibling": "node_11786"
     },
     {
       "type": "standard",
-      "title": "node_11783",
+      "title": "Risk to Pets",
       "output": {
         "text": {
           "values": [
@@ -1765,13 +1854,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Risktopetsa8f847c3b465f9ddbc086d2321146 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#RiskToPets && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11783",
       "previous_sibling": "node_11782"
     },
     {
       "type": "standard",
-      "title": "node_11773",
+      "title": "Preparing and Calming Children",
       "output": {
         "text": {
           "values": [
@@ -1785,7 +1874,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Preparingchildrena50533d424d9b8287b74efa18d8f3 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#PreparingChildren && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11773",
       "previous_sibling": "node_11772"
     },
@@ -1805,7 +1894,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Whythenamea1be11fcb4d97b8fd0afd7f83b164 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Whythename && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11752",
       "previous_sibling": "node_11751"
     },
@@ -1831,7 +1920,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11767",
+      "title": "Children and Face Masks",
       "output": {
         "text": {
           "values": [
@@ -1851,7 +1940,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11753",
+      "title": "How does it Spread",
       "output": {
         "text": {
           "values": [
@@ -1865,13 +1954,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Howdoesitspreadab25abb0945ec9146bfc83ac5df70 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#HowDoesItSpread && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11753",
       "previous_sibling": "node_11752"
     },
     {
       "type": "standard",
-      "title": "node_11763",
+      "title": "Products and Packages from China",
       "output": {
         "text": {
           "values": [
@@ -1885,27 +1974,30 @@
         ]
       },
       "context": {},
-      "conditions": "(#ProductsfromChinaa4c382d20433eb8a1d75b485970f6 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#ProductsFromChina && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11763",
       "previous_sibling": "node_11762"
     },
     {
       "type": "standard",
-      "title": "node_11760",
-      "output": {
-        "text": {
-          "values": [
-            "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. See the current U.S. case count of COVID-19"
-          ],
-          "selection_policy": "sequential"
-        },
-        "video": {},
-        "disclaimers": [
-          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
-        ]
+      "title": "US Infection Level",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "api",
+            "country": "US"
+          },
+          "result_variable": "us_result"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
       },
-      "context": {},
-      "conditions": "(#USinfectionlevela612c0a6a4fe58804a065c5465e77 && intents[0].confidence > $low_confidence)",
+      "conditions": "(#USinfectionlevel && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11760",
       "previous_sibling": "node_11759"
     },
@@ -1931,7 +2023,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11769",
+      "title": "Reduce Family Risk",
       "output": {
         "text": {
           "values": [
@@ -1945,7 +2037,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Reducefamilyriska31180dbb40a9bb9745968d1ae8b8 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#ReduceFamilyRisk && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11769",
       "previous_sibling": "node_11768"
     },
@@ -1979,7 +2071,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11779",
+      "title": "Info about Stigmatized Groups",
       "output": {
         "text": {
           "values": [
@@ -1993,7 +2085,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Stygmatizedgroupsa40835d62469ca8c9efad2be9f006 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Stigmatizedgroups && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11779",
       "previous_sibling": "node_11778"
     },
@@ -2019,7 +2111,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11776",
+      "title": "Symptoms of COVID19",
       "output": {
         "text": {
           "values": [
@@ -2033,7 +2125,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Symptomsaf9dc56944e09996777f17af2b6fa && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Symptoms && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11776",
       "previous_sibling": "node_11775"
     },
@@ -2059,7 +2151,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11757",
+      "title": "Can it spread via food?",
       "output": {
         "text": {
           "values": [
@@ -2073,13 +2165,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#spreadviafoodab268003f461fade3485ee15fd747 && intents[0].confidence > $low_confidence)",
+      "conditions": "(#spreadviafood && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11757",
       "previous_sibling": "node_11756"
     },
     {
       "type": "standard",
-      "title": "node_11762",
+      "title": "Should I wear face masks?",
       "output": {
         "text": {
           "values": [
@@ -2093,13 +2185,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Wearingfacemasksa7390768849428697f9a80f4f106e && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Wearingfacemasks && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11762",
       "previous_sibling": "node_11761"
     },
     {
       "type": "standard",
-      "title": "node_11768",
+      "title": "Family Preparation",
       "output": {
         "text": {
           "values": [
@@ -2113,7 +2205,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Preparefamilya983054bc4ff88261a5eb2b1afed3 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#PrepareFamily && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11768",
       "previous_sibling": "node_11767"
     },
@@ -2175,13 +2267,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#warmerweatheraf9bf61d34e32bb82ee2caaca99df && intents[0].confidence > $low_confidence)",
+      "conditions": "(#warmerweather && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11758",
       "previous_sibling": "node_11757"
     },
     {
       "type": "standard",
-      "title": "node_11775",
+      "title": "Guidance on going in to work",
       "output": {
         "text": {
           "values": [
@@ -2195,7 +2287,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Reportingtoworkab4e1f5e645b2b6643d796677e572 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#ReportingToWork && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11775",
       "previous_sibling": "node_11774"
     },
@@ -2281,7 +2373,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11777",
+      "title": "Testing Information",
       "output": {
         "text": {
           "values": [
@@ -2295,13 +2387,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Testingabf05d3a548e8b0fdd45f06f2d1cf && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Testing && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11777",
       "previous_sibling": "node_11776"
     },
     {
       "type": "standard",
-      "title": "node_11766",
+      "title": "What symptoms are shown in Children?",
       "output": {
         "text": {
           "values": [
@@ -2315,13 +2407,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Symptomsinchildrenadd565f0a4ff5b0828de1922a58ca && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Symptomsinchildren && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11766",
       "previous_sibling": "node_11765"
     },
     {
       "type": "standard",
-      "title": "node_11756",
+      "title": "What is Quarantine",
       "output": {
         "text": {
           "values": [
@@ -2335,13 +2427,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#spreadinquarantineafe8601c74329a6adbcf197631f50 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#spreadinquarantine && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11756",
       "previous_sibling": "node_11755"
     },
     {
       "type": "standard",
-      "title": "node_11755",
+      "title": "Person to Person Spread",
       "output": {
         "text": {
           "values": [
@@ -2355,7 +2447,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#persontopersonab11ec53f495d8823e6b003aaf715 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#PersonToPerson && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11755",
       "previous_sibling": "node_11754"
     },
@@ -2401,7 +2493,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11754",
+      "title": "Where did it originate?",
       "output": {
         "text": {
           "values": [
@@ -2415,7 +2507,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Wherediditstarta5c88a17f47db82e00644eda9b706 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#Wherediditstart && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11754",
       "previous_sibling": "node_11753"
     },
@@ -2441,7 +2533,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11781",
+      "title": "Can I attend funerals?",
       "output": {
         "text": {
           "values": [
@@ -2481,7 +2573,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11770",
+      "title": "Infected Family Member",
       "output": {
         "text": {
           "values": [
@@ -2495,13 +2587,13 @@
         ]
       },
       "context": {},
-      "conditions": "(#Infectedfamilymemberaff1cd09d4a939b7f428fca22ef86 && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#InfectedFamilyMember && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11770",
       "previous_sibling": "node_11769"
     },
     {
       "type": "standard",
-      "title": "node_11764",
+      "title": "Risk to Children",
       "output": {
         "text": {
           "values": [
@@ -2515,7 +2607,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Risktochildrena9899ac9c4e7da8ad6aedeeb5f0f6 && intents[0].confidence > $low_confidence)",
+      "conditions": "(#RiskToChildren && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11764",
       "previous_sibling": "node_11763"
     },
@@ -2554,7 +2646,7 @@
     },
     {
       "type": "standard",
-      "title": "node_11778",
+      "title": "Negative Test Result Considerations",
       "output": {
         "text": {
           "values": [
@@ -2568,7 +2660,7 @@
         ]
       },
       "context": {},
-      "conditions": "(#Negativetestresultsa79e27d754a9c9c5b9427c6db9cde && intents[0].confidence > $low_confidence) ",
+      "conditions": "(#NegativeTestResults && intents[0].confidence > $low_confidence)",
       "dialog_node": "node_11778",
       "previous_sibling": "node_11777"
     },
