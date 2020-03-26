@@ -72,8 +72,10 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 7. Watson Discovery scans news articles and responds with relevant articles
-8. Watson Assistant replies to the user inquiry
-9. Node.js web server displays the chat answer to the user
+8. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+9. IBM Cloud Funtion calls COVID-19 api to get stats
+10. Watson Assistant replies to the user inquiry
+11. Node.js web server displays the chat answer to the user
 
 ### Crisis Chatbot integrated with Slack
 
@@ -86,8 +88,10 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 7. Watson Discovery scans news articles and responds with relevant articles
-8. Watson Assistant replies to the Slack app
-9. Slack app displays the chat answer to the user
+8. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+9. IBM Cloud Funtion calls COVID-19 api to get stats
+10. Watson Assistant replies to the Slack app
+11. Slack app displays the chat answer to the user
 
 ### Voice enabled Crisis Chatbot using Node-RED
 
@@ -102,10 +106,12 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 7. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 8. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 9. Watson Discovery scans news articles and responds with relevant articles
-10. Watson Assistant replies to the user inquiry and Node-RED sends the text transcript to Watson Text to Speech
-11. Watson Text to Speech encodes the message in the user's language
-12. Node-RED plays the chat answer wav file to the user
-13. User listens to the chat answer
+10. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
+11. IBM Cloud Funtion calls COVID-19 api to get stats
+12. Watson Assistant replies to the user inquiry and Node-RED sends the text transcript to Watson Text to Speech
+13. Watson Text to Speech encodes the message in the user's language
+14. Node-RED plays the chat answer wav file to the user
+15. User listens to the chat answer
 
 
 ## Documents
