@@ -26,7 +26,7 @@ Completing this tutorial should take about 30 minutes.
 
 ## Architecture Diagram
 
-### Voice enabled Crisis Communications Chatbot using Node-RED
+### Voice enabled COVID Crisis Communications Chatbot using Node-RED
 
 ![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
@@ -144,7 +144,7 @@ Before the flow will execute successfully, the Watson Assistant and Watson Speec
 
 ### Enable Watson Assistant node with the COVID-19 Workspace ID and API Key
 
-- Double click on the **assistant** node and paste the Workspace ID and the API key from the Watson Assistant service instance
+- Double click on the **assistant** node and paste the Workspace ID, Assistant Service Endpoint URL and the API key from the Watson Assistant service instance
 - Click on the Done button
 ![Config Watson Assistant Node](./images/Config-Watson-Assistant-node.png)
 

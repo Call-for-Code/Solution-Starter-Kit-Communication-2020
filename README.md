@@ -153,7 +153,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 **Step 5.** Click on [Add dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add)
 ![Watson Assistant Photo4 ](/starter-kit/assistant/WA-Photo4.png)
 
-**Step 6.** Click on **Import skill** and upload the [`skill-CDC-COVID-FAQ.json`](./starter-kit/covid-simple/training/skill-CDC-COVID-FAQ.json) file.
+**Step 6.** Click on **Import skill** and upload the [`skill-CDC-COVID-FAQ.json`](./starter-kit/assistant/skill-CDC-COVID-FAQ.json) file.
 ![Watson Assistant Photo5 ](/starter-kit/assistant/WA-Photo5.png)
 
 **Step 7.** Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
@@ -175,7 +175,7 @@ A webhook is a mechanism that allows you to call out to an external program base
 
 [Instruction for setting up Webhook](./starter-kit/webhook/README.md)
 
-### Integrate Watson Assistant with Slack 
+### Integrate Watson Assistant with Slack
 
 Now that you have a functioning Watson Assistant, let’s deploy it to Slack. Slack is a cloud-based messaging application that helps people collaborate with one another. After you configure a dialog skill and add it to an assistant, you can integrate the assistant with Slack.
 
