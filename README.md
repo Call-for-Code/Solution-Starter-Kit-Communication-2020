@@ -163,10 +163,10 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
 **Step 9.**  Go back to your dialog skill and click on the  **Preview Link** button on the side to get a link to test and verify your assistant.
-![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
+![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo91.png)
 
 **Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
-![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
+![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo101.png)
 
 ### Connect Watson Assistant to data sources via a webhook
 To make a programmatic call, define a webhook that sends a POST request callout to an external application that performs a programmatic function. You can then invoke the webhook from one or more dialog nodes.
