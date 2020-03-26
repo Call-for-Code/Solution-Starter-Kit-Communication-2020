@@ -146,34 +146,32 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 Log in to IBM Cloud and provision a Watson Assistant instance.
 
 **Step 1.** Provision an instance of **Watson Assistant** from the [IBM Cloud catalog](https://cloud.ibm.com/catalog/services/watson-assistant).
-
 ![Watson Assistant Catalog](/starter-kit/assistant/WA-Photo1.png)
 
 **Step 2.**  Launch the Watson Assistant service.
 
-**Step 3.** [Create an **Assistant** and call it COVID Crisis Communication](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
-
+**Step 3.** [Create a  **Watson Assistant** service instance](https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add).
 ![Watson Assistant Photo2 ](/starter-kit/assistant/WA-Photo2.png)
 
+**Step 4.** Name the Watson Assistant instance **COVID Crisis Communication**
 ![Watson Assistant Photo3 ](/starter-kit/assistant/WA-Photo3.png)
 
-**Step 4.** [Add a dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add) to the **Assistant** by importing the [`Covid Json`](./starter-kit/assistant/starter-kit-flood-dialog-skill.json) file.
-
+**Step 5.** Click on [Add dialog skill](https://cloud.ibm.com/docs/assistant?topic=assistant-skill-dialog-add)
 ![Watson Assistant Photo4 ](/starter-kit/assistant/WA-Photo4.png)
 
+**Step 6.** Click on **Import skill** and upload the [`skill-CDC-COVID-FAQ.json`](./starter-kit/covid-simple/training/skill-CDC-COVID-FAQ.json) file.
 ![Watson Assistant Photo5 ](/starter-kit/assistant/WA-Photo5.png)
 
-**Step 5.** Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
-
+**Step 7.** Go back to All Assistants page, open **Settings** from the action menu ( **`⋮`** ) and click on **API Details**.
 ![Watson Assistant Photo6 ](/starter-kit/assistant/WA-Photo6.png)
 
-**Step 6.**  Note the **Assistant ID** and **API Key** for future use.
+**Step 8.**  Note the **Assistant ID** and **Api Key** for future use.
 ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
-**Step 6.**  Go to **Preview Link** to get a link to test and verify the dialog skill.
-
+**Step 9.**  Go to **Preview Link** to get a link to test and verify the dialog skill.
 ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
 
+**Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
 ![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
 
 ### Add a Webhook

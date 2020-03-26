@@ -1,6 +1,6 @@
 ###
 
-Learn how to create a voice enabled chatbot using Node-RED and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech nodes.
+Learn how to create a voice enabled chatbot using Node-RED and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech services.
 
 ## Learning objectives
 
@@ -9,7 +9,7 @@ In this tutorial, you will:
 - Learn about Node-RED (local and on IBM Cloud)
 - Explore the node-red-node-watson Node-RED nodes
 - Import / Deploy the Watson Assistant example
-- Build a Call for Code COVID Crisis Communications Chatbot solution
+- Build a Call for Code COVID Crisis Communications voice enabled Chatbot solution
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ Completing this tutorial should take about 30 minutes.
 
 ### Voice enabled Crisis Chatbot using Node-RED
 
-![Crisis Comms Architecture diagram](./images/Crisis-Comms-Architecture-Node-RED.png)
+![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
 1. User visits a voice enabled Node-RED website with the COVID-19 chatbot and asks a question
 2. Node-RED records the speech wav file and calls the Watson Speech to Text service hosted in IBM Cloud
@@ -67,27 +67,27 @@ npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-wats
 The [node-red-node-watson GitHub repository](https://github.com/watson-developer-cloud/node-red-node-watson) includes a collection of Node-RED nodes for IBM Watson services.  This package add the following nodes to your Node-RED palette:
 
 - Assistant (formerly Conversation)
- - Add conversational capabilities into applications.
+  - Add conversational capabilities into applications.
 - Discovery
- - List environments created for the Discovery service
+  - List environments created for the Discovery service
 - Language Identification
- - Detects the language used in text
+  - Detects the language used in text
 - Language Translator
- - Translates text from one language to another
+  - Translates text from one language to another
 - Natural Language Classifier
- - Uses machine learning algorithms to return the top matching predefined classes for short text inputs.
+  - Uses machine learning algorithms to return the top matching predefined classes for short text inputs.
 - Natural Language Understanding
- - Analyze text to extract meta-data from content such as concepts, entities, keywords ...
+  - Analyze text to extract meta-data from content such as concepts, entities, keywords ...
 - Personality Insights
- - Use linguistic analytics to infer cognitive and social characteristics from text
+  - Use linguistic analytics to infer cognitive and social characteristics from text
 - Speech To Text
- - Convert audio containing speech to text
+  - Convert audio containing speech to text
 - Text To Speech
- - Convert text to audio speech
+  - Convert text to audio speech
 - Tone Analyzer
- - Discover, understand, and revise the language tones in text.
+  - Discover, understand, and revise the language tones in text.
 - Visual Recognition
- - Analyze visual appearance of images to understand their contents
+  - Analyze visual appearance of images to understand their contents
 
 ![Watson Node Example](./starter-kit/node-red/watson-nodes.png)
 
@@ -105,20 +105,32 @@ screenshot
 #### Create a Watson Assistant service instance
 
 If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/speech-to-text)
-
-screenshots
-
-#### Create a Watson Speech to Text service instance
-
-Create a [Watson Speech to Text service instance](https://cloud.ibm.com/catalog/services/speech-to-text)
-
-screenshots
+![IBM Cloud Catalog Watson Assistant](./starter-kit/assistant/WA-Photo1.png)
 
 #### Create a Watson Speech to Text service instance
 
-Create a [Watson Text to Speech service instance](https://cloud.ibm.com/catalog/services/text-to-speech)
+- Create a Watson Speech to Text service instance by following this [link](https://cloud.ibm.com/catalog/services/speech-to-text) to the IBM Cloud Catalog
+- Click on the Create button
+![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
 
-screenshots
+- The Node-RED Watson Speech to Text node will need the apikey credentials for this new instance.
+- Once the Watson Speech to Text service has been created, click on **Service credentials** (1)
+- Click the **View credentials** (2) twistie
+- Copy the **apikey** (3) for use in the next section.
+![Watson STT credentials](./images/Watson-STT-apikey.png)  
+
+#### Create a Watson Speech to Text service instance
+
+- Create a Watson Text to Speech service instance
+instance by following this [link](https://cloud.ibm.com/catalog/services/text-to-speech) to the IBM Cloud Catalog
+- Click on the Create button
+![Create Watson Tex text Speech service instance](./images/Create-Watson-TTS.png)
+
+- The Node-RED Watson Text to Speech node will need the apikey credentials for this new instance.
+- Once the Watson Text to Speech service has been created, click on **Service credentials** (1)
+- Click the **View credentials** (2) twistie
+- Copy the **apikey** (3) for use in the next section.
+![Watson TTS credentials](./images/Watson-TTS-apikey.png)  
 
 ### Enable Watson Nodes with API keys
 
