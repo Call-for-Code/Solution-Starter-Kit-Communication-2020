@@ -191,8 +191,6 @@ When integrated, depending on the events that you configure the assistant to sup
 
 Follow this tutorial to learn how to [Integrate with Slack](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
 
-Follow this tutorial to learn how to [Integrate with Slack Tutoral](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
-
 ![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/slack-bot.gif)
 
 ### Integrate with Node-RED
