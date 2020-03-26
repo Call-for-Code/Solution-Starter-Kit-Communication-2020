@@ -26,7 +26,7 @@ Completing this tutorial should take about 30 minutes.
 
 ## Architecture Diagram
 
-### Voice enabled Crisis Chatbot using Node-RED
+### Voice enabled Crisis Communications Chatbot using Node-RED
 
 ![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
@@ -67,7 +67,7 @@ npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-wats
 The [node-red-node-watson GitHub repository](https://github.com/watson-developer-cloud/node-red-node-watson) includes a collection of Node-RED nodes for IBM Watson services.  This package adds the following nodes to your Node-RED palette:
 
 - Assistant (formerly Conversation)
-  - Add conversational capabilities into applications.
+  - Add conversational capabilities into applications
 - Discovery
   - List environments created for the Discovery service
 - Language Identification
@@ -75,7 +75,7 @@ The [node-red-node-watson GitHub repository](https://github.com/watson-developer
 - Language Translator
   - Translates text from one language to another
 - Natural Language Classifier
-  - Uses machine learning algorithms to return the top matching predefined classes for short text inputs.
+  - Uses machine learning algorithms to return the top matching predefined classes for short text inputs
 - Natural Language Understanding
   - Analyze text to extract meta-data from content such as concepts, entities, keywords ...
 - Personality Insights
@@ -85,12 +85,9 @@ The [node-red-node-watson GitHub repository](https://github.com/watson-developer
 - Text To Speech
   - Convert text to audio speech
 - Tone Analyzer
-  - Discover, understand, and revise the language tones in text.
+  - Discover, understand, and revise the language tones in text
 - Visual Recognition
   - Analyze visual appearance of images to understand their contents
-
-![Watson Node Example](./starter-kit/node-red/watson-nodes.png)
-
 
 ### Import / Deploy the Watson Assistant example
 
@@ -106,8 +103,9 @@ Before the flow will execute successfully, the Watson Assistant and Watson Speec
 
 #### Create a Watson Assistant service instance
 
-If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/speech-to-text)
-![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
+If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant)
+ ![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
+- Follow these [instructions](/README.md) to provision a Watson Assistant chatbot for COVID-19
 
 #### Create a Watson Speech to Text service instance
 
@@ -115,46 +113,45 @@ If you haven't already, create a [Watson Assistant service instance](https://clo
 - Click on the Create button
 ![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
 
-- The Node-RED Watson Speech to Text node will need the apikey credentials for this new instance.
+- The Node-RED Watson Speech to Text node will need the apikey credentials for this new instance
 - Once the Watson Speech to Text service has been created, click on **Service credentials** (1)
 - Click the **View credentials** (2) twistie
-- Copy the **apikey** (3) for use in the next section.
+- Copy the **apikey** (3) for use in the next section
 ![Watson STT credentials](./images/Watson-STT-apikey.png)  
 
-#### Create a Watson Speech to Text service instance
+#### Create a Watson Text to Speech service instance
 
-- Create a Watson Text to Speech service instance
-instance by following this [link](https://cloud.ibm.com/catalog/services/text-to-speech) to the IBM Cloud Catalog
+- Create a Watson Text to Speech service instance by following this [link](https://cloud.ibm.com/catalog/services/text-to-speech) to the IBM Cloud Catalog
 - Click on the Create button
 ![Create Watson Tex text Speech service instance](./images/Create-Watson-TTS.png)
 
-- The Node-RED Watson Text to Speech node will need the apikey credentials for this new instance.
+- The Node-RED Watson Text to Speech node will need the apikey credentials for this new instance
 - Once the Watson Text to Speech service has been created, click on **Service credentials** (1)
 - Click the **View credentials** (2) twistie
-- Copy the **apikey** (3) for use in the next section.
+- Copy the **apikey** (3) for use in the next section
 ![Watson TTS credentials](./images/Watson-TTS-apikey.png)  
 
 ### Enable Watson Speech Nodes with API keys
 
-- Double click on the **speech to text** node and paste the API key from the Watson Speech to Text service instance.
-- Click on the Done button.
+- Double click on the **speech to text** node and paste the API key from the Watson Speech to Text service instance
+- Click on the Done button
 ![Config Watson STT Node](./images/Config-Watson-STT-node.png)
 
-- Doubleclick on the **text to speech** node and paste the API key from the Watson Text to Speech service instance.
-- Click on the Done button.
+- Double click on the **text to speech** node and paste the API key from the Watson Text to Speech service instance
+- Click on the Done button
 ![Config Watson TTS Node](./images/Config-Watson-TTS-node.png)
 
 ### Enable Watson Assistant node with the COVID-19 Workspace ID and API Key
 
-- Doubleclick on the **assistant** node and paste the Workspace ID and the API key from the Watson Assistant service instance.
-- Click on the Done button.
+- Double click on the **assistant** node and paste the Workspace ID and the API key from the Watson Assistant service instance
+- Click on the Done button
 ![Config Watson Assistant Node](./images/Config-Watson-Assistant-node.png)
 
 ### Parse Intents and invoke API Calls
 
 - Watson Assistant returns the Intents related to your questions
-- The Switch node routes two Intents to an **http request** node to query a data source for current COVID statistics
-- A **Function** node adds up the summary statistics
+- The **Switch** node routes two Intents to an **http request** node to query an external data source for current COVID statistics
+- A **Function** node adds up the summary statistics and builds a sentence to be spoken
 
 ### Deploy the Node-RED flows
 
@@ -162,9 +159,13 @@ instance by following this [link](https://cloud.ibm.com/catalog/services/text-to
 
 ### Talk to your COVID-19 Crisis Chatbot
 
-- Click on the **microphone** input tab and speak a question about COVID
+- Click on the **microphone** input tab and ask a question about COVID
 ![Node-RED flow](./images/Talk2COVIDChatBot.png)
 ---
+###
+
+**Bonus** : This flow includes a Node-RED Dashboard with several gauges to display COVID-19 statistics.
+ ![COVID Node-RED Dashboard](./images/Node-RED-COVID-Dashboard.png)
 
 ## Summary
 ### Build a Call for Code Crisis Communications solution!
