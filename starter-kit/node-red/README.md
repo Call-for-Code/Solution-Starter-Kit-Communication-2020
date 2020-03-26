@@ -64,7 +64,7 @@ npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-wats
 
 ### Explore node-red-node-watson Node-RED nodes
 
-The [node-red-node-watson GitHub repository](https://github.com/watson-developer-cloud/node-red-node-watson) includes a collection of Node-RED nodes for IBM Watson services.  This package add the following nodes to your Node-RED palette:
+The [node-red-node-watson GitHub repository](https://github.com/watson-developer-cloud/node-red-node-watson) includes a collection of Node-RED nodes for IBM Watson services.  This package adds the following nodes to your Node-RED palette:
 
 - Assistant (formerly Conversation)
   - Add conversational capabilities into applications.
@@ -94,18 +94,20 @@ The [node-red-node-watson GitHub repository](https://github.com/watson-developer
 
 ### Import / Deploy the Watson Assistant example
 
-Now that you have installed the Node-RED dependencies, node-red-node-watson nodes are available to integrate Watson AI services. Let's build an example
+Now that you have installed the Node-RED dependencies, Watson nodes are available to integrate Watson AI services. Let's build a voice enabled chatbot example that uses Watson Assistant, Watson Speech to Text and Watson Text to Speech.
 
- Import this [flow](./starter-kit/node-red/Node-RED-Voice-Enabled-Chatbot.json) and **Deploy** the flow.
+Import this [flow](./starter-kit/node-red/Node-RED-Voice-Enabled-Chatbot.json) and **Deploy** the flow.
 
-screenshot
+![Node-RED flow](./images/Node-RED-COVIDChatBot-flow.png)
 
 ### Create Watson Services on IBM Cloud
+
+Before the flow will execute successfully, the Watson Assistant and Watson Speech nodes need to be configured with new service instances and API Keys.
 
 #### Create a Watson Assistant service instance
 
 If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/speech-to-text)
-![IBM Cloud Catalog Watson Assistant](./starter-kit/assistant/WA-Photo1.png)
+![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
 
 #### Create a Watson Speech to Text service instance
 
@@ -132,15 +134,39 @@ instance by following this [link](https://cloud.ibm.com/catalog/services/text-to
 - Copy the **apikey** (3) for use in the next section.
 ![Watson TTS credentials](./images/Watson-TTS-apikey.png)  
 
-### Enable Watson Nodes with API keys
+### Enable Watson Speech Nodes with API keys
 
-### Enable Watson Assistant with the COVID-19 workspace
+- Double click on the **speech to text** node and paste the API key from the Watson Speech to Text service instance.
+- Click on the Done button.
+![Config Watson STT Node](./images/Config-Watson-STT-node.png)
+
+- Doubleclick on the **text to speech** node and paste the API key from the Watson Text to Speech service instance.
+- Click on the Done button.
+![Config Watson TTS Node](./images/Config-Watson-TTS-node.png)
+
+### Enable Watson Assistant node with the COVID-19 Workspace ID and API Key
+
+- Doubleclick on the **assistant** node and paste the Workspace ID and the API key from the Watson Assistant service instance.
+- Click on the Done button.
+![Config Watson Assistant Node](./images/Config-Watson-Assistant-node.png)
+
+### Parse Intents and invoke API Calls
+
+- Watson Assistant returns the Intents related to your questions
+- The Switch node routes two Intents to an **http request** node to query a data source for current COVID statistics
+- A **Function** node adds up the summary statistics
+
+### Deploy the Node-RED flows
+
+- Click on the Red **Deploy** button
 
 ### Talk to your COVID-19 Crisis Chatbot
 
+- Click on the **microphone** input tab and speak a question about COVID
+![Node-RED flow](./images/Talk2COVIDChatBot.png)
 ---
 
 ## Summary
-### Build a Call for Code Water Sustainability solution!
+### Build a Call for Code Crisis Communications solution!
 
-Now that you have completed this tutorial, you are ready to modify these example flows and Node-RED Dashboard to build a [Call for Code Water Sustainability](https://developer.ibm.com/callforcode/resources/#water-sustainability) solution.
+Now that you have completed this tutorial, you are ready to modify these example flows and Node-RED Dashboard to build a [Call for Code COVID Crisis Communications](https://developer.ibm.com/callforcode/getstarted/covid-19/) solution.
