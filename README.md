@@ -184,12 +184,22 @@ A webhook is a mechanism that allows you to call out to an external program base
 [Instruction for setting up Webhook](./starter-kit/webhook/README.md)
 
 
+<<<<<<< HEAD
 ### Integrate with Slack
 
 This tutorial will show you [step by step instructions](./starter-kit/slack/README.md) on how you can get your COVID Crisis Communication Assistant up and running with Slack
 
 ![Slack Movie](/starter-kit/slack/Movie.mp4)
+=======
+### Integrate with Slack 
+Now that you have a functioning Watson Assistant, let’s deploy it to Slack! Slack is a cloud-based messaging application that helps people collaborate with one another. After you configure a dialog skill and add it to an assistant, you can integrate the assistant with Slack.
 
+When integrated, depending on the events that you configure the assistant to support, your assistant can respond to questions that are asked in direct messages or in channels where the assistant is directly mentioned.
+
+Follow this tutorial to learn how to [Integrate with Slack](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
+>>>>>>> 20129a016a1d896f7b63ff868bb575c446510564
+
+![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/slack-bot.gif)
 
 ### Integrate with Node-RED
 
