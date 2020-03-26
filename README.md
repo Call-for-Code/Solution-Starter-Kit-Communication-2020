@@ -189,7 +189,7 @@ When integrated, depending on the events that you configure the assistant to sup
 
 Follow this tutorial to learn how to [Integrate with Slack](/starter-kit/slack/README.md)
 
-![Slack Gif](/starter-kit/slack/readme_images/Slack.gif)
+![Slack Gif](/starter-kit/slack/readme_images/Slack1.gif)
 
 ### Integrate Watson Assistant with Node-RED
 
