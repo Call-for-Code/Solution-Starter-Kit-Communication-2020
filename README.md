@@ -168,7 +168,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 **Step 8.**  Note the **Assistant ID** and **Api Key** for future use.
 ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
-**Step 9.**  Go to **Preview Link** to get a link to test and verify the dialog skill.
+**Step 9.**  Go back to your dialog skill and click on the  **Preview Link** button on the side to get a link to test and verify your assistant.
 ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
 
 **Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
@@ -188,7 +188,7 @@ When integrated, depending on the events that you configure the assistant to sup
 
 Follow this tutorial to learn how to [Integrate with Slack](/starter-kit/slack/README.md)
 
-![Slack Gif](/starter-kit/slack/readme_images/slack-bot.gif)
+![Slack Gif](/starter-kit/slack/readme_images/Slack.gif)
 
 ### Integrate with Node-RED
 
