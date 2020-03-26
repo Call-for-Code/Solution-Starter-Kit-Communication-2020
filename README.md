@@ -67,13 +67,13 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 
 1. User visits a website with the COVID-19 chatbot and asks a question
 2. Node.js web server calls Watson Assistant service hosted in IBM Cloud
-3. Watson Assistant uses NLU and ML to extract entities and intents of the user question
+3. Watson Assistant uses natural language understanding (NLU) and machine learning (ML) to extract entities and intents of the user question
 4. Check external data sources for COVID information
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 7. Watson Discovery scans news articles and responds with relevant articles
 8. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
-9. IBM Cloud Funtion calls COVID-19 api to get stats
+9. IBM Cloud Function calls COVID-19 api to get stats
 10. Watson Assistant replies to the user inquiry
 11. Node.js web server displays the chat answer to the user
 
@@ -83,13 +83,13 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 
 1. User invokes a COVID-19 Slack integration chatbot app and asks a question
 2. Slack app calls Watson Assistant service hosted in IBM Cloud
-3. Watson Assistant uses NLU and ML to extract entities and intents of the user question
+3. Watson Assistant uses natural language understanding (NLU) and machine learning (ML) to extract entities and intents of the user question
 4. Check external data sources for COVID information
 5. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 6. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 7. Watson Discovery scans news articles and responds with relevant articles
 8. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
-9. IBM Cloud Funtion calls COVID-19 api to get stats
+9. IBM Cloud Function calls COVID-19 api to get stats
 10. Watson Assistant replies to the Slack app
 11. Slack app displays the chat answer to the user
 
@@ -101,13 +101,13 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 2. Node-RED records the speech wav file and calls the Watson Speech to Text service hosted in IBM Cloud
 3. Watson Speech to Text uses ML to decode the user's speech
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud
-5. Watson Assistant uses NLU and ML to extract entities and intents of the user question
+5. Watson Assistant uses natural language understanding (NLU) and machine learning (ML) to extract entities and intents of the user question
 6. Check external data sources for COVID information
 7. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
 8. IBM Cloud Function calls Watson Discovery service running in IBM Cloud
 9. Watson Discovery scans news articles and responds with relevant articles
 10. Watson Assistant invokes an OpenWhisk open source powered IBM Cloud Function
-11. IBM Cloud Funtion calls COVID-19 api to get stats
+11. IBM Cloud Function calls COVID-19 api to get stats
 12. Watson Assistant replies to the user inquiry and Node-RED sends the text transcript to Watson Text to Speech
 13. Watson Text to Speech encodes the message in the user's language
 14. Node-RED plays the chat answer wav file to the user
@@ -172,7 +172,10 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo91.png)
 
 **Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
-![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo101.png)
+<p align="center">
+<img width="80%" height="80%" src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/assistant/WA-Photo101.png">
+</p>
+
 
 ### Connect Watson Assistant to data sources via a webhook
 To make a programmatic call, define a webhook that sends a POST request callout to an external application that performs a programmatic function. You can then invoke the webhook from one or more dialog nodes.
