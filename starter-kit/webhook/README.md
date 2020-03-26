@@ -51,15 +51,57 @@ You can query for dynamic data using webhooks in IBM Watson Assistant. Our crisi
 
 ![code](./images/code.png)
 
-6. On the left, click on the **Parameters** tab. Add the following parameters &mdash; `api_key`, `url`, `collection_id`, and `env_id` &mdash; from the Discovery service that you got from previous steps.
+6. Our Code has two main parts. We decide whther to call the COVID-19 api or Watson Discovery based on a parameter sent on the function call. If there is a query param of `type=api` is set we call the COVID-19 api on the [summary endpoint](https://api.covid19api.com/summary). 
+
+It returns the data in the following form
+
+```
+{
+  Countries: [
+    {
+      Country: "",
+      Slug: "",
+      NewConfirmed: 0,
+      TotalConfirmed: 0,
+      NewDeaths: 0,
+      TotalDeaths: 0,
+      NewRecovered: 0,
+      TotalRecovered: 0
+    },
+    {
+      Country: " Azerbaijan",
+      Slug: "-azerbaijan",
+      NewConfirmed: 0,
+      TotalConfirmed: 0,
+      NewDeaths: 0,
+      TotalDeaths: 0,
+      NewRecovered: 0,
+      TotalRecovered: 0
+    },
+    ...
+  ]
+}
+```
+
+8. We then parse through the list of summary for each country and sum up to get combined stats. If there is specific country selected we look for that country in the summary response and return status for that country.
+
+For example response for `type=api` and `country=US` is shown below.
+
+```
+{
+  "result": "Total Cases: 65778\nTotal Deaths: 942\nTotal Recovered: 361\n\nSource: Johns Hopkins CSSE"
+}
+```
+
+9. If we want to make a call to the Discovery service we need to set some parameters that lets us call the IAM enabled service. On the left, click on the **Parameters** tab. Add the following parameters &mdash; `api_key`, `url`, `collection_id`, and `env_id` &mdash; from the Discovery service that you got from previous steps.
 
 ![parameters](./images/parameter.png)
 
-7. Enable the action as a web action. To do so, select the **Endpoints** tab on the left. Click the checkbox beside "Enable as Web Action."
+10. Enable the action as a web action. To do so, select the **Endpoints** tab on the left. Click the checkbox beside "Enable as Web Action."
 
 ![endpoint](./images/endpoint.png)
 
-8. Make note of the HTTP URL. You will use this as the webhook for your assistant. You will have to add `.json` in the end of this url to make it work as a webhook.
+11. Make note of the HTTP URL. You will use this as the webhook for your assistant. You will have to add `.json` in the end of this url to make it work as a webhook.
 
 ![http endpoint](./images/http-endpoint.png)
 
