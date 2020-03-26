@@ -173,7 +173,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
     ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
-**Step 9.**  Go back to your dialog skill and click on the  **Preview Link** button on the side to get a link to test and verify your assistant.
+**Step 9.**  Go back to your dialog skill and click on the **Preview Link** button on the side to get a link to test and verify your assistant.
 
     ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo91.png)
 
@@ -183,7 +183,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 </p>
 
 
-### Connect you chatbot to data sources via a webhook
+### Connect your chatbot to data sources via a webhook
 
 Now that you’ve created your Watson Assistant-enabled chatbot, you need to connect it to a data source. With Watson Assistant, you need to do this via a webhook.
 
@@ -205,7 +205,7 @@ When integrated, depending on the events that you configure the assistant to sup
 
 Want to create a voice-enabled chatbot? This tutorial teaches you how to [create a voice enabled chatbot using Node-RED](./starter-kit/node-red/README.md) and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech nodes.
 
-### Integrate your COVID-19 chatbot on a Node.js website
+### Embed your COVID-19 chatbot on a Node.js website
 
 Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website. 
 
