@@ -16,7 +16,9 @@ In this tutorial, you will:
 This tutorial assumes you have a Slack workspace with administrative rights. 
  - [Learn more about creating your slack workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 
-Once you have a Slack Workspace .... 
+This tutorial also assumes you have created a [Watson Assistant COVID Crisis Bot](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020#getting-started) 
+
+Once you have a Slack Workspace and your Assistant up and running  .... 
 
 ## Lets Get Started! 
 
