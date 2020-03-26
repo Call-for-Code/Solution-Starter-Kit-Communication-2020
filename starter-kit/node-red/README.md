@@ -94,7 +94,7 @@ The [node-red-node-watson GitHub repository](https://github.com/watson-developer
 
 Now that you have installed the Node-RED dependencies, Watson nodes are available to integrate Watson AI services. Let's build a voice enabled chatbot example that uses Watson Assistant, Watson Speech to Text and Watson Text to Speech.
 
-Import this [flow](./starter-kit/node-red/Node-RED-Voice-Enabled-Chatbot.json) and **Deploy** the flow.
+Import this [flow](./starter-kit/node-red/flows/Node-RED-Voice-Enabled-Chatbot.json) and **Deploy** the flow.
 
 ![Node-RED flow](./images/Node-RED-COVIDChatBot-flow.png)
 
