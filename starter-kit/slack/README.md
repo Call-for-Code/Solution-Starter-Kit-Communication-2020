@@ -1,6 +1,7 @@
 # Integrating with Slack 
 
 This tutorial will show you step by step instructions on how you can get your COVID Crisis Communication Assistant up and running with Slack
+![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/slack-bot.gif)
 
 ## Lets Get Started! 
 
@@ -66,6 +67,5 @@ Log in to Slack workspace and click on **Browse App** Find the app you just crea
 ### Step 12.
 Test app by asking questions based on intents and entities in your dialog tree! If you recieve answers back you have successfully integrated your COVID Crisis Communication Assistant!! 
 
-![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/COVID%20CRISIS%20BOT.gif)
 
 
