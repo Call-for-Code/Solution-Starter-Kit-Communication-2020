@@ -7,7 +7,7 @@ This solution starter was created by technologists from IBM.
 - Donna Byron - IBM
 - [John Walicki](https://developer.ibm.com/profiles/walicki/) - IBM
 - Matt Price - IBM
-- [Mofizur Rahman](https://developer.ibm.com/profiles/mofizur.rahman/) - IBM
+- [Mofizur Rahman](https://developer.ibm.com/profiles/mofizur.rahman) - IBM
 - [Pooja Mistry](https://developer.ibm.com/profiles/pmistry/) - IBM
 - [Upkar Lidder](https://developer.ibm.com/profiles/ulidder/) - IBM
 
@@ -176,6 +176,14 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 ![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
 
+### Add a Webhook
+To make a programmatic call, define a webhook that sends a POST request callout to an external application that performs a programmatic function. You can then invoke the webhook from one or more dialog nodes.
+
+A webhook is a mechanism that allows you to call out to an external program based on something happening in your program. When used in a dialog skill, a webhook is triggered when the assistant processes a node that has a webhook enabled. The webhook collects data that you specify or that you collect from the user during the conversation and save in context variables. It sends the data as part of a HTTP POST request to the URL that you specify as part of your webhook definition. The URL that receives the webhook is the listener. It performs a predefined action using the information that you pass to it as specified in the webhook definition, and can optionally return a response.
+
+[Instruction for setting up Webhook](./starter-kit/webhook/README.md)
+
+
 ### Integrate with Slack 
 **Step 1.** Go to your COVID Crisis Communications Assistant and **Add Integration** 
 
@@ -238,11 +246,6 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 - Fork of [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple)
 - Follow the [COVID-Simple installation instructions](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/covid-simple/README.md) 
-
-### Integrate Data Sources via a Watson Assistant Webhook
-
-- [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
-
 
 ## Resources
 
