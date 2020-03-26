@@ -119,19 +119,13 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 
 ## Technology
 
-- [Bot Asset Exchange](https://developer.ibm.com/code/exchanges/bots/)
 - [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
 - [How-to guides for chatbots](https://www.ibm.com/watson/how-to-build-a-chatbot)
-- [Create a machine learning powered web app to answer questions](https://developer.ibm.com/patterns/create-a-machine-learning-powered-web-app-to-answer-questions-from-a-book/)
 - [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
-- [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
 - [Chatbot with Watson Discovery](https://github.com/IBM/watson-discovery-sdu-with-assistant)
-- [Chat Bot Slack Integration](https://developer.ibm.com/technologies/artificial-intelligence/videos/integrating-watson-assistant-with-slack-using-built-in-integrations/#)
 - [Chat Bot Slack Deployment](https://cloud.ibm.com/docs/assistant?topic=assistant-deploy-slack)
 - [Node-RED Slack Integration](https://www.ibm.com/cloud/blog/create-a-chatbot-on-ibm-cloud-and-integrate-with-slack-part-1)
-- [Enhance customer helpdesks with Smart Document Understanding using webhooks in Watson Assistant](https://developer.ibm.com/patterns/enhance-customer-help-desk-with-smart-document-understanding/)
-- [Watson Voice Agent](https://cloud.ibm.com/catalog/services/voice-agent-with-watson)
-- [Getting Started with Watson Voice Agent](https://cloud.ibm.com/docs/services/voice-agent?topic=voice-agent-getting-started)
+- [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
 - [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 - [IBM Cloud Voice Agent with Twilio](https://developer.ibm.com/recipes/tutorials/ibms-voice-agent-with-watson-and-twilio/)
 
@@ -174,14 +168,15 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 **Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
 ![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
 
-### Add a Webhook
+### Connect Watson Assistant to data sources via a webhook
 To make a programmatic call, define a webhook that sends a POST request callout to an external application that performs a programmatic function. You can then invoke the webhook from one or more dialog nodes.
 
 A webhook is a mechanism that allows you to call out to an external program based on something happening in your program. When used in a dialog skill, a webhook is triggered when the assistant processes a node that has a webhook enabled. The webhook collects data that you specify or that you collect from the user during the conversation and save in context variables. It sends the data as part of a HTTP POST request to the URL that you specify as part of your webhook definition. The URL that receives the webhook is the listener. It performs a predefined action using the information that you pass to it as specified in the webhook definition, and can optionally return a response.
 
 [Instruction for setting up Webhook](./starter-kit/webhook/README.md)
 
-### Integrate with Slack
+### Integrate Watson Assistant with Slack 
+
 Now that you have a functioning Watson Assistant, let’s deploy it to Slack. Slack is a cloud-based messaging application that helps people collaborate with one another. After you configure a dialog skill and add it to an assistant, you can integrate the assistant with Slack.
 
 When integrated, depending on the events that you configure the assistant to support, your assistant can respond to questions that are asked in direct messages or in channels where the assistant is directly mentioned.
@@ -190,11 +185,11 @@ Follow this tutorial to learn how to [Integrate with Slack](/starter-kit/slack/R
 
 ![Slack Gif](/starter-kit/slack/readme_images/slack-bot.gif)
 
-### Integrate with Node-RED
+### Integrate Watson Assistant with Node-RED
 
 This tutorial will teach you how to [create a voice enabled chatbot using Node-RED](./starter-kit/node-red/README.md) and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech nodes.
 
-### Integrate with a Node.js web site
+### Integrate Watson Assistant on a Node.js web site
 
 - Fork of [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple)
 - Follow the [COVID-Simple installation instructions](./starter-kit/covid-simple/README.md)
@@ -203,8 +198,6 @@ This tutorial will teach you how to [create a voice enabled chatbot using Node-R
 
 - [IBM Cloud](https://www.ibm.com/cloud)
 - [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
-
-## Resources
 
 
 ## License
