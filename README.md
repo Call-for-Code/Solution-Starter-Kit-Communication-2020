@@ -189,7 +189,9 @@ Now that you have a functioning bot, let’s deploy it to Slack! Slack is a clou
 
 When integrated, depending on the events that you configure the assistant to support, your assistant can respond to questions that are asked in direct messages or in channels where the assistant is directly mentioned.
 
-**Follow this tutorial to learn how to** **[Integrate with Slack]**(https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
+Follow this tutorial to learn how to [Integrate with Slack](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
+
+Follow this tutorial to learn how to [Integrate with Slack Tutoral](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/README.md)
 
 ![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/slack-bot.gif)
 
