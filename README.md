@@ -52,7 +52,7 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 
 - Respond by sharing consistent, accurate COVID-19 information
 - Help citizens quickly and easily access the latest information through their channel of choice – voice, text or collaborative tool
-- Free valuable resources by automating answers to common COVID-19 questions.
+- Free valuable resources by automating answers to common COVID-19 questions
 - Dynamically update information with the latest developments and recommendations
 
 
@@ -117,7 +117,7 @@ With this Watson Assistant powered Crisis Communications Starter Kit you can int
 ## Documents
 
 - Trusted sources for COVID-19 information
- - [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
+  - [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 
 ## Datasets
 
@@ -173,7 +173,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 
 **Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19
 <p align="center">
-<img width="80%" height="80%" src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/assistant/WA-Photo101.png">
+<img width="50%" height="50%" src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/assistant/WA-Photo101.png">
 </p>
 
 
