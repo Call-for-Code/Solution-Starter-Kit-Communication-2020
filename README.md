@@ -208,6 +208,12 @@ This tutorial will teach you how to [create a voice enabled chatbot using Node-R
 - [IBM Cloud](https://www.ibm.com/cloud)
 - [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
 
+## Disclosures
+
+This Watson Assistant bot is populated with data sourced from the following resources:
+- Most static responses provide information found on the CDC's COVID FAQ Page: https://www.cdc.gov/coronavirus/2019-ncov/faq.html
+- Dynamic infection and death counts are sourced from Johns Hopkins University via the following API: https://www.covid19api.com/
+- Dynamic news stories are sourced from Watson Discovery's news feed. Additional information on that service can be found here: https://www.ibm.com/watson/services/discovery-news/
 
 ## License
 
