@@ -32,7 +32,7 @@ In times of crisis, communications systems are one of the first systems to becom
 
 ### How can technology help?
 
-Crisis communication, whether through a chatbot, SMS, or a website, can alleviate panic in communities and provide guidance on the best ways to protect yourself and your loved ones.  From guidance on good hygiene to how to properly detect symptoms or key contact information, technology like chatbots or messaging platforms can help deliver information quickly and precisely. This can save people hours compared to waiting to get through to a call center, and free up customer service representatives to focus on higher level issues. 
+Crisis communication, whether through a chatbot, SMS, or a website, can alleviate panic in communities and provide guidance on the best ways to protect yourself and your loved ones.  From guidance on good hygiene to how to properly detect symptoms or key contact information, technology like chatbots or messaging platforms can help deliver information quickly and precisely. This can save people hours compared to waiting to get through to a call center, and free up customer service representatives to focus on higher level issues.
 
 Watson Assistant is a service on IBM Cloud that allows us to build, train, and deploy conversational interactions into any application, device, or channel. Creating a chatbot using Watson Assistant can help address the issues that our users can face while trying to gather the right information. Whether that is trying to learn the latest news on Covid-19 or find out how to take the right precautions, a chatbot built with Watson Assistant can play a major role in helping communities quickly understand crucial information and free up customer service resources to focus on higher-level issues.
 
@@ -42,7 +42,7 @@ Watson Assistant is a service on IBM Cloud that allows us to build, train, and d
 
 ## The idea
 
-The idea for this starter kit stems from having an accurate source for communication and messaging during time of crisis. With communication systems being the first systems to be overwhelmed, the team thought that the best idea would be to use technology to create a chatbot that can help respond to a multiple inquiries a day and  can integrate with various technologies. In this pandemic , the team thought it would be best to create a chat bot using Watson Assistant that is  based on COVID-19 crisis management training data that would answer all basic inquires about the Coronavirus as well as any information regarding health and safety of individuals. This Watson Assistant based chatbot would also be integrated with to Watson Discovery news to get real time news articles around COVID-19 and would be used to  deployed to various different mediums such as Slack and Node-RED. 
+The idea for this starter kit stems from having an accurate source for communication and messaging during time of crisis. With communication systems being the first systems to be overwhelmed, the team thought that the best idea would be to use technology to create a chatbot that can help respond to a multiple inquiries a day and  can integrate with various technologies. In this pandemic , the team thought it would be best to create a chat bot using Watson Assistant that is  based on COVID-19 crisis management training data that would answer all basic inquires about the Coronavirus as well as any information regarding health and safety of individuals. This Watson Assistant based chatbot would also be integrated with to Watson Discovery news to get real time news articles around COVID-19 and would be used to  deployed to various different mediums such as Slack and Node-RED.
 
 This starter kit shows how a user can integrate the COVID Crisis Communication Watson Assistant to various different technologies. With more and more individuals working from home and communicating via Slack  the team thought that having a Slack integration to the COVID Crisis Communication Bot would be a great use case for individuals to communicate. The other integration with Node-RED integration allows users to communicate with COVID Crisis Communication bot via speech to text api for any home automated assistant use cases. Along with these two integrations, this starter kit provided various resources and tutorials on how to integrate a Watson Assistant to a multitude of technologies. Overall the goal of this starter kit was to provide use examples on how to integrate the COVID Crisis Communication Bot and inspire everyone on how to get started with building your own version of these integrations.  
 
@@ -171,7 +171,7 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
 **Step 6.**  Go to **Preview Link** to get a link to test and verify the dialog skill.
- 
+
 ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo9.png)
 
 ![Watson Assistant Photo10 ](/starter-kit/assistant/WA-Photo10.png)
@@ -184,68 +184,21 @@ A webhook is a mechanism that allows you to call out to an external program base
 [Instruction for setting up Webhook](./starter-kit/webhook/README.md)
 
 
-### Integrate with Slack 
-**Step 1.** Go to your COVID Crisis Communications Assistant and **Add Integration** 
+### Integrate with Slack
 
-![Slack Integration Photo1 ](/starter-kit/slack/Slack-Photo1.png)
-
-**Step 2.** Scroll down to Third-party integration and Select Slack 
-
-![Slack Integration Photo2 ](/starter-kit/slack/Slack-Photo2.png)
-
-**Step 3.** The first thing you will have to do is [Create a Slack App](https://api.slack.com/apps). Click on **Create New App** and give app a name and point to a slack development workspace. Learn more about creating slack apps [here](https://api.slack.com/start) 
-
-![Slack Integration Photo3 ](/starter-kit/slack/Slack-Photo3.png)
-
-
-**Step 4.** On the Slack app settings page, go to the **Basic Information** tab and find the **App Credentials** section. Copy your verification token from that section to **section 1** of Step 2 on Watson Assistant Slack integration page 
-
-![Slack Integration Photo4 ](/starter-kit/slack/Slack-Photo4.png)
-![Slack Integration Photo5 ](/starter-kit/slack/Slack-Photo5.png)
-
-(Optional) : Upload an App Icon and App Name in the Display information section of **Basic Information** tab 
-
-![Slack Integration Photo- ](/starter-kit/slack/Slack-Photo.png)
-
-
-**Step 5.** Go to the **OAuth & Permissions tab**. In the **Bot Token Scopes** section click **Add an Oauth Scope**, and then select the following scopes:`app_mentions:read` `chat:write` `im:history` `im:read` `im:write`
-![Slack Integration Photo6 ](/starter-kit/slack/Slack-Photo6.png)
-
-
-**Step 6.** On the **OAuth & Permissions** tab. Click **Install App** to Workspace, and then click **Allow**. You should be redirected back to the OAuth & Permissions page. **Note** Make sure you copy your Bot User OAuth access token (`starts with xoxb`)  to both of the fields in **section 3** of Step 2 on Watson Assistant Slack integration page 
-
-![Slack Integration Photo7 ](/starter-kit/slack/Slack-Photo7.png)
-![Slack Integration Photo8 ](/starter-kit/slack/Slack-Photo8.png)
-
-
-**Step 7.** On the Slack app settings page, go to the **Event Subscriptions** tab. Switch the **Enable Events** toggle to the On position. On Step 3 of the Watson Assistant Slack Integration page click on **Generate Requestt URL** Paste request url and verify on **Enable Events** page 
-
-![Slack Integration Photo9 ](/starter-kit/slack/Slack-Photo9.png)
-
-**Step 8.** On the Event Subscriptions tab, find the Subscribe to Bot Events section. Click Add Bot User Event, and then select the event types you want to subscribe to. You must select at least one of the following types: `message.im: Listens for message events that are posted in a direct message channel.` `    app_mention: Listens for only message events that mention your app or bot.` Make sure you save your changes
-
-![Slack Integration Photo10 ](/starter-kit/slack/Slack-Photo10.png)
-
-**Step 9.** On the **App Home** tab. Click **Edit** and enter a display name and default username for your virtual assistant and then click **Save**. Enable the **Always Show My Bot as Online** toggle
-![Slack Integration Photo11 ](/starter-kit/slack/Slack-Photo11.png)
-
-**Step 10.** On Watson Assistant Slack Integration page click **Save Changes**
-
-**Step 11.** Log in to Slack workspace and click on **Browse App** Find the app you just created and add to workspace
-![Slack Integration Photo12 ](/starter-kit/slack/Slack-Photo12.png)
-
-**Step 12.** Test app by asking questions based on intents and entities in your dialog tree! If you recieve answers back you have successfully integrated your COVID Crisis Communication Assistant!! 
+This tutorial will show you [step by step instructions](./starter-kit/slack/README.md) on how you can get your COVID Crisis Communication Assistant up and running with Slack
 
 ![Slack Movie](/starter-kit/slack/Movie.mp4)
 
 
 ### Integrate with Node-RED
 
+This tutorial will teach you how to [create a voice enabled chatbot using Node-RED](./starter-kit/node-red/README.md) and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech nodes.
 
 ### Integrate with a Node.js web site
 
 - Fork of [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple)
-- Follow the [COVID-Simple installation instructions](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/covid-simple/README.md) 
+- Follow the [COVID-Simple installation instructions](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/covid-simple/README.md)
 
 ## Resources
 
