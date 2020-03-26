@@ -1,7 +1,7 @@
 # Integrating with Slack 
 
 This tutorial will show you step by step instructions on how you can get your COVID Crisis Communication Assistant up and running with Slack
-![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/Slack1.gif)
+![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/Slack.gif)
 
 ## Lets Get Started! 
 
