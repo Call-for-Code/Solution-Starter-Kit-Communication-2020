@@ -3,6 +3,21 @@
 This tutorial will show you step by step instructions on how you can get your COVID Crisis Communication Assistant up and running with Slack
 ![Slack Gif](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/blob/master/starter-kit/slack/readme_images/Slack.gif)
 
+## Learning objectives
+
+In this tutorial, you will:
+
+- Learn about building a Slack App 
+- Integrating your Slack App with Watson Assistant
+- Build a Call for Code COVID Crisis Communications Slack enabled Chatbot solution
+
+## Prerequisites
+
+This tutorial assumes you have a Slack workspace with administrative rights. 
+ - [Learn more about creating your slack workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+
+Once you have a Slack Workspace .... 
+
 ## Lets Get Started! 
 
 ### Step 1. 
