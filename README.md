@@ -113,16 +113,10 @@ The challenge for you is to build out from this framework to create a more compl
 
 ## Documents
 
-- Trusted sources for COVID-19 information
-  - [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
+### Trusted sources for COVID-19 information
+- [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 
-## Datasets
-
-- [covid19api](https://covid19api.com/)
-
-## Technology
-
-- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+### Tutorials and documentation:
 - [How-to guides for chatbots](https://www.ibm.com/watson/how-to-build-a-chatbot)
 - [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
 - [Chatbot with Watson Discovery](https://github.com/IBM/watson-discovery-sdu-with-assistant)
@@ -132,6 +126,25 @@ The challenge for you is to build out from this framework to create a more compl
 - [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 - [IBM Cloud Voice Agent with Twilio](https://developer.ibm.com/recipes/tutorials/ibms-voice-agent-with-watson-and-twilio/)
 
+## Datasets
+
+- [covid19api](https://covid19api.com/)
+
+## Technology
+
+### IBM technology
+
+- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+- [Watson Discovery](https://www.ibm.com/cloud/watson-discovery)
+- [Watson Speech to Text](https://www.ibm.com/cloud/watson-speech-to-text)
+- [Watson Text to Speech](https://www.ibm.com/cloud/watson-text-to-speech)
+- [IBM Cloud Functions](https://cloud.ibm.com/functions/)
+
+### Open source technology
+
+- [Node.js[(https://nodejs.org/en/)
+- [Apache OpenWhisk](https://openwhisk.apache.org/)
+- [Node-RED] https://nodered.org/
 
 ## Getting started
 
