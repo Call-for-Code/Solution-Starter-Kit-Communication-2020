@@ -7,7 +7,7 @@ You can query for dynamic data using webhooks in IBM Watson Assistant. Our crisi
 
 ## Prerequisites
 - Create an [IBM Cloud Account](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020?cm_mmc=OSocial_Blog-_-Audience+Developer_Developer+Conversation-_-WW_WW-_-cfc-2020-ghub-starterkit-communication_ov75914&cm_mmca1=000039JL&cm_mmca2=10008917).
-- Create a Watson Assistant COVID-19 crisis communications chatbot. [Follow these instructions](/README.md)
+- Create a Watson Assistant COVID-19 crisis communications chatbot. [Follow these instructions](/README.md#getting-started)
 
 ### Make use of Discovery to get news information
 
