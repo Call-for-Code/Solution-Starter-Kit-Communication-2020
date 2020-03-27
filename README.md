@@ -117,6 +117,7 @@ The challenge for you is to build out from this framework to create a more compl
 - [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 
 ### Tutorials and documentation:
+
 - [How-to guides for chatbots](https://www.ibm.com/watson/how-to-build-a-chatbot)
 - [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
 - [Chatbot with Watson Discovery](https://github.com/IBM/watson-discovery-sdu-with-assistant)
@@ -125,6 +126,7 @@ The challenge for you is to build out from this framework to create a more compl
 - [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
 - [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 - [IBM Cloud Voice Agent with Twilio](https://developer.ibm.com/recipes/tutorials/ibms-voice-agent-with-watson-and-twilio/)
+- [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
 
 ## Datasets
 
@@ -142,9 +144,9 @@ The challenge for you is to build out from this framework to create a more compl
 
 ### Open source technology
 
-- [Node.js[(https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [Apache OpenWhisk](https://openwhisk.apache.org/)
-- [Node-RED] https://nodered.org/
+- [Node-RED](https://nodered.org/)
 
 ## Getting started
 
@@ -214,13 +216,7 @@ Want to create a voice-enabled chatbot? This tutorial teaches you how to [create
 
 Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website. 
 
-- Fork the [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple) code.
 - Follow the [COVID-Simple installation instructions](./starter-kit/covid-simple/README.md)
-
-## Resources
-
-- [IBM Cloud](https://www.ibm.com/cloud)
-- [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
 
 ## Disclosures
 
