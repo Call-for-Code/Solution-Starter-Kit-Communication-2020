@@ -170,23 +170,16 @@ To talk to your chatbot, click on the **microphone** input tab and ask a questio
 
 **Bonus**: This flow includes a Node-RED Dashboard with several gauges to display COVID-19 statistics.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/node-red/images/Node-RED-COVID-Dashboard.png">
-</p>
+![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard.png)
 
-
-* Every hour the Node-RED flow will call the [covid19api](https://api.covid19api.com/summary) summary API and collect dynamic COVID-19 infection statistics
-
-* The country data is aggregated and then the gauges are updated
-
+- Every hour the Node-RED flow will call the [covid19api](https://api.covid19api.com/summary) summary API and collect dynamic COVID-19 infection statistics
+- The country data is aggregated and then the gauges are updated
 
 ### Learn more about the Dashboard code
 
-The following Node-RED flow is included in this starter-kit.
+The following Node-RED flow is included in this tutorial.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/node-red/images/Node-RED-COVID-Dashboard-flow.png">
-</p>
+![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard-flow.png)
 
 The **http request node** is using the public Covid-19 API https://api.covid19api.com/summary to retrieve the daily information for all countries with infections. 
 
@@ -196,7 +189,7 @@ Here's the sample JSON object from the summary API:
 {"Country":"US","Slug":"us","NewConfirmed":18058,"TotalConfirmed":83836,"NewDeaths":267,"TotalDeaths":1209,"NewRecovered":320,"TotalRecovered":681},
 ```
 
-Each **function node** then aggregates The Total Confirmed Cases, Total Fatalities, Total Recovered, and Total Countires and sends the results to the corresponding **gauge node**.
+Each **function node** then aggregates the Total Confirmed Cases, Total Fatalities, Total Recovered, and Total Countries and sends the results to the corresponding **gauge node**.
 
 This is the code in the **function node**
 
@@ -212,7 +205,7 @@ msg.payload = totalConfirmedCase;
 return msg;
 ```
 
-The above dashboard can be expanded to include daily new infections from [covid19api](https://api.covid19api.com/summary) data and chatbot UI.
+The above dashboard can be expanded to include daily new infections from [covid19api](https://api.covid19api.com/summary) data, charts, tables and chatbot UI.
 
 ## Build a Call for Code Crisis Communications solution!
 
