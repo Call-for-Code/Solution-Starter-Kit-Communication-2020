@@ -11,19 +11,19 @@
 - [Pooja Mistry](https://developer.ibm.com/profiles/pmistry/) - IBM
 - [Upkar Lidder](https://developer.ibm.com/profiles/ulidder/) - IBM
 
-## コンテンツ
+## 目次
 
-1. [Overview](#overview)
-2. [Video](#video)
-3. [The idea](#the-idea)
-4. [How it works](#how-it-works)
-5. [Diagrams](#diagrams)
-6. [Documents](#documents)
-7. [Datasets](#datasets)
-8. [Technology](#technology)
-9. [Getting started](#getting-started)
-9. [Resources](#resources)
-10.[License](#license)
+1. [概要](#概要)
+2. [動画](#動画)
+3. [解決案](#解決案)
+4. [使い方](#使い方)
+5. [構成図](#構成図)
+6. [ドキュメント](#ドキュメント)
+7. [データセット](#データセット)
+8. [テクノロジー](#テクノロジー)
+9. [始め方](#始め方)
+9. [利用している情報源について](#利用している情報源について)
+10.[ライセンス](#license)
 
 ## 概要
 
