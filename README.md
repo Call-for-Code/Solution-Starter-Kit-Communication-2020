@@ -1,6 +1,6 @@
 # COVID Crisis Communications Starter Kit
 
-This solution starter was created by technologists from IBM.
+This solution starter was created by technologists from IBM.  Translations are available: [JP](/README_JP.md)
 
 ## Authors
 
