@@ -220,6 +220,8 @@ Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js w
 
 ## Disclosures
 
+This tool is intended to provide information based on currently available CDC and other public information to help you make decisions about seeking appropriate medical care. This system is not intended for the diagnosis or treatment of disease or other conditions, including COVID-19, and you should not provide any personally identifying or private health information.
+
 This Watson Assistant bot is populated with data that is sourced from the following resources:
 
 - Most static responses provide information found on the CDC's COVID FAQ Page: https://www.cdc.gov/coronavirus/2019-ncov/faq.html
