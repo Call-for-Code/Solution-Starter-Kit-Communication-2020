@@ -181,7 +181,7 @@ The following Node-RED flow is included in this tutorial.
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard-flow.png)
 
-The **http request node** is using the public Covid-19 API https://api.covid19api.com/summary to retrieve the daily information for all countries with infections. 
+The `http request` node is using the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections. 
 
 Here's the sample JSON object from the summary API:
 
@@ -189,9 +189,9 @@ Here's the sample JSON object from the summary API:
 {"Country":"US","Slug":"us","NewConfirmed":18058,"TotalConfirmed":83836,"NewDeaths":267,"TotalDeaths":1209,"NewRecovered":320,"TotalRecovered":681},
 ```
 
-Each **function node** then aggregates the Total Confirmed Cases, Total Fatalities, Total Recovered, and Total Countries and sends the results to the corresponding **gauge node**.
+Each `function` node then aggregates the Total Confirmed Cases, Total Fatalities, Total Recovered, and Total Countries and sends the results to the corresponding `gauge` node.
 
-This is the code in the **function node**
+This is the code in the `function` node:
 
 ```javascript
 let totalConfirmedCase = 0;
@@ -205,7 +205,7 @@ msg.payload = totalConfirmedCase;
 return msg;
 ```
 
-The above dashboard can be expanded to include daily new infections from [covid19api](https://api.covid19api.com/summary) data, charts, tables and chatbot UI.
+You can expand the above dashboard to include daily new infections from [covid19api](https://api.covid19api.com/summary) data, charts, tables, and the chatbot UI.
 
 ## Build a Call for Code Crisis Communications solution!
 
