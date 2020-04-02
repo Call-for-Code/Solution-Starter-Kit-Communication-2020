@@ -181,10 +181,19 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 **Step 8.**  On the Settings tab, click **API Details** on the left and make a note of the `Assistant ID` and `Api Key` for future use.
   ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
-**Step 9.**  Go back to your dialog skill and click on the **Preview Link** button on the side to get a link to test and verify your assistant.
+**Step 9.** Go back to the All Assistants page and click on the **Skills** link.
+  ![Watson Assistant Skills ](/starter-kit/assistant/WA-Skills.png)
+
+**Step 10.** On the Skill page, click on the action menu ( **`⋮`** ), open **View API Details**.
+  ![Watson Assistant Skill Properties](/starter-kit/assistant/WA-SkillAPIProperties.png)
+
+**Step 11.** On the Skill Details page, make note of the `Skill ID` for future use.
+  ![Watson Assistant Skill Details](/starter-kit/assistant/WA-SkillDetails.png)
+
+**Step 12.**  Go back to your dialog skill and click on the **Preview Link** button on the side to get a link to test and verify your assistant.
   ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo91.png)
 
-**Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19.
+**Step 13.** Ask the Watson Assistant chatbot some questions about COVID-19.
 <p align="center">
 <img width="50%" height="50%" src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/assistant/WA-Photo101.png">
 </p>
@@ -214,7 +223,7 @@ Want to create a voice-enabled chatbot? This tutorial teaches you how to [create
 
 ### Embed your COVID-19 chatbot on a Node.js website
 
-Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website. 
+Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website.
 
 - Follow the [COVID-Simple installation instructions](./starter-kit/covid-simple/README.md)
 
