@@ -15,7 +15,12 @@ function getRandomInt(max) {
 }
 
 async function main(params) {
+
+
   if (params.type === "api") {
+   /*
+    * Use of the 'Johns Hopkins CSSE' resource
+    */
     try {
       const summary = await request({
         method: "GET",
@@ -52,6 +57,9 @@ async function main(params) {
       return { error: "it failed : " + err };
     }
   } else {
+    /*
+    * Use of the 'Watson Discovery' as resource
+    */
     const discovery = new DiscoveryV1({
       version: "2019-03-25",
       iam_apikey: params.api_key,
@@ -70,6 +78,11 @@ async function main(params) {
     };
     try {
       data = await discovery.query(queryParams);
+      
+      if (data.results == undefined ) {
+          return { "discovery response error" : data };
+      }
+      
       let response = data.results.map((v, i) => {
         return `${v.title}
                  ${v.text}
