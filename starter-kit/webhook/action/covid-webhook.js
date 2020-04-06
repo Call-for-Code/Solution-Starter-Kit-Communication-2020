@@ -26,7 +26,7 @@ async function main(params) {
       if (params.country) {
         for (var i = 0; i < summary.Countries.length; i++) {
           if (
-            summary.Countries[i].CountryCode.toLowerCase() ===
+            summary.Countries[i].Country.toLowerCase() ===
             params.country.toLowerCase()
           ) {
             return {
