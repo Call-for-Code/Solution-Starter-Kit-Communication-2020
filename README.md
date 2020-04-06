@@ -1,6 +1,6 @@
 # COVID Crisis Communications Starter Kit
 
-This solution starter was created by technologists from IBM.
+This solution starter was created by technologists from IBM.  Translations are available: [JP](/README_JP.md)
 
 ## Authors
 
@@ -38,7 +38,7 @@ IBM Watson Assistant service helps you build, train, and deploy conversational i
 
 ## Video
 
-[![Call for Code Solution Starter: Water sustainability in the context of climate change ](https://img.youtube.com/vi/VnKmEgUnn34/0.jpg)](https://www.youtube.com/watch?v=VnKmEgUnn34)
+[![Call for Code Solution Starter: Water sustainability in the context of climate change ](https://img.youtube.com/vi/WzEj_m0hwF0/0.jpg)](https://www.youtube.com/watch?v=WzEj_m0hwF0)
 
 ## The idea
 
@@ -113,16 +113,11 @@ The challenge for you is to build out from this framework to create a more compl
 
 ## Documents
 
-- Trusted sources for COVID-19 information
-  - [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
+### Trusted sources for COVID-19 information
+- [CDC COVID-19 FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
 
-## Datasets
+### Tutorials and documentation:
 
-- [covid19api](https://covid19api.com/)
-
-## Technology
-
-- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
 - [How-to guides for chatbots](https://www.ibm.com/watson/how-to-build-a-chatbot)
 - [Learning path: Getting started with Watson Assistant](https://developer.ibm.com/series/learning-path-watson-assistant/)
 - [Chatbot with Watson Discovery](https://github.com/IBM/watson-discovery-sdu-with-assistant)
@@ -131,7 +126,27 @@ The challenge for you is to build out from this framework to create a more compl
 - [Train a speech-to-text model](https://developer.ibm.com/patterns/customize-and-continuously-train-your-own-watson-speech-service/)
 - [Making Programmatic Calls from Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-webhooks)
 - [IBM Cloud Voice Agent with Twilio](https://developer.ibm.com/recipes/tutorials/ibms-voice-agent-with-watson-and-twilio/)
+- [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
 
+## Datasets
+
+- [covid19api](https://covid19api.com/)
+
+## Technology
+
+### IBM technology
+
+- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+- [Watson Discovery](https://www.ibm.com/cloud/watson-discovery)
+- [Watson Speech to Text](https://www.ibm.com/cloud/watson-speech-to-text)
+- [Watson Text to Speech](https://www.ibm.com/cloud/watson-text-to-speech)
+- [IBM Cloud Functions](https://cloud.ibm.com/functions/)
+
+### Open source technology
+
+- [Node.js](https://nodejs.org/en/)
+- [Apache OpenWhisk](https://openwhisk.apache.org/)
+- [Node-RED](https://nodered.org/)
 
 ## Getting started
 
@@ -166,16 +181,25 @@ Log in to IBM Cloud and provision a Watson Assistant instance.
 **Step 8.**  On the Settings tab, click **API Details** on the left and make a note of the `Assistant ID` and `Api Key` for future use.
   ![Watson Assistant Photo7 ](/starter-kit/assistant/WA-Photo7.png)
 
-**Step 9.**  Go back to your dialog skill and click on the  **Preview Link** button on the side to get a link to test and verify your assistant.
+**Step 9.** Go back to the All Assistants page and click on the **Skills** link.
+  ![Watson Assistant Skills ](/starter-kit/assistant/WA-Skills.png)
+
+**Step 10.** On the Skill page, click on the action menu ( **`⋮`** ), open **View API Details**.
+  ![Watson Assistant Skill Properties](/starter-kit/assistant/WA-SkillAPIProperties.png)
+
+**Step 11.** On the Skill Details page, make note of the `Skill ID` for future use.
+  ![Watson Assistant Skill Details](/starter-kit/assistant/WA-SkillDetails.png)
+
+**Step 12.**  Go back to your dialog skill and click on the **Preview Link** button on the side to get a link to test and verify your assistant.
   ![Watson Assistant Photo9 ](/starter-kit/assistant/WA-Photo91.png)
 
-**Step 10.** Ask the Watson Assistant chatbot some questions about COVID-19.
+**Step 13.** Ask the Watson Assistant chatbot some questions about COVID-19.
 <p align="center">
 <img width="50%" height="50%" src="https://raw.githubusercontent.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/master/starter-kit/assistant/WA-Photo101.png">
 </p>
 
 
-### Connect you chatbot to data sources via a webhook
+### Connect your chatbot to data sources via a webhook
 
 Now that you’ve created your Watson Assistant-enabled chatbot, you need to connect it to a data source. With Watson Assistant, you need to do this via a webhook.
 
@@ -197,19 +221,15 @@ When integrated, depending on the events that you configure the assistant to sup
 
 Want to create a voice-enabled chatbot? This tutorial teaches you how to [create a voice enabled chatbot using Node-RED](./starter-kit/node-red/README.md) and the Watson Assistant, Watson Speech to Text, and Watson Text to Speech nodes.
 
-### Integrate your COVID-19 chatbot on a Node.js website
+### Embed your COVID-19 chatbot on a Node.js website
 
-Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website. 
+Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js website.
 
-- Fork the [Assistant-Simple](https://github.com/watson-developer-cloud/assistant-simple) code.
 - Follow the [COVID-Simple installation instructions](./starter-kit/covid-simple/README.md)
 
-## Resources
-
-- [IBM Cloud](https://www.ibm.com/cloud)
-- [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
-
 ## Disclosures
+
+This tool is intended to provide information based on currently available CDC and other public information to help you make decisions about seeking appropriate medical care. This system is not intended for the diagnosis or treatment of disease or other conditions, including COVID-19, and you should not provide any personally identifying or private health information.
 
 This Watson Assistant bot is populated with data that is sourced from the following resources:
 

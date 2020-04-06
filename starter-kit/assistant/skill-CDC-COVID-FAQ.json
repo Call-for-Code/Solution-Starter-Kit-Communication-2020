@@ -1756,7 +1756,7 @@
       "output": {
         "text": {
           "values": [
-            "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. See the current U.S. case count of COVID-19"
+            "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. Ask this chatbot how many infections of the coronavirus."
           ],
           "selection_policy": "sequential"
         }
@@ -1773,7 +1773,7 @@
           {
             "values": [
               {
-                "text": "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. See the current U.S. case count of COVID-19"
+                "text": "There have been cases of COVID-19 in the U.S. related to travel and through close contact. U.S. case counts are updated regularly Mondays through Fridays. Ask this chatbot how many infections of the coronavirus."
               }
             ],
             "response_type": "text",
@@ -1868,7 +1868,7 @@
       "output": {
         "text": {
           "values": [
-            "While this virus seems to have emerged from an animal source, it is now spreading from person-to-person in China. There is no reason to think that any animals including pets in the United States might be a source of infection with this new coronavirus. To date, CDC has not received any reports of pets or other animals becoming sick with COVID-19. At this time, there is no evidence that companion animals including pets can spread COVID-19. However, since animals can spread other diseases to people, it’s always a good idea to wash your hands after being around animals. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife, visit CDC’s Healthy Pets, Healthy People website"
+            "While this virus seems to have emerged from an animal source, it is now spreading from person-to-person. There is no reason to think that any animals including pets in the United States might be a source of infection with this new coronavirus. To date, CDC has not received any reports of pets or other animals becoming sick with COVID-19. At this time, there is no evidence that companion animals including pets can spread COVID-19. However, since animals can spread other diseases to people, it’s always a good idea to wash your hands after being around animals. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife, visit CDC’s Healthy Pets, Healthy People website"
           ],
           "selection_policy": "sequential"
         },
@@ -1948,7 +1948,7 @@
       "output": {
         "text": {
           "values": [
-            "If your child is healthy, there is no need for them to wear a facemask. Only people who have symptoms of illness or who are providing care to those who are ill should wear masks. Preparing Your Home for COVID-19"
+            "If your child is healthy, there is no need for them to wear a facemask. Only people who have symptoms of illness or who are providing care to those who are ill should wear masks."
           ],
           "selection_policy": "sequential"
         },
@@ -1968,7 +1968,7 @@
       "output": {
         "text": {
           "values": [
-            "This virus was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person. It’s important to note that person-to-person spread can happen on a continuum. Some viruses are highly contagious (like measles), while other viruses are less so. The virus that causes COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in some affected geographic areas . Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. spread of newly emerged coronaviruses"
+            "This virus was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person. It’s important to note that person-to-person spread can happen on a continuum. Some viruses are highly contagious (like measles), while other viruses are less so. The virus that causes COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in some affected geographic areas. Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected."
           ],
           "selection_policy": "sequential"
         },
@@ -2179,7 +2179,7 @@
       "output": {
         "text": {
           "values": [
-            "Coronaviruses are generally thought to be spread from person-to-person through respiratory droplets. Currently there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for 20 seconds for general food safety. Throughout the day wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging that are shipped over a period of days or weeks at ambient, refrigerated, or frozen temperatures.  "
+            "Coronaviruses are generally thought to be spread from person-to-person through respiratory droplets. Currently there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for 20 seconds for general food safety. Throughout the day wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging that are shipped over a period of days or weeks at ambient, refrigerated, or frozen temperatures."
           ],
           "selection_policy": "sequential"
         },
@@ -2381,7 +2381,7 @@
       "output": {
         "text": {
           "values": [
-            "You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy. Clean hands often using soap and water or alcohol-based hand sanitizer Avoid people who are sick (coughing and sneezing) Clean and disinfect high-touch surfaces daily in household common areas (e.g. tables, hard-backed chairs, doorknobs, light switches, remotes, handles, desks, toilets, sinks) Launder items including washable plush toys as appropriate in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items. You can find additional information on preventing COVID-19 at Prevention for 2019 Novel Coronavirus and at Preventing COVID-19 Spread in Communities . Additional information on how COVID-19 is spread is available at How COVID-19 Spreads"
+            "You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy. Clean hands often using soap and water or alcohol-based hand sanitizer Avoid people who are sick (coughing and sneezing) Clean and disinfect high-touch surfaces daily in household common areas (e.g. tables, hard-backed chairs, doorknobs, light switches, remotes, handles, desks, toilets, sinks) Launder items including washable plush toys as appropriate in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items. You can find additional information on preventing COVID-19 at Prevention for 2019 Novel Coronavirus and at Preventing COVID-19 Spread in Communities . Additional information on how COVID-19 is spread by asking How does the coronavirus Spread"
           ],
           "selection_policy": "sequential"
         },
@@ -2481,7 +2481,7 @@
       "output": {
         "text": {
           "values": [
-            "Older adults and people of any age who have serious underlying medical conditions may be at higher risk for more serious complications from COVID-19. Based upon available information to date, those most at risk include People 65 years and older People who live in a nursing home or long-term care facility People of any age with the following underlying medical conditions, particularly those that are not well controlled Chronic lung disease or asthma Congestive heart failure or coronary artery disease Diabetes Neurologic conditions that weaken ability to cough Weakened immune system Chemotherapy or radiation for cancer (currently or in recent past) Sickle cell anemia Chronic kidney disease requiring dialysis Cirrhosis of the liver Lack of spleen or a spleen that doesn’t function correctly Extreme obesity (body mass index [BMI] > 40) People who are pregnant"
+            "Older adults and people of any age who have serious underlying medical conditions may be at higher risk for more serious complications from COVID-19. Based upon available information to date, those most at risk include People 65 years and older, People who live in a nursing home or long-term care facility, People of any age with the following underlying medical conditions, particularly those that are not well controlled, Chronic lung disease or asthma, Congestive heart failure or coronary artery disease, Diabetes, Neurologic conditions that weaken ability to cough, Weakened immune system, Chemotherapy or radiation for cancer (currently or in recent past), Sickle cell anemia, Chronic kidney disease requiring dialysis, Cirrhosis of the liver, Lack of spleen or a spleen that doesn’t function correctly, Extreme obesity (body mass index [BMI] > 40), People who are pregnant."
           ],
           "selection_policy": "sequential"
         },
@@ -2521,7 +2521,7 @@
       "output": {
         "text": {
           "values": [
-            "Coronaviruses are a large family of viruses. Some cause illness in people, and others, such as canine and feline coronaviruses, only infect animals. Rarely, animal coronaviruses that infect animals have emerged to infect people and can spread between people. This is suspected to have occurred for the virus that causes COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS) are two other examples of coronaviruses that originated from animals and then spread to people. More information about the source and spread of COVID-19 is available on the Situation Summary: Source and Spread of the Virus"
+            "Coronaviruses are a large family of viruses. Some cause illness in people, and others, such as canine and feline coronaviruses, only infect animals. Rarely, animal coronaviruses that infect animals have emerged to infect people and can spread between people. This is suspected to have occurred for the virus that causes COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS) are two other examples of coronaviruses that originated from animals and then spread to people."
           ],
           "selection_policy": "sequential"
         },
@@ -2581,7 +2581,7 @@
       "output": {
         "text": {
           "values": [
-            "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. How to Protect Yourself"
+            "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected."
           ],
           "selection_policy": "sequential"
         },
@@ -2643,7 +2643,7 @@
           {
             "values": [
               {
-                "text": "This bot is populated with data sourced from the following resources:\n\nMost static responses provide information found on the CDC's Covid FAQ Page: https://www.cdc.gov/coronavirus/2019-ncov/faq.html\nDynamic infection and death counts are sourced from Johns Hopkins University via the following API: https://www.covid19api.com/\nDynamic news stories are sourced from Watson Discovery's news feed. Additional information on that service can be found here: https://www.ibm.com/watson/services/discovery-news/"
+                "text": "This bot is populated with data sourced from the following resources:\n\nMost static responses provide information found on the CDC's Covid FAQ Page: https://www.cdc.gov/coronavirus/2019-ncov/faq.html\n\nDynamic infection and death counts are sourced from Johns Hopkins University via the following API: https://www.covid19api.com/\n\nDynamic news stories are sourced from Watson Discovery's news feed. Additional information on that service can be found here: https://www.ibm.com/watson/services/discovery-news/"
               }
             ],
             "response_type": "text",
