@@ -17,7 +17,7 @@ In this tutorial, you will:
     - After Node-RED is installed, add the dependencies:
 
     ```
-    npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson node-red-contrib-play-audio
+    npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
     ```
  - Create a Watson Assistant COVID-19 crisis communications chatbot.
 
@@ -59,13 +59,13 @@ The following diagram shows the workflow for a Node-RED chatbot that answers que
 
 After Node-RED is installed, add the dependencies for this tutorial:
 
-- [node-red-contrib-browser-utils](https://flows.nodered.org/node/node-red-contrib-browser-utils)
+- [node-red-node-ui-microphone](https://flows.nodered.org/node/node-red-node-ui-microphone)
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-node-watson](https://flows.nodered.org/node/node-red-node-watson)
 - [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
 
 ```
-npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson node-red-contrib-play-audio
+npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
 ```
 
 ### Explore node-red-node-watson Node-RED nodes
@@ -99,55 +99,50 @@ Before the flow will execute successfully, you must configure the Watson Assista
 #### Create a Watson Assistant instance
 
 1. If you haven't already, create a [Watson Assistant service instance](https://cloud.ibm.com/catalog/services/watson-assistant).
-
- ![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
+   ![IBM Cloud Catalog Watson Assistant](/starter-kit/assistant/WA-Photo1.png)
 
 1. Follow these [instructions](/README.md) to provision a Watson Assistant chatbot for COVID-19
 
 #### Create a Watson Speech to Text service instance
 
 1. Create a [Watson Speech to Text Service instance](https://cloud.ibm.com/catalog/services/speech-to-text) instance from the IBM Cloud Catalog. Click **Create**.
-
- ![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
+   ![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
 
  The Node-RED Watson Speech to Text node will need the `apikey` credentials for this new instance.
 2. Once the Watson Speech to Text service has been created, click **Service credentials** (1).
 3. Click the **View credentials** (2) twistie.
 4. Copy the **apikey** (3) for use in the next section
-
-![Watson STT credentials](./images/Watson-STT-apikey.png)  
+   ![Watson STT credentials](./images/Watson-STT-apikey.png)  
 
 #### Create a Watson Text to Speech service instance
 
 Create a [Watson Text to Speech Service](https://cloud.ibm.com/catalog/services/text-to-speech) instance from the IBM Cloud Catalog.
 
 1. Click **Create**.
- ![Create Watson Tex text Speech service instance](./images/Create-Watson-TTS.png)
+   ![Create Watson Tex text Speech service instance](./images/Create-Watson-TTS.png)
 
  The Node-RED Watson Text to Speech node will need the apikey credentials for this new instance
 2. After you create the Watson Text to Speech service, click **Service credentials** (1).
 3. Click the **View credentials** (2) twistie.
 4. Copy the **apikey** (3) for use in the next section.
-![Watson TTS credentials](./images/Watson-TTS-apikey.png)  
+   ![Watson TTS credentials](./images/Watson-TTS-apikey.png)  
 
 ### Enable Watson Speech Nodes with API keys
 
 1. Double click on the **speech to text** node and paste the API key from the Watson Speech to Text service instance
 2. Click **Done**.
-
-![Config Watson STT Node](./images/Config-Watson-STT-node.png)
+   ![Config Watson STT Node](./images/Config-Watson-STT-node.png)
 
 3. Double-click the **text to speech** node and paste the API key from the Watson Text to Speech service instance.
 4. Click **Done**.
-![Config Watson TTS Node](./images/Config-Watson-TTS-node.png)
+   ![Config Watson TTS Node](./images/Config-Watson-TTS-node.png)
 
 ### Enable Watson Assistant node with the COVID-19 Workspace ID and API Key
 
 1. Double-click the **assistant** node and paste the Skill ID into the Workspace ID field, Assistant Service Endpoint URL, and the API key from the Watson Assistant service instance.
 
 2. Click **Done**.
-
-![Config Watson Assistant Node](./images/Config-Watson-Assistant-node.png)
+   ![Config Watson Assistant Node](./images/Config-Watson-Assistant-node.png)
 
 ### Parse intents and invoke API calls
 
@@ -162,7 +157,9 @@ Watson Assistant returns the intents related to your questions.
 
 ### Talk to your COVID-19 crisis chatbot
 
-To talk to your chatbot, click on the **microphone** input tab and ask a question about COVID.
+To talk to your chatbot, click on the **microphone** input button and ask a question about COVID-19.
+
+![Node-RED Chatbot Dashboard](./images/Node-RED-COVIDChatBot-Dashboard.png)
 
 ![Node-RED flow](./images/Talk2COVIDChatBot.png)
 
@@ -181,7 +178,7 @@ The following Node-RED flow is included in this tutorial.
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard-flow.png)
 
-The `http request` node is using the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections. 
+The `http request` node is using the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections.
 
 Here's the sample JSON object from the summary API:
 

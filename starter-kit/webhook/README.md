@@ -93,7 +93,7 @@ For example, the response for `type=api` and `country=US` is shown below.
 }
 ```
 
-8. If you want to make a call to the Discovery service, you need to set some parameters that lets you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters: `api_key`, `url`, `collection_id`, and `env_id`. These are the values you noted from the Watson Discovery service in the previous steps.
+8. If you want to make a call to the Discovery service, you need to set some parameters that lets you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters: `api_key`, `url`, `collection_id`, and `env_id`. The `collection_id` and `env_id` are the values you noted from the Watson Discovery service in the previous steps.
 
 ![parameters](./images/parameter.png)
 
