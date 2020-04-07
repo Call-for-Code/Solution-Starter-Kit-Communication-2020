@@ -65,7 +65,7 @@ After Node-RED is installed, add the dependencies for this tutorial:
 - [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
 
 ```
-npm install node-red-contrib-browser-utils node-red-dashboard node-red-node-watson node-red-contrib-play-audio
+npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
 ```
 
 ### Explore node-red-node-watson Node-RED nodes
