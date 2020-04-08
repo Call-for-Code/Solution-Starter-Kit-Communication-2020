@@ -19,7 +19,7 @@ In this tutorial, you will:
     ```
     npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
     ```
- - [Create a Watson Assistant COVID-19 crisis communications chatbot](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020#getting-started).
+ - [Create a Watson Assistant COVID-19 crisis communications chatbot](/README.md#getting-started).
 
 ## Estimated time
 
@@ -34,7 +34,7 @@ The following diagram shows the workflow for a Node-RED chatbot that answers que
 ![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
 1. A user visits a voice enabled Node-RED website with the COVID-19 chatbot and asks a question.
-2. Node-RED records the speech .wav file and calls the Watson Speech to Text service hosted in IBM Cloud.
+2. Node-RED records the speech wav audio format and calls the Watson Speech to Text service hosted in IBM Cloud.
 3. Watson Speech to Text uses machine learning to decode the user's speech.
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud.
 5. Watson Assistant uses natural language understanding and machine learning to extract entities and intents of the user question.
