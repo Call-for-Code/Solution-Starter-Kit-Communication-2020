@@ -19,7 +19,7 @@ In this tutorial, you will:
     ```
     npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
     ```
- - Create a Watson Assistant COVID-19 crisis communications chatbot.
+ - [Create a Watson Assistant COVID-19 crisis communications chatbot](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020#getting-started).
 
 ## Estimated time
 
@@ -34,7 +34,7 @@ The following diagram shows the workflow for a Node-RED chatbot that answers que
 ![Crisis Comms Architecture diagram](/images/Crisis-Comms-Architecture-Node-RED.png)
 
 1. A user visits a voice enabled Node-RED website with the COVID-19 chatbot and asks a question.
-2. Node-RED records the speech wav file and calls the Watson Speech to Text service hosted in IBM Cloud.
+2. Node-RED records the speech .wav file and calls the Watson Speech to Text service hosted in IBM Cloud.
 3. Watson Speech to Text uses machine learning to decode the user's speech.
 4. Watson Speech to Text replies with a transcript of the COVID-19 question and Node-RED calls Watson Assistant service hosted in IBM Cloud.
 5. Watson Assistant uses natural language understanding and machine learning to extract entities and intents of the user question.
@@ -106,10 +106,12 @@ Before the flow will execute successfully, you must configure the Watson Assista
 #### Create a Watson Speech to Text service instance
 
 1. Create a [Watson Speech to Text Service instance](https://cloud.ibm.com/catalog/services/speech-to-text) instance from the IBM Cloud Catalog. Click **Create**.
+   
    ![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
 
  The Node-RED Watson Speech to Text node will need the `apikey` credentials for this new instance.
-2. Once the Watson Speech to Text service has been created, click **Service credentials** (1).
+
+2. Once the Watson Speech to Text service is created, click **Service credentials** (1).
 3. Click the **View credentials** (2) twistie.
 4. Copy the **apikey** (3) for use in the next section
    ![Watson STT credentials](./images/Watson-STT-apikey.png)  
@@ -122,6 +124,7 @@ Create a [Watson Text to Speech Service](https://cloud.ibm.com/catalog/services/
    ![Create Watson Tex text Speech service instance](./images/Create-Watson-TTS.png)
 
  The Node-RED Watson Text to Speech node will need the apikey credentials for this new instance
+
 2. After you create the Watson Text to Speech service, click **Service credentials** (1).
 3. Click the **View credentials** (2) twistie.
 4. Copy the **apikey** (3) for use in the next section.
@@ -129,7 +132,7 @@ Create a [Watson Text to Speech Service](https://cloud.ibm.com/catalog/services/
 
 ### Enable Watson Speech Nodes with API keys
 
-1. Double click on the **speech to text** node and paste the API key from the Watson Speech to Text service instance
+1. Double click the **speech to text** node and paste the API key from the Watson Speech to Text service instance.
 2. Click **Done**.
    ![Config Watson STT Node](./images/Config-Watson-STT-node.png)
 
@@ -137,7 +140,7 @@ Create a [Watson Text to Speech Service](https://cloud.ibm.com/catalog/services/
 4. Click **Done**.
    ![Config Watson TTS Node](./images/Config-Watson-TTS-node.png)
 
-### Enable Watson Assistant node with the COVID-19 Workspace ID and API Key
+### Enable Watson Assistant node with the COVID-19 Workspace ID and API key
 
 1. Double-click the **assistant** node and paste the Skill ID into the Workspace ID field, Assistant Service Endpoint URL, and the API key from the Watson Assistant service instance.
 
@@ -153,7 +156,7 @@ Watson Assistant returns the intents related to your questions.
 
 ### Deploy the Node-RED flows
 
-- Click on the Red **Deploy** button,
+- Click on the Red **Deploy** button.
 
 ### Talk to your COVID-19 crisis chatbot
 
@@ -161,24 +164,26 @@ To talk to your chatbot, click on the **microphone** input button and ask a ques
 
 ![Node-RED Chatbot Dashboard](./images/Node-RED-COVIDChatBot-Dashboard.png)
 
+When someone asks a question, here's the Node-RED flow that happens in the background:
+
 ![Node-RED flow](./images/Talk2COVIDChatBot.png)
 
-### Build a Node-RED COVID Statistics Dashboard
+### Build a Node-RED COVID statistics dashboard
 
-**Bonus**: This flow includes a Node-RED Dashboard with several gauges to display COVID-19 statistics.
+**Bonus**: This flow includes a Node-RED dashboard with several gauges to display COVID-19 statistics.
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard.png)
 
-- Every hour the Node-RED flow will call the [covid19api](https://api.covid19api.com/summary) summary API and collect dynamic COVID-19 infection statistics
-- The country data is aggregated and then the gauges are updated
+- Every hour, the Node-RED flow will call the [covid19api](https://api.covid19api.com/summary) summary API and collect dynamic COVID-19 infection statistics.
+- The country data is aggregated and then the gauges are updated.
 
-### Learn more about the Dashboard code
+### Learn more about the dashboard code
 
-The following Node-RED flow is included in this tutorial.
+The following Node-RED flow is included in this tutorial:
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard-flow.png)
 
-The `http request` node is using the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections.
+The `http request` node uses the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections.
 
 Here's the sample JSON object from the summary API:
 
