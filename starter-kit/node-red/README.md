@@ -64,8 +64,20 @@ After Node-RED is installed, add the dependencies for this tutorial:
 - [node-red-node-watson](https://flows.nodered.org/node/node-red-node-watson)
 - [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
 
+#### Local installation instructions
+
 ```
 npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
+```
+
+#### IBM Cloud installation instructions
+
+- Instead of adding the additional packages via **Manage Palette**, use the IBM Cloud Toolchain and the git repository in IBM Cloud to add the following packages to the package.json. Commit the change and the CI/CD toolchain will restage the CF application.
+
+```
+"node-red-node-ui-microphone":"0.x",
+"node-red-dashboard":"2.x",
+"node-red-contrib-play-audio":"2.x",
 ```
 
 ### Explore node-red-node-watson Node-RED nodes
