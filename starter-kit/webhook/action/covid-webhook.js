@@ -87,9 +87,9 @@ async function main(params) {
         json: true,
       });
 
-      if (params.country) {
-        // country is the old param, could be states in us.
-        state = formatStates(params.country);
+      if (params.location) {
+        // country was the old param, could be states in us.
+        state = formatStates(params.location);
         if (state in statesMap) {
           const uri = `https://api.weather.com/v3/wx/disease/tracker/state/60day?postalKey=${statesMap[state]}&format=json&apiKey=${params.twcApiKey}`;
 
@@ -106,14 +106,16 @@ async function main(params) {
         for (var i = 0; i < summary.Countries.length; i++) {
           if (
             summary.Countries[i].Country.toLowerCase() ===
-            params.country.toLowerCase()
+              params.location.toLowerCase() ||
+            summary.Countries[i].CountryCode.toLowerCase() ===
+              params.location.toLowerCase()
           ) {
             return {
               result: `Total Cases: ${summary.Countries[i].TotalConfirmed}\nTotal Deaths: ${summary.Countries[i].TotalDeaths}\nTotal Recovered: ${summary.Countries[i].TotalRecovered}\n\nSource: Johns Hopkins CSSE`,
             };
           }
         }
-        return { error: "did not find country" };
+        return { error: "did not find location" };
       }
       let totalCases = summary.Global.TotalConfirmed;
       let totalDeaths = summary.Global.TotalDeaths;

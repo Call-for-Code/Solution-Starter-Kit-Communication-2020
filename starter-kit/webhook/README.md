@@ -85,7 +85,7 @@ It returns the data in the following format:
 
 7. You then parse through the list of summaries for each country and sum up to get combined stats. If there is specific country selected, you look for that country in the summary response and return the , status for that country.
 
-For example, the response for `type=api` and `country=US` is shown below.
+For example, the response for `type=api` and `location=United States of America` is shown below.
 
 ```
 {
