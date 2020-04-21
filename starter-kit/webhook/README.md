@@ -39,7 +39,7 @@ You can query for dynamic data using webhooks in IBM Watson Assistant. Our crisi
 
 2. Signup with your info. Your API key will be emailed to you.
 
-3. Save the api key for future use.
+3. Save the API key for future use.
 
 ### Creating Cloud Functions
 
@@ -61,7 +61,7 @@ You can query for dynamic data using webhooks in IBM Watson Assistant. Our crisi
 
 ![code](./images/code.png)
 
-6. Our code has two main parts. We decide whether to call the COVID-19 API or Watson Discovery based on a parameter sent on the function call. If a query param of `type=api` is set, you call the COVID-19 api on the [summary endpoint](https://api.covid19api.com/summary). 
+6. Our code has two main parts. We decide whether to call the COVID-19 API or Watson Discovery based on a parameter sent on the function call. If a query param of `type=api` is set, you call the COVID-19 API on the [summary endpoint](https://api.covid19api.com/summary). 
 
 It returns the data in the following format:
 
@@ -93,7 +93,7 @@ It returns the data in the following format:
 }
 ```
 
-7. If there is specific location (Country/Country Code/US State) selected, you look for that location either using The Weather Company API or in the summary response and return the status for that country.
+7. If there is specific location (Country/Country Code/US State) selected, you look for that location either using The Weather Company API or in the summary response and return the status for that location.
 
 For example, the response for `type=api` and `location=United States of America` is shown below.
 
@@ -103,7 +103,12 @@ For example, the response for `type=api` and `location=United States of America`
 }
 ```
 
-8. If you want to make a call to the Discovery service, you need to set some parameters that lets you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters: `api_key`, `twcApiKey`, `url`, `collection_id`, and `env_id`. The `twcApiKey` is the api key from The Weather Company and `collection_id` and `env_id` are the values you noted from the Watson Discovery service in the previous steps.
+8. If you want to make a call to the Discovery service, you need to set some parameters that let you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters: 
+    - `api_key` (Discovery API Key)
+    - `twcApiKey` (API key from The Weather Company)
+    - `url` (Discovery Service URL)
+    - `collection_id`
+    - `env_id`
 
 ![parameters](./images/parameter.png)
 
