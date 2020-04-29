@@ -209,21 +209,25 @@ msg.payload = totalConfirmedCase;
 return msg;
 ```
 
-You can expand the above dashboard to include daily new infections from [node-red-contrib-twc-covid19-tracker](https://github.com/Call-for-Code/node-red-contrib-twc-covid19-tracker) data, charts, tables, and the chatbot UI.
+You can expand the above dashboard to include additional COVID-19 data visualization using the [node-red-contrib-twc-covid19-tracker](https://github.com/Call-for-Code/node-red-contrib-twc-covid19-tracker) data to build charts, tables, maps and enhanced chatbot user experiences.
 
-### Build a SMS to Watson Assistant COVID Chatbot
+### Build a SMS enabled Watson Assistant COVID Chatbot
 
 Import this [flow](/starter-kit/node-red/flows/Node-RED-COVID-SMS-ChatBot.json) and **Deploy** the flow.
 
 - This example requires some additional dependencies:
   - [node-red-node-twilio](https://flows.nodered.org/node/node-red-node-twilio)
 
-- This flow requires a Twilio Number with a SMS Messaging webhook configured to POST to the URL specified by the **HTTP In** node.
+- This flow requires a [Twilio](https://www.twilio.com/) Number with a SMS Messaging webhook configured to POST to the URL specified by the **HTTP In** node.
+- For Twilio to retransmit the incoming SMS to this Node-RED   endpoint, Node-RED needs to be reachable and hosted on the Internet (not on your local computer).  Follow the instructions above to deploy Node-RED on IBM Cloud.
 
   ![Twilio Messaging Webhook Config](./images/Twilio-Messaging-Webhook.png)
 
 ![Node-RED flow](./images/Node-RED-COVID-SMS-ChatBot-flow.png)
 
+<p align="center">
+<img width="25%" height="25%" src="./images/SMS-Covid19-ChatBot.png">
+</p>
 
 ## Build a Call for Code Crisis Communications solution!
 
