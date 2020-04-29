@@ -1,0 +1,267 @@
+[
+    {
+        "id": "287f6d7a.c1b412",
+        "type": "tab",
+        "label": "SMS Chatbot",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "40f3e59f.3e7b9c",
+        "type": "change",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Body",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "req",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "res",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "612201e7.da6ba"
+            ]
+        ]
+    },
+    {
+        "id": "d590f70c.1a9638",
+        "type": "http in",
+        "z": "287f6d7a.c1b412",
+        "name": "Twilio POST Endpoint",
+        "url": "/sms2chatbot",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "281908e.d3c8f78",
+                "40f3e59f.3e7b9c",
+                "724feeba.985028"
+            ]
+        ]
+    },
+    {
+        "id": "281908e.d3c8f78",
+        "type": "http response",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "statusCode": "201",
+        "headers": {},
+        "x": 360,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "724feeba.985028",
+        "type": "debug",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 350,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1825c7db.925e2",
+        "type": "comment",
+        "z": "287f6d7a.c1b412",
+        "name": "Send Messages from SMS to Watson Assistant",
+        "info": "",
+        "x": 220,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e4f93712.ed98d8",
+        "type": "change",
+        "z": "287f6d7a.c1b412",
+        "name": "Watson Conversation Reply",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.output.text[0]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "cc9674.43d9d19"
+            ]
+        ]
+    },
+    {
+        "id": "7093decd.15af",
+        "type": "debug",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 850,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cc9674.43d9d19",
+        "type": "twilio out",
+        "z": "287f6d7a.c1b412",
+        "twilio": "f8910cb1.111708",
+        "twilioType": "sms",
+        "url": "",
+        "number": "",
+        "name": "",
+        "x": 890,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "612201e7.da6ba",
+        "type": "watson-conversation-v1",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "workspaceid": "",
+        "multiuser": false,
+        "context": true,
+        "empty-payload": false,
+        "service-endpoint": "",
+        "timeout": "",
+        "optout-learning": false,
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "7093decd.15af",
+                "a2a7cdc2.3a213"
+            ]
+        ]
+    },
+    {
+        "id": "a2a7cdc2.3a213",
+        "type": "switch",
+        "z": "287f6d7a.c1b412",
+        "name": "Intents",
+        "property": "payload.intents[0].intent",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "How_many_cases",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "b74b5b25.27fdc"
+            ],
+            [
+                "e4f93712.ed98d8"
+            ]
+        ]
+    },
+    {
+        "id": "b74b5b25.27fdc",
+        "type": "twc-covid19-country-report",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "apikey": "",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "4e27eaa.3496414",
+                "e7a905ad.455fc8"
+            ]
+        ]
+    },
+    {
+        "id": "4e27eaa.3496414",
+        "type": "debug",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6a385b82.0f735c",
+        "type": "debug",
+        "z": "287f6d7a.c1b412",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 910,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e7a905ad.455fc8",
+        "type": "function",
+        "z": "287f6d7a.c1b412",
+        "name": "Total Confirmed Cases",
+        "func": "let totalConfirmedCase = 0;\n\nmsg.payload.covid19.confirmed.map(function(line){\n    totalConfirmedCase += line;\n});\n\nmsg.payload = \"Worldwide, there have been \"+totalConfirmedCase+\" total confirmed cases of COVID-19\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "6a385b82.0f735c",
+                "cc9674.43d9d19"
+            ]
+        ]
+    }
+]

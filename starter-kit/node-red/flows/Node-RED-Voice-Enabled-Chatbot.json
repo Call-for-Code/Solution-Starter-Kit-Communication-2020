@@ -1,190 +1,31 @@
 [
     {
-        "id": "47e9b769.f10e68",
+        "id": "3fbc7baf.6c3fac",
         "type": "tab",
         "label": "Voice Enabled COVID Chatbot",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "cffac7b6.1e36",
-        "type": "ui_tab",
-        "z": "",
-        "name": "COVID Voice Chatbot",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "980a3852.33025",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "7fa34511.0a7d64",
-        "type": "ui_group",
-        "z": "",
-        "name": "Record",
-        "tab": "cffac7b6.1e36",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "65638bb5.46df9c",
-        "type": "ui_group",
-        "z": "",
-        "name": "Chat",
-        "tab": "cffac7b6.1e36",
-        "order": 2,
-        "disp": true,
-        "width": "10",
-        "collapse": false
-    },
-    {
-        "id": "6fc63314.2eb644",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "7fa34511.0a7d64",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "586c4466.73cdcc",
-        "type": "mqtt-broker",
-        "z": "",
-        "broker": "iot.eclipse.org",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "b9843f2f.4ccf88",
+        "id": "666d29ad.d3d24",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": true,
         "console": "false",
         "complete": "false",
-        "x": 930,
+        "x": 1030,
         "y": 320,
         "wires": []
     },
     {
-        "id": "3c510aa2.10965e",
+        "id": "788811bd.464a98",
         "type": "switch",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Intents",
         "property": "payload.intents[0].intent",
         "propertyType": "msg",
         "rules": [
-            {
-                "t": "eq",
-                "v": "USinfectionlevel",
-                "vt": "str"
-            },
             {
                 "t": "eq",
                 "v": "How_many_cases",
@@ -196,35 +37,32 @@
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
+        "outputs": 2,
         "x": 250,
         "y": 320,
         "wires": [
             [
-                "b87a33c3.c89268"
+                "63ee0ac6.711784"
             ],
             [
-                "9e7eae69.f46588"
-            ],
-            [
-                "1d39bc43.d48a74"
+                "49c21a41.7698f4"
             ]
         ]
     },
     {
-        "id": "67eed93a.2d34a",
+        "id": "2877c900.cd1bb8",
         "type": "comment",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Reply to the user",
         "info": "",
-        "x": 1160,
+        "x": 1260,
         "y": 340,
         "wires": []
     },
     {
-        "id": "7bcb0ff6.a43408",
+        "id": "d135a26d.7befd8",
         "type": "change",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Pass the recorded transcript to Conversation",
         "rules": [
             {
@@ -251,15 +89,15 @@
         "y": 100,
         "wires": [
             [
-                "61a9dd2a.5dae64",
-                "e7c40f16.b9cbd8"
+                "aef0f53b.8cfc4",
+                "d45d0b33.da28c"
             ]
         ]
     },
     {
-        "id": "723ff8b6.d58328",
+        "id": "29b5c90c.62f366",
         "type": "watson-text-to-speech",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "lang": "en-US",
         "langhidden": "en-US",
@@ -272,18 +110,18 @@
         "apikey": "",
         "payload-response": true,
         "service-endpoint": "",
-        "x": 940,
+        "x": 1040,
         "y": 380,
         "wires": [
             [
-                "d6f85cd2.211a78"
+                "c00a3141.c13e48"
             ]
         ]
     },
     {
-        "id": "56673dd3.d0965c",
+        "id": "f3edfc6.13aa78",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -294,21 +132,9 @@
         "wires": []
     },
     {
-        "id": "87116c84.ed17d8",
-        "type": "debug",
-        "z": "47e9b769.f10e68",
-        "name": "",
-        "active": true,
-        "console": "false",
-        "complete": "false",
-        "x": 650,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "1d39bc43.d48a74",
+        "id": "49c21a41.7698f4",
         "type": "function",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Watson Conversation Reply",
         "func": "function createTextLinks(text) {\n\n  return (text || \"\").replace(\n    /([^\\S]|^)(((https?\\:\\/\\/)|(www\\.))(\\S+))/gi,\n    function(match, space, url){\n      var hyperlink = url;\n      if (!hyperlink.match('^https?:\\/\\/')) {\n        hyperlink = 'http://' + hyperlink;\n      }\n      return space + '<a href=\"' + hyperlink + '\">' + url + '</a>';\n    }\n  );\n}\n\nvar response = \"\"\n\nfor(i=0;i<msg.payload.output.generic.length;i++) {\n  response = response + msg.payload.output.generic[i].text ;\n}\n\nresponse = createTextLinks(response);\n\n// The news reports will have \\n, replace with breaks\nmsg.payload = response.replace(/(?:\\r\\n|\\r|\\n)/g, '<br />');\n\n// The news reports will have http: links. Make them \n\nreturn msg;",
         "outputs": 1,
@@ -317,25 +143,25 @@
         "y": 320,
         "wires": [
             [
-                "b9843f2f.4ccf88",
-                "61a9dd2a.5dae64",
-                "723ff8b6.d58328"
+                "666d29ad.d3d24",
+                "aef0f53b.8cfc4",
+                "29b5c90c.62f366"
             ]
         ]
     },
     {
-        "id": "d6f85cd2.211a78",
+        "id": "c00a3141.c13e48",
         "type": "play audio",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
-        "x": 1150,
+        "x": 1250,
         "y": 380,
         "wires": []
     },
     {
-        "id": "e7c40f16.b9cbd8",
+        "id": "d45d0b33.da28c",
         "type": "watson-conversation-v1",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "workspaceid": "",
         "multiuser": false,
@@ -348,15 +174,15 @@
         "y": 100,
         "wires": [
             [
-                "adc42e13.26a9e8",
-                "c6e6e876.249988"
+                "f318fdac.75605",
+                "59cfaaf6.d7750c"
             ]
         ]
     },
     {
-        "id": "adc42e13.26a9e8",
+        "id": "f318fdac.75605",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -368,63 +194,23 @@
         "wires": []
     },
     {
-        "id": "32b9c54c.c7b9e2",
-        "type": "function",
-        "z": "47e9b769.f10e68",
-        "name": "Total Confirmed Cases",
-        "func": "msg.payload = \"Worldwide, there have been \"+msg.payload.Global.TotalConfirmed+\" total confirmed cases of COVID-19\"\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 680,
-        "y": 500,
-        "wires": [
-            [
-                "723ff8b6.d58328",
-                "8fe5cf8b.4a7ac8",
-                "61a9dd2a.5dae64"
-            ]
-        ]
-    },
-    {
-        "id": "9e7eae69.f46588",
-        "type": "http request",
-        "z": "47e9b769.f10e68",
-        "name": "Summary - Covid-19",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": false,
-        "url": "https://api.covid19api.com/summary",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 440,
-        "y": 500,
-        "wires": [
-            [
-                "32b9c54c.c7b9e2",
-                "87116c84.ed17d8"
-            ]
-        ]
-    },
-    {
-        "id": "8fe5cf8b.4a7ac8",
+        "id": "19a4a1b7.a9a0b6",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 930,
+        "x": 1030,
         "y": 460,
         "wires": []
     },
     {
-        "id": "9d1ea084.378d3",
+        "id": "ba40125e.042328",
         "type": "watson-speech-to-text",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "alternatives": 1,
         "speakerlabels": true,
@@ -448,24 +234,24 @@
         "discard-listening": false,
         "disable-precheck": false,
         "service-endpoint": "",
-        "x": 300,
+        "x": 280,
         "y": 100,
         "wires": [
             [
-                "56673dd3.d0965c",
-                "7bcb0ff6.a43408"
+                "f3edfc6.13aa78",
+                "d135a26d.7befd8"
             ]
         ]
     },
     {
-        "id": "683934b6.fa0b4c",
+        "id": "4846ded6.e4dcb",
         "type": "ui_template",
-        "z": "47e9b769.f10e68",
-        "group": "65638bb5.46df9c",
+        "z": "3fbc7baf.6c3fac",
+        "group": "4d9b3130.a18a08",
         "name": "Chat History",
-        "order": 0,
-        "width": "10",
-        "height": "15",
+        "order": 1,
+        "width": 10,
+        "height": 15,
         "format": "<div id=\"{{'my_'+$id}}\" style=\"{{'color:'+theme.base_color}}\"></div>\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Render the chatbot table when msg arrives\n      $(\"#my_\"+scope.$id).html(msg.payload);\n      // scroll to Bottom\n      var elmnt = document.getElementById(\"chatbot\");\n      elmnt.scrollIntoView(false);\n    }\n  });\n})(scope);\n</script>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -477,9 +263,9 @@
         ]
     },
     {
-        "id": "61a9dd2a.5dae64",
+        "id": "aef0f53b.8cfc4",
         "type": "function",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Build Chat table",
         "func": "var chathistory = flow.get(\"history\")||[];\nvar chatstart = flow.get(\"chatstart\");\nvar who;\n\nif( typeof(chatstart) == 'undefined' ) { chatstart = true ; }\nif(chatstart===true) {\n    who = \"Q\";\n} else {\n    who = \"A\";\n}\n\nvar newchatentry = {\"who\":\"\",\"text\":\"\"};\nif( chathistory.length === 0 ) {\n    // First chat, init the table\n    newchatentry = {\"who\":\"A\",\"text\":\"Hello, I’m the COVID Crisis Communication Bot ready to answer your questions about COVID-19. How can I help you?\"};\n\n    // Add the question, if its not a Clear Chat button press\n    if( msg.payload.length ) { \n        chathistory.push(newchatentry);\n        newchatentry = {\"who\":\"Q\",\"text\":msg.payload}; \n    }\n} else {\n    newchatentry = {\"who\":who,\"text\":msg.payload};\n}\nchathistory.push(newchatentry);\n\nmsg.payload=\"<style>\";\nmsg.payload=msg.payload+\"table { width: 488px; margin-top: 10px; }\";\nmsg.payload=msg.payload+\"tr:nth-child(even){background-color: #f2f2f2;}\";\nmsg.payload=msg.payload+\"th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; width: 10%;}\";\nmsg.payload=msg.payload+\"</style>\";\n\nmsg.payload=msg.payload+\"<table id=\\\"chatbot\\\" span=100%><tr><th>Chat History</th></tr>\";\nfor( i = 0; i < chathistory.length; i++ ) {\n    if( chathistory[i].who == \"Q\" ) {\n        msg.payload = msg.payload + \"<tr><td><p style=\\\"text-align:right;\\\">\"+chathistory[i].text+\"</p></td></tr>\" ;\n    } else {\n        msg.payload = msg.payload + \"<tr><td><p style=\\\"text-align:left;background-color:#f2f2f2;\\\">\" +chathistory[i].text+\"</p></td></tr>\" ;\n    }\n}\n\nmsg.payload = msg.payload + \"</table>\";\nflow.set(\"chatstart\",false);\nflow.set(\"history\",chathistory);\nreturn msg;\n",
         "outputs": 1,
@@ -488,15 +274,15 @@
         "y": 220,
         "wires": [
             [
-                "683934b6.fa0b4c",
-                "7765861b.4912e"
+                "4846ded6.e4dcb",
+                "7da428eb.71a7b8"
             ]
         ]
     },
     {
-        "id": "7765861b.4912e",
+        "id": "7da428eb.71a7b8",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -509,9 +295,9 @@
         "wires": []
     },
     {
-        "id": "c51e967d.796b1",
+        "id": "346b6fa5.8c7978",
         "type": "inject",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "topic": "Clear Chat",
         "payload": "true",
@@ -524,14 +310,14 @@
         "y": 240,
         "wires": [
             [
-                "4454e6e2.9a61b8"
+                "37ac3b75.4c4b0c"
             ]
         ]
     },
     {
-        "id": "4454e6e2.9a61b8",
+        "id": "37ac3b75.4c4b0c",
         "type": "change",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "delete history",
         "rules": [
             {
@@ -563,19 +349,19 @@
         "y": 220,
         "wires": [
             [
-                "61a9dd2a.5dae64"
+                "aef0f53b.8cfc4"
             ]
         ]
     },
     {
-        "id": "ca082e2b.5f1ee8",
+        "id": "d399be33.e3fc58",
         "type": "ui_button",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
-        "group": "7fa34511.0a7d64",
-        "order": 7,
-        "width": "6",
-        "height": "1",
+        "group": "9bb15170.c72018",
+        "order": 6,
+        "width": 6,
+        "height": 1,
         "passthru": false,
         "label": "Clear Chat",
         "tooltip": "",
@@ -589,33 +375,14 @@
         "y": 200,
         "wires": [
             [
-                "4454e6e2.9a61b8"
+                "37ac3b75.4c4b0c"
             ]
         ]
     },
     {
-        "id": "54317ba8.9094d4",
-        "type": "ui_microphone",
-        "z": "47e9b769.f10e68",
-        "group": "7fa34511.0a7d64",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "maxLength": 3,
-        "timeslice": 0,
-        "x": 110,
-        "y": 100,
-        "wires": [
-            [
-                "9d1ea084.378d3"
-            ]
-        ]
-    },
-    {
-        "id": "c6e6e876.249988",
+        "id": "59cfaaf6.d7750c",
         "type": "function",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "func": "if( typeof msg.payload.intents != 'undefined') {\n    if( msg.payload.intents.length > 0 ) {\n        if( typeof msg.payload.intents[0].intent!= 'undefined') {\n            return [msg, null];\n        }\n    }\n}\nmsg.payload = \"Sorry, the chat bot did not understand the question.\";\nreturn [null,msg];",
         "outputs": 2,
@@ -624,19 +391,19 @@
         "y": 360,
         "wires": [
             [
-                "3c510aa2.10965e"
+                "788811bd.464a98"
             ],
             [
-                "723ff8b6.d58328"
+                "29b5c90c.62f366"
             ]
         ]
     },
     {
-        "id": "27c9fd68.4fca02",
+        "id": "81e44236.e48678",
         "type": "ui_gauge",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
-        "group": "7fa34511.0a7d64",
+        "group": "9bb15170.c72018",
         "order": 2,
         "width": 3,
         "height": 3,
@@ -645,7 +412,7 @@
         "label": "",
         "format": "{{value}}",
         "min": 0,
-        "max": "2000000",
+        "max": "4000000",
         "colors": [
             "#ca3838",
             "#ca3838",
@@ -654,13 +421,13 @@
         "seg1": "",
         "seg2": "",
         "x": 1060,
-        "y": 600,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "b6439cc5.5139",
+        "id": "acbb1d22.0b4fc8",
         "type": "inject",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "Hourly updates",
         "topic": "",
         "payload": "",
@@ -670,44 +437,19 @@
         "once": false,
         "onceDelay": 0.1,
         "x": 240,
-        "y": 760,
+        "y": 640,
         "wires": [
             [
-                "95047621.af6bf"
+                "81373b54.927718"
             ]
         ]
     },
     {
-        "id": "95047621.af6bf",
-        "type": "http request",
-        "z": "47e9b769.f10e68",
-        "name": "Data summary from covid19api",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": false,
-        "url": "https://api.covid19api.com/summary",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 510,
-        "y": 720,
-        "wires": [
-            [
-                "5a7bcc5e.b85c0c",
-                "1e835ef1.1294e9",
-                "bad17e9d.df0e",
-                "5c084642.76fe58",
-                "41ad886b.b503b8"
-            ]
-        ]
-    },
-    {
-        "id": "29881c2b.5734f4",
+        "id": "fdf77e50.d2ca98",
         "type": "ui_gauge",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
-        "group": "7fa34511.0a7d64",
+        "group": "9bb15170.c72018",
         "order": 4,
         "width": 3,
         "height": 3,
@@ -716,7 +458,7 @@
         "label": "",
         "format": "{{value}}",
         "min": 0,
-        "max": "100000",
+        "max": "500000",
         "colors": [
             "#c13421",
             "#d40015",
@@ -725,41 +467,15 @@
         "seg1": "",
         "seg2": "",
         "x": 1030,
-        "y": 660,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "6e6bf109.d98428",
+        "id": "bd07a25a.9d31b8",
         "type": "ui_gauge",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
-        "group": "7fa34511.0a7d64",
-        "order": 3,
-        "width": 3,
-        "height": 3,
-        "gtype": "gage",
-        "title": "Total Recovered",
-        "label": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "1000000",
-        "colors": [
-            "#c22f0c",
-            "#e6e600",
-            "#00be00"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "x": 1040,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "f5727f9a.71e508",
-        "type": "ui_gauge",
-        "z": "47e9b769.f10e68",
-        "name": "",
-        "group": "7fa34511.0a7d64",
+        "group": "9bb15170.c72018",
         "order": 1,
         "width": 3,
         "height": 3,
@@ -777,29 +493,13 @@
         "seg1": "",
         "seg2": "",
         "x": 1040,
-        "y": 780,
+        "y": 620,
         "wires": []
     },
     {
-        "id": "41ad886b.b503b8",
-        "type": "function",
-        "z": "47e9b769.f10e68",
-        "name": "Total Countries",
-        "func": "totalCountries = 0;\n\nmsg.payload.Countries.map(function(line){\n    totalCountries += 1;\n});\n\nmsg.payload = totalCountries;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 800,
-        "y": 780,
-        "wires": [
-            [
-                "f5727f9a.71e508"
-            ]
-        ]
-    },
-    {
-        "id": "f5da7384.ab2d5",
+        "id": "97370177.30a7",
         "type": "trigger",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "op1": "1",
         "op2": "0",
         "op1type": "str",
@@ -811,180 +511,235 @@
         "bytopic": "all",
         "name": "",
         "x": 260,
-        "y": 680,
+        "y": 560,
         "wires": [
             [
-                "95047621.af6bf"
+                "81373b54.927718"
             ]
         ]
     },
     {
-        "id": "9005be46.925fc8",
+        "id": "9fc239ec.cc809",
         "type": "ui_ui_control",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "events": "change",
         "x": 100,
-        "y": 680,
+        "y": 560,
         "wires": [
             [
-                "f5da7384.ab2d5"
+                "97370177.30a7"
             ]
         ]
     },
     {
-        "id": "5a7bcc5e.b85c0c",
+        "id": "c4d72b45.773f1",
+        "type": "comment",
+        "z": "3fbc7baf.6c3fac",
+        "name": "Refresh the dashboard",
+        "info": "",
+        "x": 220,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3b513bc5.344024",
+        "type": "inject",
+        "z": "3fbc7baf.6c3fac",
+        "name": "",
+        "topic": "",
+        "payload": "what is coronavirus",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "d45d0b33.da28c"
+            ]
+        ]
+    },
+    {
+        "id": "81373b54.927718",
+        "type": "twc-covid19-country-report",
+        "z": "3fbc7baf.6c3fac",
+        "name": "",
+        "apikey": "48c5abfd.3425cc",
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "27ef2356.efa1d4",
+                "86c3ad35.62ff4",
+                "9e1ba92c.0f9228",
+                "cf3a3b3b.5c6e1"
+            ]
+        ]
+    },
+    {
+        "id": "27ef2356.efa1d4",
+        "type": "function",
+        "z": "3fbc7baf.6c3fac",
+        "name": "Total Confirmed Cases",
+        "func": "let totalConfirmedCase = 0;\n\nmsg.payload.covid19.confirmed.map(function(line){\n    totalConfirmedCase += line;\n});\n\nmsg.payload = totalConfirmedCase;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 500,
+        "wires": [
+            [
+                "81e44236.e48678",
+                "19a4a1b7.a9a0b6"
+            ]
+        ]
+    },
+    {
+        "id": "86c3ad35.62ff4",
+        "type": "function",
+        "z": "3fbc7baf.6c3fac",
+        "name": "Total Fatalities",
+        "func": "let totalFatalities = 0;\n\nmsg.payload.covid19.deaths.map(function(line){\n    totalFatalities += line;\n});\n\nmsg.payload = totalFatalities;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 760,
+        "y": 560,
+        "wires": [
+            [
+                "fdf77e50.d2ca98"
+            ]
+        ]
+    },
+    {
+        "id": "cf3a3b3b.5c6e1",
+        "type": "function",
+        "z": "3fbc7baf.6c3fac",
+        "name": "Total Confirmed Countries",
+        "func": "let totalCtryConfirmed = 0;\n\nmsg.payload.covid19.confirmed.map(function(line){\n    if( line !== null ) {\n      totalCtryConfirmed += 1;\n    }\n});\n\nmsg.payload = totalCtryConfirmed;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 620,
+        "wires": [
+            [
+                "bd07a25a.9d31b8"
+            ]
+        ]
+    },
+    {
+        "id": "9e1ba92c.0f9228",
         "type": "debug",
-        "z": "47e9b769.f10e68",
+        "z": "3fbc7baf.6c3fac",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 790,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "670f4b62.24562c",
-        "type": "comment",
-        "z": "47e9b769.f10e68",
-        "name": "https://covid19api.com/",
-        "info": "",
-        "x": 480,
+        "x": 750,
         "y": 680,
         "wires": []
     },
     {
-        "id": "9c61233a.00e42",
-        "type": "comment",
-        "z": "47e9b769.f10e68",
-        "name": "Refresh the dashboard",
-        "info": "",
-        "x": 220,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "1e835ef1.1294e9",
-        "type": "change",
-        "z": "47e9b769.f10e68",
-        "name": "Total Confirmed Cases",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.Global.TotalConfirmed",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 820,
-        "y": 600,
+        "id": "c5966974.18a47",
+        "type": "ui_microphone",
+        "z": "3fbc7baf.6c3fac",
+        "group": "9bb15170.c72018",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "maxLength": 3,
+        "timeslice": 0,
+        "x": 90,
+        "y": 100,
         "wires": [
             [
-                "27c9fd68.4fca02"
+                "ba40125e.042328"
             ]
         ]
     },
     {
-        "id": "9a94a216.7936c",
+        "id": "4a8a422d.250c5c",
+        "type": "inject",
+        "z": "3fbc7baf.6c3fac",
+        "name": "",
+        "topic": "",
+        "payload": "How many cases of coronavirus",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "d45d0b33.da28c"
+            ]
+        ]
+    },
+    {
+        "id": "63ee0ac6.711784",
+        "type": "twc-covid19-country-report",
+        "z": "3fbc7baf.6c3fac",
+        "name": "",
+        "apikey": "",
+        "x": 490,
+        "y": 420,
+        "wires": [
+            [
+                "26641bb.7d566e4"
+            ]
+        ]
+    },
+    {
+        "id": "26641bb.7d566e4",
         "type": "function",
-        "z": "47e9b769.f10e68",
-        "name": "US Confirmed Cases",
-        "func": "let totalConfirmedCase = 0;\nlet countryName = \"\";\n\nmsg.payload.Countries.map(function(line){\n  if (line.CountryCode === 'US'){\n      totalConfirmedCase = line.TotalConfirmed;\n      countryName = line.Country;\n  }\n});\n\nmsg.payload = \"The \" + countryName + \" has \" + totalConfirmedCase + \" total confirmed cases of COVID-19\"\n\n\nreturn msg;",
+        "z": "3fbc7baf.6c3fac",
+        "name": "Total Confirmed Cases",
+        "func": "let totalConfirmedCase = 0;\n\nmsg.payload.covid19.confirmed.map(function(line){\n    totalConfirmedCase += line;\n});\n\nmsg.payload = \"Worldwide, there have been \"+totalConfirmedCase+\" total confirmed cases of COVID-19\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 680,
+        "x": 780,
         "y": 420,
         "wires": [
             [
-                "723ff8b6.d58328",
-                "61a9dd2a.5dae64",
-                "8fe5cf8b.4a7ac8"
+                "29b5c90c.62f366"
             ]
         ]
     },
     {
-        "id": "b87a33c3.c89268",
-        "type": "http request",
-        "z": "47e9b769.f10e68",
-        "name": "Summary - Covid-19",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": false,
-        "url": "https://api.covid19api.com/summary",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "authType": "",
-        "x": 440,
-        "y": 420,
-        "wires": [
-            [
-                "9a94a216.7936c",
-                "87116c84.ed17d8"
-            ]
-        ]
+        "id": "4d9b3130.a18a08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Chat",
+        "tab": "37cffe76.bd877a",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
     },
     {
-        "id": "bad17e9d.df0e",
-        "type": "change",
-        "z": "47e9b769.f10e68",
-        "name": "Total Fatalities",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.Global.TotalDeaths",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 660,
-        "wires": [
-            [
-                "29881c2b.5734f4"
-            ]
-        ]
+        "id": "9bb15170.c72018",
+        "type": "ui_group",
+        "z": "",
+        "name": "Record",
+        "tab": "37cffe76.bd877a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
-        "id": "5c084642.76fe58",
-        "type": "change",
-        "z": "47e9b769.f10e68",
-        "name": "Total Recovered",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.Global.TotalRecovered",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 800,
-        "y": 720,
-        "wires": [
-            [
-                "6e6bf109.d98428"
-            ]
-        ]
+        "id": "37cffe76.bd877a",
+        "type": "ui_tab",
+        "z": "",
+        "name": "COVID Voice Chatbot",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]

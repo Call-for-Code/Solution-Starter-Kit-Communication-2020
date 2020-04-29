@@ -14,12 +14,7 @@ In this tutorial, you will:
 ## Prerequisites
 
 - Install Node-RED [locally](https://nodered.org/docs/getting-started/) or [Create a Node-RED Starter application](https://developer.ibm.com/components/node-red/tutorials/how-to-create-a-node-red-starter-application/) in IBM Cloud
-    - After Node-RED is installed, add the dependencies:
-
-    ```
-    npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
-    ```
- - [Create a Watson Assistant COVID-19 crisis communications chatbot](/README.md#getting-started).
+- [Create a Watson Assistant COVID-19 crisis communications chatbot](/README.md#getting-started).
 
 ## Estimated time
 
@@ -63,11 +58,12 @@ After Node-RED is installed, add the dependencies for this tutorial:
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-node-watson](https://flows.nodered.org/node/node-red-node-watson)
 - [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
+- [node-red-contrib-twc-covid19-tracker](https://flows.nodered.org/node/node-red-contrib-twc-covid19-tracker)
 
 #### Local installation instructions
 
 ```
-npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio
+npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio node-red-contrib-twc-covid19-tracker
 ```
 
 #### IBM Cloud installation instructions
@@ -78,6 +74,7 @@ npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson 
 "node-red-node-ui-microphone":"0.x",
 "node-red-dashboard":"2.x",
 "node-red-contrib-play-audio":"2.x",
+"node-red-contrib-twc-covid19-tracker":"0.x",
 ```
 
 ### Explore node-red-node-watson Node-RED nodes
@@ -118,7 +115,7 @@ Before the flow will execute successfully, you must configure the Watson Assista
 #### Create a Watson Speech to Text service instance
 
 1. Create a [Watson Speech to Text Service instance](https://cloud.ibm.com/catalog/services/speech-to-text) instance from the IBM Cloud Catalog. Click **Create**.
-   
+
    ![Create Watson Speech to Text service instance](./images/Create-Watson-STT.png)
 
  The Node-RED Watson Speech to Text node will need the `apikey` credentials for this new instance.
@@ -186,7 +183,7 @@ When someone asks a question, here's the Node-RED flow that happens in the backg
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard.png)
 
-- Every hour, the Node-RED flow will call the [covid19api](https://api.covid19api.com/summary) summary API and collect dynamic COVID-19 infection statistics.
+- Every hour, the Node-RED flow will call the [TWC COVID-19 Disease Tracker](https://github.com/Call-for-Code/node-red-contrib-twc-covid19-tracker)  API and collect dynamic COVID-19 infection statistics.
 - The country data is aggregated and then the gauges are updated.
 
 ### Learn more about the dashboard code
@@ -195,31 +192,38 @@ The following Node-RED flow is included in this tutorial:
 
 ![Node-RED COVID Data Dashboard](./images/Node-RED-COVID-Dashboard-flow.png)
 
-The `http request` node uses the [public Covid-19 API](https://api.covid19api.com/summary) to retrieve the daily information for all countries with infections.
+The `TWC COVID-19 Country Report` node uses the [TWC COVID-19 Global Disease Country List API](https://weather.com/swagger-docs/ui/sun/v3/sunV3DiseaseTrackerCountryList.json) to retrieve the daily information for all countries with infections.
 
-Here's the sample JSON object from the summary API:
-
-```json
-{"Country":"US","Slug":"us","NewConfirmed":18058,"TotalConfirmed":83836,"NewDeaths":267,"TotalDeaths":1209,"NewRecovered":320,"TotalRecovered":681},
-```
-
-Each `function` node then aggregates the Total Confirmed Cases, Total Fatalities, Total Recovered, and Total Countries and sends the results to the corresponding `gauge` node.
+Each `function` node then aggregates the Total Confirmed Cases, Total Fatalities and Total Countries and sends the results to the corresponding `gauge` node.
 
 This is the code in the `function` node:
 
 ```javascript
 let totalConfirmedCase = 0;
 
-msg.payload.Countries.map(function(line){
-    totalConfirmedCase += line.TotalConfirmed;
+msg.payload.covid19.confirmed.map(function(line){
+    totalConfirmedCase += line;
 });
 
 msg.payload = totalConfirmedCase;
-
 return msg;
 ```
 
-You can expand the above dashboard to include daily new infections from [covid19api](https://api.covid19api.com/summary) data, charts, tables, and the chatbot UI.
+You can expand the above dashboard to include daily new infections from [node-red-contrib-twc-covid19-tracker](https://github.com/Call-for-Code/node-red-contrib-twc-covid19-tracker) data, charts, tables, and the chatbot UI.
+
+### Build a SMS to Watson Assistant COVID Chatbot
+
+Import this [flow](/starter-kit/node-red/flows/Node-RED-COVID-SMS-ChatBot.json) and **Deploy** the flow.
+
+- This example requires some additional dependencies:
+  - [node-red-node-twilio](https://flows.nodered.org/node/node-red-node-twilio)
+
+- This flow requires a Twilio Number with a SMS Messaging webhook configured to POST to the URL specified by the **HTTP In** node.
+
+  ![Twilio Messaging Webhook Config](./images/Twilio-Messaging-Webhook.png)
+
+![Node-RED flow](./images/Node-RED-COVID-SMS-ChatBot-flow.png)
+
 
 ## Build a Call for Code Crisis Communications solution!
 
