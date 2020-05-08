@@ -166,6 +166,7 @@ Watson Assistant returns the intents related to your questions.
 ### Deploy the Node-RED flows
 
 - Click on the Red **Deploy** button.
+- To launch the Node-RED Dashboard, click on the **dashboard** tab in the right sidebar. Click on the arrow icon in the upper right corner.
 
 ### Talk to your COVID-19 crisis chatbot
 
