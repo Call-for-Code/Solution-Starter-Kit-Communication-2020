@@ -57,13 +57,12 @@ After Node-RED is installed, add the dependencies for this tutorial:
 - [node-red-node-ui-microphone](https://flows.nodered.org/node/node-red-node-ui-microphone)
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-node-watson](https://flows.nodered.org/node/node-red-node-watson)
-- [node-red-contrib-play-audio](https://flows.nodered.org/node/node-red-contrib-play-audio)
 - [node-red-contrib-twc-covid19-tracker](https://flows.nodered.org/node/node-red-contrib-twc-covid19-tracker)
 
 #### Local installation instructions
 
 ```
-npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson node-red-contrib-play-audio node-red-contrib-twc-covid19-tracker
+npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson  node-red-contrib-twc-covid19-tracker
 ```
 
 #### IBM Cloud installation instructions
@@ -73,7 +72,6 @@ npm install node-red-node-ui-microphone node-red-dashboard node-red-node-watson 
 ```
 "node-red-node-ui-microphone":"0.x",
 "node-red-dashboard":"2.x",
-"node-red-contrib-play-audio":"2.x",
 "node-red-contrib-twc-covid19-tracker":"0.x",
 ```
 
