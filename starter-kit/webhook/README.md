@@ -103,7 +103,7 @@ For example, the response for `type=api` and `location=United States of America`
 }
 ```
 
-8. If you want to make a call to the Discovery service, you need to set some parameters that let you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters: 
+8. If you want to make a call to the Discovery service, you need to set some parameters that let you call the IAM-enabled service. On the left, click on the **Parameters** tab. Add the following parameters in double quotes: 
     - `api_key` (Discovery API Key)
     - `twcApiKey` (API key from The Weather Company)
     - `url` (Discovery Service URL)
