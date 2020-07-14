@@ -22,8 +22,8 @@ This solution starter was created by technologists from IBM.  Translations are a
 7. [Datasets](#datasets)
 8. [Technology](#technology)
 9. [Getting started](#getting-started)
-9. [Resources](#resources)
-10.[License](#license)
+10. [Resources](#resources)
+11. [License](#license)
 
 ## Overview
 
