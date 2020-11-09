@@ -42,7 +42,7 @@ The following steps assume that you have created an assistant, imported the COVI
     cp .env.example .env
     ```
 
-3. Open the *.env* file and add the service credentials that you obtained in the previous step. 
+3. Open the *.env* file and add the service credentials that you obtained in the previous step.
 
     The following example *.env* file configures the `apikey` and `url` for a Watson Assistant service instance hosted in the US East region:
 
@@ -60,9 +60,9 @@ The following steps assume that you have created an assistant, imported the COVI
     ASSISTANT_PASSWORD=A4Z5BdGENxxxx
     ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
     ```
-    
+
     However, if your credentials contain an IAM API key, copy the `apikey` and `url` to the relevant fields.
-    
+
     ```JSON
       {
         "apikey": "ca2905e6-7b5d-4408-9192-xxxxxxxx",
@@ -73,7 +73,7 @@ The following steps assume that you have created an assistant, imported the COVI
         "url": "https://gateway-syd.watsonplatform.net/assistant/api"
       }
     ```
-   
+
    ```
     ASSISTANT_IAM_APIKEY=ca2905e6-7b5d-4408-9192-xxxxxxxx
     ```
@@ -125,8 +125,30 @@ The following steps assume that you have created an assistant, imported the COVI
 
 1. View the application online at the app URL. For example, [covid-assistant-simple-yourname.mybluemix.net](covid-assistant-simple-yourname.mybluemix.net).
 
+## Build a Docker container
+
+If you want to containerize this covid-assistant-simple application so that you can run it in a
+Kubernetes cluster or other hosted service, follow these instructions.
+
+- First, fill in the Watson Assistant credentials in the .env file.
+- The slim version of package.json strips out the test dependencies and will be copied into the container.
+- Build the container:
+
+ ```docker build . -t <your-docker-username>/covid-chatbot```
+
+- Test your container interactively
+
+ ```docker container run -p 3000:3000 --name chatbot -it <your-docker-username>/covid-chatbot:latest /bin/bash```
+- Within the container, run
+
+ ```node server.js```
+- Open a browser to http://localhost:3000
+- Exit the container
+- Optionally, push the container to Docker Hub (remember that it has your credentials file so you might want to push it to a private repository or registry)
+
+
 ## Take on COVID-19
 
-You now know how to build a chatbot using Watson Assistant and a website on IBM Cloud that users to interact with the chatbot. You can see some other Watson Assistant sample applications in the [official documentation](https://cloud.ibm.com/docs/services/assistant?topic=assistant-sample-apps). 
+You now know how to build a chatbot using Watson Assistant and a website on IBM Cloud that users to interact with the chatbot. You can see some other Watson Assistant sample applications in the [official documentation](https://cloud.ibm.com/docs/services/assistant?topic=assistant-sample-apps).
 
 It's your turn to use these technologies to help tackle this pandemic and make a difference by accepting the [COVID-19 challenge](https://developer.ibm.com/callforcode/getstarted/covid-19/)!

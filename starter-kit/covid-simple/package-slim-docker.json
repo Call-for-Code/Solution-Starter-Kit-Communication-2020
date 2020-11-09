@@ -1,0 +1,36 @@
+{
+  "name": "@ibm-watson/assistant-simple",
+  "description": "A simple Node.js based web app which shows CDC COVID FAQ Assistant Starter Kit.",
+  "version": "0.1.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020.git"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "engineStrict": true,
+  "bugs": {
+    "url": "https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020/issues"
+  },
+  "homepage": "https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
+}
