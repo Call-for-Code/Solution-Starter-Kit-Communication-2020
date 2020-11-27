@@ -42,6 +42,7 @@ The following steps assume that you have created an assistant, imported the COVI
 3. Open the *.env* file and change the credentials as follows:
 
     - ASSISTANT_URL: service endpoint for Watson Assistant based on the region your service is created in. You can get the region specific service endpoints from the [documentation](https://cloud.ibm.com/apidocs/assistant/assistant-v2). The URLs are as follows at the time these instructions were written:
+    
     |Region|Service Endpoint|
     |------|----------------|
     |Dallas|https://api.us-south.assistant.watson.cloud.ibm.com|
