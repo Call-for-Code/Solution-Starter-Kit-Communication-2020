@@ -42,16 +42,14 @@ The following steps assume that you have created an assistant, imported the COVI
 3. Open the *.env* file and change the credentials as follows:
 
     - ASSISTANT_URL: service endpoint for Watson Assistant based on the region your service is created in. You can get the region specific service endpoints from the [documentation](https://cloud.ibm.com/apidocs/assistant/assistant-v2). The URLs are as follows at the time these instructions were written:
-  
-  |Region|Service Endpoint|
-  |------|----------------|
-  |Dallas|https://api.us-south.assistant.watson.cloud.ibm.com|
-  |Washington, DC|https://api.us-east.assistant.watson.cloud.ibm.com|
-  |Frankfurt|https://api.eu-de.assistant.watson.cloud.ibm.com|
-  |Sydney|https://api.au-syd.assistant.watson.cloud.ibm.com|
-  |Tokyo|https://api.jp-tok.assistant.watson.cloud.ibm.com|
-  |London|https://api.eu-gb.assistant.watson.cloud.ibm.com|
-  
+    |Region|Service Endpoint|
+    |------|----------------|
+    |Dallas|https://api.us-south.assistant.watson.cloud.ibm.com|
+    |Washington, DC|https://api.us-east.assistant.watson.cloud.ibm.com|
+    |Frankfurt|https://api.eu-de.assistant.watson.cloud.ibm.com|
+    |Sydney|https://api.au-syd.assistant.watson.cloud.ibm.com|
+    |Tokyo|https://api.jp-tok.assistant.watson.cloud.ibm.com|
+    |London|https://api.eu-gb.assistant.watson.cloud.ibm.com|
     - ASSISTANT_ID: `Assistant ID` as shown in the screenshot above.
     - ASSISTANT_IAM_APIKEY: `Api Key` as shown in the screenshot above.
     - ASSISTANT_IAM_URL: `Assistant URL` as shown in the screenshot above.
