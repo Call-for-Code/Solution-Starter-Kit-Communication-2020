@@ -17,12 +17,9 @@ Here is a demo of the final application:
 
 1. Sign up for an [IBM Cloud account](https://www.ibm.com/account/reg/us-en/signup?formid=urx-42793&eventid=cfc-2020?cm_mmc=OSocial_Blog-_-Audience+Developer_Developer+Conversation-_-WW_WW-_-cfc-2020-ghub-starterkit-communication_ov75914&cm_mmca1=000039JL&cm_mmca2=10008917).
 1. Download the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview). You will use it to push your Node.js application to the cloud.
-1. You should already have a Watson Assistant service created when you deployed the COVID bot. You need to get the credentials from that chatbot to use in your Node.js application:
-    - Log in to your IBM Cloud account.
-    - Go to resources and open your Watson Assistant service instance.
-    - You will be taken to Watson Assistant launch page. Click **Service Credentials** to view the service credentials.
-      ![Watson Assistant Credentials](readme_images/watson-assistant-credentials.png)
-    - You will use these credentials to populate the `.env` file when configuring the application below. Copy and save the JSON somewhere or leave this window open.
+1. You should already have a Watson Assistant service created when you deployed the COVID bot [following this tutorial](https://developer.ibm.com/tutorials/crisis-communication-chatbot-watson-assistant-webhook-integration-discovery-covid-data/). You will need your assistant credentials (Assistant ID, Assistant URL and Api Key) as explained in the previous tutorial.
+
+    ![Watson Assistant Photo7 ](readme_images/WA-Photo7.png)
 
 ## Estimated **time**
 
@@ -30,7 +27,7 @@ This tutorial will take you about 30 minutes to complete.
 
 ## Steps
 
-The following steps assume that you have created an assistant, imported the COVID skills, and have the Watson Assistant service credentials available.
+The following steps assume that you have created an assistant, imported the COVID skills, and have the assistant credentials available.
 
 ## Configuring the application
 
@@ -42,46 +39,30 @@ The following steps assume that you have created an assistant, imported the COVI
     cp .env.example .env
     ```
 
-3. Open the *.env* file and add the service credentials that you obtained in the previous step.
+3. Open the *.env* file and change the credentials as follows:
 
-    The following example *.env* file configures the `apikey` and `url` for a Watson Assistant service instance hosted in the US East region:
+    - ASSISTANT_URL: service endpoint for Watson Assistant based on the region your service is created in. You can get the region specific service endpoints from the [documentation](https://cloud.ibm.com/apidocs/assistant/assistant-v2). The URLs are as follows at the time these instructions were written:
+  
+        ```
+        Dallas: https://api.us-south.assistant.watson.cloud.ibm.com
+        Washington, DC: https://api.us-east.assistant.watson.cloud.ibm.com
+        Frankfurt: https://api.eu-de.assistant.watson.cloud.ibm.com
+        Sydney: https://api.au-syd.assistant.watson.cloud.ibm.com
+        Tokyo: https://api.jp-tok.assistant.watson.cloud.ibm.com
+        London: https://api.eu-gb.assistant.watson.cloud.ibm.com
+        ```
+    - ASSISTANT_ID: `Assistant ID` as shown in the screenshot above.
+    - ASSISTANT_IAM_APIKEY: `Api Key` as shown in the screenshot above.
+    - ASSISTANT_IAM_URL: `Assistant URL` as shown in the screenshot above.
 
-    ```
-    ASSISTANT_IAM_APIKEY=X4rbi8vwZmKpXfowaS3GAsA7vdy17Qhxxxxxxxx
-    ASSISTANT_URL=https://gateway-wdc.watsonplatform.net/assistant/api
-    ```
+    That's it! You are now ready to run your application. 
 
-    - If your service instance uses `username` and `password` credentials, add the `ASSISTANT_USERNAME` and `ASSISTANT_PASSWORD` variables to the *.env* file.
-
-    The following example *.env* file configures the `username`, `password`, and `url` for a Watson Assistant service instance hosted in the US South region:
+    **_Note_**: if you have an older Watson Assistant Service, you may have to use a username and password in place of the API key. The following example *.env* file configures the `username`, `password`, and `url` for an older Watson Assistant service instance hosted in the US South region:
 
     ```
     ASSISTANT_USERNAME=522be-7b41-ab44-dec3-xxxxxxxx
     ASSISTANT_PASSWORD=A4Z5BdGENxxxx
     ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
-    ```
-
-    However, if your credentials contain an IAM API key, copy the `apikey` and `url` to the relevant fields.
-
-    ```JSON
-      {
-        "apikey": "ca2905e6-7b5d-4408-9192-xxxxxxxx",
-        "iam_apikey_description": "Auto generated apikey during resource-key ...",
-        "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-xxxxxxxx",
-        "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-        "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
-        "url": "https://gateway-syd.watsonplatform.net/assistant/api"
-      }
-    ```
-
-   ```
-    ASSISTANT_IAM_APIKEY=ca2905e6-7b5d-4408-9192-xxxxxxxx
-    ```
-
-4. Add the `ASSISTANT_ID` to the previous properties:
-
-    ```
-    ASSISTANT_ID=522be-7b41-ab44-dec3-xxxxxxxx
     ```
 
 ## Running locally
