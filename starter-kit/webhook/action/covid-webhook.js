@@ -8,7 +8,7 @@
  *
  */
 var request = require("request-promise");
-const DiscoveryV1 = require("watson-developer-cloud/discovery/v1");
+const DiscoveryV1 = require("ibm-watson/discovery/v2");
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
