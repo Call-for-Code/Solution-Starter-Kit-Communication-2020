@@ -227,6 +227,10 @@ Finally, you can embed your COVID-19 crisis communication chatbot on a Node.js w
 
 - Follow the [COVID-Simple installation instructions](./starter-kit/covid-simple/README.md)
 
+### Integrate your COVID-19 chatbot with WhatsApp
+
+WhatsApp is one of the most used platforms in the world with approximately 2 Billion users. This tutorial shows you how to [integrate Watson Assistant with WhatsApp](https://medium.com/ibm-data-ai/integrating-ibm-watson-assistant-with-whatsapp-e62dcaa803fd). 
+
 ## Disclosures
 
 This tool is intended to provide information based on currently available CDC and other public information to help you make decisions about seeking appropriate medical care. This system is not intended for the diagnosis or treatment of disease or other conditions, including COVID-19, and you should not provide any personally identifying or private health information.
